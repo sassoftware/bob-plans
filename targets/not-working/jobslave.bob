@@ -1,0 +1,13 @@
+resolveTroves media-template=%(master_label)s
+
+includeConfigFile ../config/troves/jobmaster.conf
+includeConfigFile ../config/troves/pyovf.conf
+includeConfigFile ../config/troves/restlib.conf
+
+includeConfigFile config/rbuilder.conf
+
+hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
+
+target group-jobslave
+target jobslave
+target rbuilder-mcp

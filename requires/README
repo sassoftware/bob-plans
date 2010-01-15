@@ -1,0 +1,11 @@
+Because rBuilder components have a wide array of dependencies, it is
+helpful to define them all in one place. However, troves cannot depend
+on themselves or on things that haven't been built yet.  Because of this
+we break up these resolveTroves into smaller files which are included
+as needed by each plan.
+
+Each file should specify a resolveTroves for a particular component with
+a corresponding bob plan. Files may include other files defining further
+resolveTroves which are required for consumers of the component.
+resolveTroves for platform items (things which are not built by the
+plan) should be put into a platform configuration file instead.

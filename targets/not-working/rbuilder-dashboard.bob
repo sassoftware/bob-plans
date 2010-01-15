@@ -1,0 +1,15 @@
+includeConfigFile ../config/troves/flexlibs.conf
+includeConfigFile ../config/flex-devel.conf
+includeConfigFile ../config/troves/flexsdk.conf
+includeConfigFile ../config/flex.conf
+
+includeConfigFile config/rbuilder.conf
+
+includeConfigFile ../config/flex-devel-post.conf
+
+macros version 0
+hg rbuilder-ui http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbuilder-ui
+
+# target configuration
+target rbuilder-dashboard
+

@@ -1,0 +1,20 @@
+includeConfigFile ../config/rbuilder.conf
+
+macros version 0.1
+hg restlib http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/restlib
+hg restlib-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/restlib-private
+
+target restlib
+target restlib-test
+
+[target:restlib]
+version %(version)s.%(hg)s
+sourceLabel testbits.rb.rpath.com@rpath:common
+hg restlib
+flavor_set plain
+
+[target:restlib-test]
+version %(version)s.%(hg)s
+sourceLabel testbits.rb.rpath.com@rpath:common
+hg restlib-private
+flavor_set plain

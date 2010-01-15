@@ -1,0 +1,10 @@
+includeConfigFile ../config/troves/xmllib.conf
+
+includeConfigFile config/rbuilder.conf
+
+macros version 0.1
+hg rpath-storage http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-storage
+hg rpath-storage-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-storage-private
+
+target rpath-storage-test
+target rpath-storage

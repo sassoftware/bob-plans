@@ -1,0 +1,12 @@
+includeConfigFile ../config/troves/proddef.conf
+
+includeConfigFile config/rbuilder.conf
+
+# source materials
+macros version 2.0
+hg conary-factory-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator-test
+hg package-creator-service http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator
+
+# target configuration
+target conary-factory-test
+target pcreator

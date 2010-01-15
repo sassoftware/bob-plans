@@ -1,0 +1,5 @@
+includeConfigFile config/rbuilder.conf
+
+# don't try to build child packages
+recurseTroveRule -group-rbuilder-dist
+target group-rbuilder-dist

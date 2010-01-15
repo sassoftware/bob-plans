@@ -1,0 +1,10 @@
+includeConfigFile ../config/flex-devel.conf
+
+includeConfigFile config/rbuilder.conf
+
+includeConfigFile ../config/flex-devel-post.conf
+
+macros version 0
+hg xobj http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/xobj
+
+target xobj
