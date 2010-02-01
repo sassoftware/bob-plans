@@ -1,0 +1,22 @@
+includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/storage.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+hg catalog-service http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/catalog-service
+hg catalog-service-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/catalog-service-private
+
+target catalog-service-test
+target catalog-service
+
+[target:catalog-service]
+version %(version)s.%(hg)s
+hg catalog-service
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common-5.5
+
+[target:catalog-service-test]
+version %(version)s.%(hg)s
+hg catalog-service-private
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common
