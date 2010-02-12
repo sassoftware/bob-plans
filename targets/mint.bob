@@ -1,6 +1,5 @@
 # internal dependencies
 includeConfigFile ../requires/capsule-indexer.conf
-includeConfigFile ../requires/catalog-client.conf
 includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/crest.conf
 includeConfigFile ../requires/mcp-notest.conf
