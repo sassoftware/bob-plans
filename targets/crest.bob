@@ -1,0 +1,23 @@
+includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/xobj.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+hg crest http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/crest
+hg crest-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/crest-test
+
+target conary-rest
+target crest-test
+
+[target:conary-rest]
+sourceLabel testbits.rb.rpath.com@rpath:conary-common
+version 0.%(hg)s
+hg crest
+flavor_set plain
+
+[target:crest-test]
+sourceLabel testbits.rb.rpath.com@rpath:conary-common
+version 0.%(hg)s
+hg crest-test
+flavor_set plain
+
