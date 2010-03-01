@@ -1,4 +1,4 @@
-includeConfigFile ../config/requires/xmllib.conf
+includeConfigFile ../requires/xmllib.conf
 
 includeConfigFile ../config/rbuilder.conf
 
