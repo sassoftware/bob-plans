@@ -1,0 +1,22 @@
+includeConfigFile ../requires/xmllib.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+macros version 0.4
+hg product-definition http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition
+hg product-definition-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition-private
+
+target rpath-product-definition
+target rpath-product-definition-test
+
+[target:rpath-product-definition]
+version %(version)s.%(hg)s
+hg product-definition
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common
+
+[target:rpath-product-definition-test]
+version %(version)s.%(hg)s
+hg product-definition-private
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common
