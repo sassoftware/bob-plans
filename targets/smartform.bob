@@ -2,7 +2,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
 
-includeConfigFile config/rbuilder.conf
+includeConfigFile ../config/rbuilder.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
