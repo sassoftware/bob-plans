@@ -17,5 +17,6 @@ target flexlibs
 [target:flexlibs]
 version %(version)s.%(hg)s
 hg flexlibs
-flavor !flexlibs.test is: x86
+flavor []
+flavor flexlibs.test is: x86
 sourceLabel private.rb.rpath.com@rpl:devel
