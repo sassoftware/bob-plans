@@ -1,4 +1,5 @@
 includeConfigFile ../config/rbuilder.conf
+includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
 includeConfigFile ../config/flex-devel-post.conf
 
