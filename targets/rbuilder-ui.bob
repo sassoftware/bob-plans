@@ -17,4 +17,5 @@ target rbuilder-ui
 version %(version)s.%(hg)s
 hg rbuilder-ui
 flavor rbuilder-ui.test is: x86
+sourceLabel products.rpath.com@rpath:rba-5.5-devel
 
