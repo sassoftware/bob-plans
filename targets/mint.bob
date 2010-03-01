@@ -6,6 +6,7 @@ includeConfigFile ../requires/mcp-notest.conf
 includeConfigFile ../requires/pcreator.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
+includeConfigFile ../requires/rpath-job.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
 
