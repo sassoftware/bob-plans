@@ -1,0 +1,13 @@
+includeConfigFile ../requires/xobj.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+macros version 0
+hg pyovf http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pyovf
+
+target pyovf
+
+[target:pyovf]
+version %(version)s.%(hg)s
+hg pyovf
+flavor_set plain
