@@ -21,7 +21,7 @@ target rbuilder-test
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo is: x86_64
-sourceLabel products.rpath.com@rpath:rba-5.5-devel
+sourceLabel products.rpath.com@rpath:rba-devel
 
 [target:rbuilder-test]
 version %(version)s.%(hg)s
