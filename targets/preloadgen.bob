@@ -1,0 +1,14 @@
+resolveTroves media-template=%(master_label)s
+
+includeConfigFile ../requires/jobmaster.conf
+includeConfigFile ../config/rbuilder.conf
+
+targetLabel preloadgen.rb.rpath.com@rpath:rba-5.5.3
+
+target media-template-preload
+
+[target:media-template-preload]
+version %(version)s
+flavor_set x86_64
+sourceLabel preloadgen.rb.rpath.com@rpath:rba-5.5-devel
+

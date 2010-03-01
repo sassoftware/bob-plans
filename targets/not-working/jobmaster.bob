@@ -1,7 +1,0 @@
-includeConfigFile ../config/troves/mcp-notest.conf
-
-includeConfigFile config/rbuilder.conf
-
-hg jobmaster http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobmaster
-
-target jobmaster
