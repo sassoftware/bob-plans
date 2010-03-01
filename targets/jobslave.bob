@@ -1,4 +1,4 @@
-#recurseTroveRule -group-jobslave
+recurseTroveRule -group-jobslave
 resolveTroves media-template=%(master_label)s
 
 includeConfigFile ../requires/jobmaster.conf
