@@ -1,8 +1,0 @@
-includeConfigFile config/rbuilder.conf
-
-macros version 0.1
-hg rpath-xmllib http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-xmllib
-hg rpath-xmllib-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-xmllib-private
-
-target rpath-xmllib-test
-target rpath-xmllib
