@@ -1,4 +1,5 @@
-includeConfigFile ../config/troves/xobj.conf
+includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
 
 includeConfigFile config/rbuilder.conf
@@ -9,3 +10,9 @@ macros version 0
 hg smartform http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/smartform
 
 target smartform
+
+[target:smartform]
+version %(version)s.%(hg)s
+hg smartform
+flavor !flexlibs.test is: x86
+
