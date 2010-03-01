@@ -1,9 +1,9 @@
-includeConfigFile ../config/troves/flexlibs.conf
+includeConfigFile ../requires/flexlibs.conf
 includeConfigFile ../config/flex-devel.conf
-includeConfigFile ../config/troves/flexsdk.conf
+includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
-includeConfigFile config/rbuilder.conf
+includeConfigFile ../config/rbuilder.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
@@ -12,4 +12,9 @@ hg rbuilder-ui http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rb
 
 # target configuration
 target rbuilder-ui
+
+[target:rbuilder-ui]
+version %(version)s.%(hg)s
+hg rbuilder-ui
+flavor rbuilder-ui.test is: x86
 
