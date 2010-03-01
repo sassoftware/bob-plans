@@ -1,9 +1,9 @@
-includeConfigFile ../config/troves/xobj.conf
-includeConfigFile ../config/troves/smartform.conf
-includeConfigFile ../config/troves/flexsdk.conf
+includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/smartform.conf
+includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
-includeConfigFile config/rbuilder.conf
+includeConfigFile ../config/rbuilder.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
