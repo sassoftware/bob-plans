@@ -1,0 +1,24 @@
+includeConfigFile ../requires/proddef.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+# source materials
+macros version 2.0
+hg conary-factory-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator-test
+hg package-creator-service http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator
+
+# target configuration
+target conary-factory-test
+target pcreator
+
+[target:pcreator]
+version %(version)s.%(hg)s
+hg package-creator-service
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:package-creator
+
+[target:conary-factory-test]
+version %(version)s.%(hg)s
+hg conary-factory-test
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:conary-factory
