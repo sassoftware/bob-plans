@@ -1,3 +1,4 @@
+includeConfigFile ../requires/job.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
 
