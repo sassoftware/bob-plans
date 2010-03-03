@@ -6,6 +6,7 @@ includeConfigFile ../requires/mcp-notest.conf
 includeConfigFile ../requires/pcreator.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
+includeConfigFile ../requires/rpath-job.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
 
@@ -21,7 +22,7 @@ target rbuilder-test
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo is: x86_64
-sourceLabel products.rpath.com@rpath:rba-5.5-devel
+sourceLabel products.rpath.com@rpath:rba-devel
 
 [target:rbuilder-test]
 version %(version)s.%(hg)s
