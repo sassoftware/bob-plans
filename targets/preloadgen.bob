@@ -3,7 +3,7 @@ resolveTroves media-template=%(master_label)s
 includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-5.5
+targetLabel preloadgen.rb.rpath.com@rpath:rba-5.6
 
 target media-template-preload
 
