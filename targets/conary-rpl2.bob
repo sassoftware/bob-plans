@@ -1,3 +1,5 @@
+includeConfigFile ../config/rbuilder.conf
+
 macros version 2.1.10
 macros policy_version 1.0.28
 macros top_group group-os
