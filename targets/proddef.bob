@@ -1,5 +1,4 @@
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xmllib.conf
 
 includeConfigFile ../config/rbuilder.conf
