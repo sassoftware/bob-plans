@@ -13,16 +13,19 @@ target conary-policy
 target conary-test
 
 [target:conary]
+sourceLabel testbits.rb.rpath.com@rpath:conary-common
 version %(version)s.%(hg)s
 hg conary
 flavor_set plain
 
 [target:conary-policy]
+sourceLabel testbits.rb.rpath.com@rpath:conary-common
 version %(policy_version)s.%(hg)s
 hg conary-policy
 flavor_set plain
 
 [target:conary-test]
+sourceLabel testbits.rb.rpath.com@rpath:conary-common
 version %(version)s.%(hg)s
 hg conary-test
 flavor %rPL 2:x86%      conary-test.rpm, !conary-test.coverage
