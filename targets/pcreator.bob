@@ -1,3 +1,4 @@
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/proddef.conf
 
 includeConfigFile ../config/rbuilder.conf

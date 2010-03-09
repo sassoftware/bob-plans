@@ -1,4 +1,5 @@
 # internal dependencies
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/capsule-indexer.conf
 includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/crest.conf
