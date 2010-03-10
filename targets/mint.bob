@@ -9,6 +9,7 @@ includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/rpath-job.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/rapa.conf
 
 includeConfigFile ../config/rbuilder.conf
 
