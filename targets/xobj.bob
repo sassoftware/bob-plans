@@ -1,3 +1,4 @@
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf

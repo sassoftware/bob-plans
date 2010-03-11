@@ -1,3 +1,4 @@
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/mcp-notest.conf
 
 includeConfigFile ../config/rbuilder.conf
