@@ -1,4 +1,3 @@
-includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
@@ -15,5 +14,5 @@ target smartform
 [target:smartform]
 version %(version)s.%(hg)s
 hg smartform
-flavor !flexlibs.test is: x86
+flavor_set plain
 
