@@ -1,3 +1,4 @@
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
@@ -15,4 +16,3 @@ target smartform
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain
-
