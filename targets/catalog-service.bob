@@ -2,6 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/job.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
+includeConfigFile ../requires/smartform.conf
 
 includeConfigFile ../config/rbuilder.conf
 
