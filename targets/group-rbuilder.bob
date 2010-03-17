@@ -1,5 +1,6 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rapa.conf
+includeConfigFile ../requires/smartform.conf
 includeConfigFile ../config/rbuilder.conf
 
 # don't try to build child packages
