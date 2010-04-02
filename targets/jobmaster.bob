@@ -8,7 +8,6 @@ hg jobmaster http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobm
 target jobmaster
 
 [target:jobmaster]
-sourceLabel products.rpath.com@rpath:rba-devel
 version %(version)s.%(hg)s
 hg jobmaster
 flavor is: x86_64
