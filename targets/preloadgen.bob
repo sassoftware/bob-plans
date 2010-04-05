@@ -4,7 +4,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-5.5.5
+targetLabel preloadgen.rb.rpath.com@rpath:rba-5.5
 
 target media-template-preload
 
