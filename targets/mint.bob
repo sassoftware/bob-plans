@@ -4,7 +4,7 @@ includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/capsule-indexer.conf
 includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/crest.conf
-includeConfigFile ../requires/mcp-notest.conf
+includeConfigFile ../requires/mcp.conf
 includeConfigFile ../requires/pcreator.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
