@@ -6,7 +6,6 @@ hg mcp http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mcp
 target mcp
 
 [target:mcp]
-sourceLabel products.rpath.com@rpath:rba-devel
 version %(version)s.%(hg)s
 hg mcp
 flavor_set x86_64
