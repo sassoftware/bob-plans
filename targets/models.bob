@@ -1,0 +1,13 @@
+includeConfigFile ../config/rbuilder.conf
+
+macros version 1.0
+hg rpath-models http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-models
+
+target rpath-models
+
+[target:rpath-models]
+version %(version)s.%(hg)s
+hg rpath-models
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common
+

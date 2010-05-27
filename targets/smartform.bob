@@ -15,5 +15,4 @@ target smartform
 [target:smartform]
 version %(version)s.%(hg)s
 hg smartform
-flavor !flexlibs.test is: x86
-
+flavor_set plain
