@@ -1,0 +1,26 @@
+includeConfigFile ../config/rbuilder.conf
+includeConfigFile ../requires/conary.conf
+
+macros version 2.0.0
+macros base_version %(version)s
+macros rmake_branch 2.0
+macros conary_branch 2.1
+
+# HACK: use rpl:2-devel libcap until update is pushed
+resolveTroves libcap=conary.rpath.com@rpl:2-devel
+
+sourceLabel testbits.rb.rpath.com@rpath:rmake-1
+
+target rmake
+target rmake-test
+
+[target:rmake]
+version %(version)s.%(hg)s
+hg rmake
+flavor_set plain
+
+[target:rmake-test]
+version %(version)s.%(hg)s
+hg rmake-private
+flavor_set plain
+

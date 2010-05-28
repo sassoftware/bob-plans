@@ -2,9 +2,9 @@ recurseTroveRule -group-jobslave
 resolveTroves media-template=%(master_label)s
 
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/pyovf.conf
 includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/proddef.conf
 
 includeConfigFile ../config/rbuilder.conf
 
