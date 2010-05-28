@@ -7,6 +7,11 @@ sourceLabel products.rpath.com@rpath:upsrv-devel
 hg rbm http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbm
 # hg us2us http://scc.eng.rpath.com/proserv/raa-plugins/us2us-mirror-4.1
 
+target updateservice
+target raa-branding-custom
+target conary-web-common-upsrv
+target firewall-rules
+
 # main troves
 [target:updateservice]
 version %(version)s.%(hg)s
