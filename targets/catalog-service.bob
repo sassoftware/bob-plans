@@ -1,6 +1,8 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/job.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
+includeConfigFile ../requires/smartform.conf
 
 includeConfigFile ../config/rbuilder.conf
 
@@ -14,7 +16,7 @@ target catalog-service
 version %(version)s.%(hg)s
 hg catalog-service
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common-5.5
+sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:catalog-service-test]
 version %(version)s.%(hg)s

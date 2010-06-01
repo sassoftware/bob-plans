@@ -8,7 +8,7 @@ target group-rbuilder-dist
 
 [target:group-rbuilder-dist]
 version %(version)s
-sourceLabel products.rpath.com@rpath:rba-5.5-devel
+sourceLabel products.rpath.com@rpath:rba-devel
 # x86_64: main product
 flavor %rPL 2:x86_64% !xen,!domU,!dom0,!vmware,   !rbuilder.rbo
 # x86_64: domU for EC2 demos

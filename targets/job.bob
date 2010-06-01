@@ -1,0 +1,15 @@
+includeConfigFile ../requires/xmllib.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+macros version 0.1
+hg rpath-job http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-job
+
+target rpath-job
+
+[target:rpath-job]
+version %(version)s.%(hg)s
+hg rpath-job
+flavor_set plain
+sourceLabel testbits.rb.rpath.com@rpath:common
+
