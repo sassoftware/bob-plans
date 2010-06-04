@@ -1,7 +1,6 @@
-resolveTroves media-template=%(master_label)s
-
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/jobmaster.conf
+includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
 targetLabel preloadgen.rb.rpath.com@rpath:rba-5.6.0
