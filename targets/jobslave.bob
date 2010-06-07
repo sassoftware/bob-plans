@@ -20,7 +20,7 @@ hg jobslave
 flavor_set x86_64
 
 [target:group-jobslave]
-sourceLabel products.rpath.com@rpath:js-devel
+sourceLabel testbits.rb.rpath.com@rpath:rba-5.5
 version %(jobslave_version)s
 after jobslave
 flavor_set x86_64
