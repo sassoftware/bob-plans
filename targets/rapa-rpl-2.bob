@@ -10,7 +10,7 @@ hg rapa-test http://scc.eng.rpath.com/products/rbuilder//%(rbuilder_forest)s/raa
 hg flipflop http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flipflop
 
 # target configuration
-installLabelPath %(platform_label)s %(contrib_label)s %(conary_label)s %(conary_test_label)s
+installLabelPath %(distro_label)s %(contrib_label)s %(conary_label)s %(conary_test_label)s
 shortenGroupFlavors True
 recurseTroveRule -group-rapa
 
