@@ -6,7 +6,7 @@ includeConfigFile ../config/rbuilder.conf
 # source materials
 sourceLabel products.rpath.com@rpath:rapa-3-devel
 hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
-hg rapa-test http://scc.eng.rpath.com/products/rbuilder//%(rbuilder_forest)s/raa-test
+hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
 hg flipflop http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flipflop
 
 # target configuration
