@@ -1,0 +1,44 @@
+# internal dependencies
+includeConfigFile ../requires/conary.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+# source materials
+sourceLabel products.rpath.com@rpath:rapa-3-devel
+hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
+hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
+
+# target configuration
+installLabelPath %(distro_label)s %(contrib_label)s %(master_label)s
+shortenGroupFlavors True
+recurseTroveRule -group-rapa
+
+target group-rapa
+target info-raa-web
+target rapa
+target rapa-test
+target rapa-plugin-rPath
+
+[target:rapa]
+version %(version)s.%(hg)s
+hg rapa
+flavor_set plain
+
+[target:group-rapa]
+version %(version)s
+flavor_set plain
+after rapa
+
+[target:rapa-test]
+version %(version)s.%(hg)s
+hg rapa-test
+flavor_set plain
+
+[target:rapa-plugin-rPath]
+version %(version)s
+flavor_set plain
+
+[target:info-raa-web]
+version 1
+flavor is: x86
+

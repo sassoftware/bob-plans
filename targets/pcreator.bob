@@ -1,5 +1,6 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/proddef.conf
+includeConfigFile ../requires/rmake.conf
 
 includeConfigFile ../config/rbuilder.conf
 
@@ -15,11 +16,11 @@ target pcreator
 [target:pcreator]
 version %(version)s.%(hg)s
 hg package-creator-service
-flavor_set plain
+flavor_set x86_64
 sourceLabel testbits.rb.rpath.com@rpath:package-creator
 
 [target:conary-factory-test]
 version %(version)s.%(hg)s
 hg conary-factory-test
-flavor_set plain
+flavor_set x86_64
 sourceLabel testbits.rb.rpath.com@rpath:conary-factory
