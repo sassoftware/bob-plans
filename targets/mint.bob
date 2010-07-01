@@ -30,4 +30,4 @@ sourceLabel products.rpath.com@rpath:rba-5.5-devel
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo, !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64
-sourceLabel products.rpath.com@rpath:rba-devel
+sourceLabel testbits.rb.rpath.com@rpath:rba-5.5
