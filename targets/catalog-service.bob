@@ -16,10 +16,10 @@ target catalog-service
 version %(version)s.%(hg)s
 hg catalog-service
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceLabel testbits.rb.rpath.com@rpath:rba-barb
 
 [target:catalog-service-test]
 version %(version)s.%(hg)s
 hg catalog-service-private
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceLabel testbits.rb.rpath.com@rpath:rba-barb
