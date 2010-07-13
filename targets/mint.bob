@@ -11,6 +11,7 @@ includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/rpath-job.conf
+includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
 

@@ -1,5 +1,6 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/job.conf
+includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/smartform.conf
