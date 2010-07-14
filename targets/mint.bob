@@ -27,10 +27,8 @@ target rbuilder-test
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo is: x86_64
-sourceLabel testbits.rb.rpath.com@rpath:rba-barb
 
 [target:rbuilder-test]
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo, !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64
-sourceLabel testbits.rb.rpath.com@rpath:rba-5.5
