@@ -3,7 +3,7 @@ includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-aruval
+targetLabel preloadgen.rb.rpath.com@rpath:rba-5.5
 
 target media-template-preload
 
