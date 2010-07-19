@@ -14,13 +14,13 @@ target catalog-service-test
 target catalog-service
 
 [target:catalog-service]
+sourceTree catalog-service recipe
 version %(version)s.%(hg)s
 hg catalog-service
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:catalog-service-test]
+sourceTree catalog-service-private recipe
 version %(version)s.%(hg)s
 hg catalog-service-private
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
