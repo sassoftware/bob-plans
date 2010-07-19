@@ -6,9 +6,11 @@ includeConfigFile ../config/rbuilder.conf
 recurseTroveRule -group-rbuilder-dist
 target group-rbuilder-dist
 
+hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+
 [target:group-rbuilder-dist]
 version %(version)s
-sourceLabel products.rpath.com@rpath:rba-5.5-devel
+sourceTree recipes group-rbuilder-dist
 # x86_64: main product
 flavor %rPL 2:x86_64% !xen,!domU,!dom0,!vmware,   !rbuilder.rbo
 # x86_64: domU for EC2 demos
