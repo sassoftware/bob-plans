@@ -2,8 +2,6 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rapa.conf
 includeConfigFile ../config/rbuilder.conf
 
-# don't try to build child packages
-recurseTroveRule -group-rbuilder-dist
 target group-rbuilder-dist
 
 hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
