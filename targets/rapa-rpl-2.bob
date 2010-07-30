@@ -4,7 +4,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
-sourceLabel products.rpath.com@rpath:rapa-3-devel
+sourceLabel testbits.rb.rpath.com@rpath:rba-5.6-devel
 hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
 hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
 
