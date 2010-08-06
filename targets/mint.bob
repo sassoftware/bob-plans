@@ -21,7 +21,7 @@ includeConfigFile ../config/rbuilder.conf
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint
 
 target rbuilder
-target rbuilder-test
+#target rbuilder-test
 
 [target:rbuilder]
 sourceTree mint recipes/rbuilder
