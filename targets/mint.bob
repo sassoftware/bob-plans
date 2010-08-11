@@ -14,6 +14,7 @@ includeConfigFile ../requires/rpath-job.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/rpath-repeater.conf
 
 includeConfigFile ../config/rbuilder.conf
 
