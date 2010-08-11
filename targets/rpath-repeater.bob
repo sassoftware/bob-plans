@@ -7,6 +7,7 @@ hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s
 target rpath-repeater
 
 [target:rpath-repeater]
+sourceTree rpath-repeater recipes/rpath-repeater
 version %(version)s.%(hg)s
 hg rpath-repeater
 flavor_set plain
