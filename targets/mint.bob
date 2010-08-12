@@ -15,6 +15,7 @@ includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/rpath-repeater.conf
+includeConfigFile ../requires/rmake3.conf
 
 includeConfigFile ../config/rbuilder.conf
 
