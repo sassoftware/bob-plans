@@ -1,0 +1,15 @@
+includeConfigFile ../requires/conary.conf
+
+includeConfigFile ../config/rbuilder.conf
+
+macros version 3.0
+
+hg rmake http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake3
+
+target rmake3
+
+[target:rmake3]
+sourceTree rmake recipes/rpl-2
+version %(version)s.%(hg)s
+hg rmake
+flavor_set x86_64

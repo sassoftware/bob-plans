@@ -11,8 +11,11 @@ includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/rpath-job.conf
+includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/rpath-repeater.conf
+includeConfigFile ../requires/rmake3.conf
 
 includeConfigFile ../config/rbuilder.conf
 
@@ -20,16 +23,16 @@ includeConfigFile ../config/rbuilder.conf
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint
 
 target rbuilder
-target rbuilder-test
+#target rbuilder-test
 
 [target:rbuilder]
+sourceTree mint recipes/rbuilder
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo is: x86_64
-sourceLabel testbits.rb.rpath.com@rpath:rba-barb
 
 [target:rbuilder-test]
+sourceTree mint recipes/rbuilder-test
 version %(version)s.%(hg)s
 hg mint
 flavor !rbuilder.rbo, !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64
-sourceLabel testbits.rb.rpath.com@rpath:rba-5.5

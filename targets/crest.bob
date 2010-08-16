@@ -11,13 +11,13 @@ target conary-rest
 target crest-test
 
 [target:conary-rest]
-sourceLabel testbits.rb.rpath.com@rpath:conary-common
+sourceTree crest recipe
 version 0.%(hg)s
 hg crest
 flavor_set plain
 
 [target:crest-test]
-sourceLabel testbits.rb.rpath.com@rpath:conary-common
+sourceTree crest-test recipe
 version 0.%(hg)s
 hg crest-test
 flavor_set plain

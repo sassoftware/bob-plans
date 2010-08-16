@@ -1,5 +1,3 @@
-recurseTroveRule -group-jobslave
-
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/pyovf.conf
 includeConfigFile ../requires/restlib.conf
@@ -11,22 +9,15 @@ hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobsl
 
 target group-jobslave
 target jobslave
-target rbuilder-mcp
 
 [target:jobslave]
-sourceLabel products.rpath.com@rpath:js-devel
+sourceTree jobslave recipes/jobslave
 version %(version)s.%(hg)s
 hg jobslave
 flavor_set x86_64
 
 [target:group-jobslave]
-sourceLabel testbits.rb.rpath.com@rpath:rba-5.5
+sourceTree jobslave recipes/group-jobslave
 version %(jobslave_version)s
 after jobslave
 flavor_set x86_64
-
-[target:rbuilder-mcp]
-sourceLabel products.rpath.com@rpath:rba-devel
-version %(jobslave_version)s
-flavor is: x86_64
-
