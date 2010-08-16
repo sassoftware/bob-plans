@@ -17,19 +17,14 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/rmake3.conf
 
+includeConfigFile ../requires/mint.conf
+
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint
 
-target rbuilder
 target rbuilder-test
-
-[target:rbuilder]
-sourceTree mint recipes/rbuilder
-version %(version)s.%(hg)s
-hg mint
-flavor !rbuilder.rbo is: x86_64
 
 [target:rbuilder-test]
 sourceTree mint recipes/rbuilder-test
