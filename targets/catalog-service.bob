@@ -1,5 +1,6 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/job.conf
+includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/smartform.conf
@@ -13,13 +14,13 @@ target catalog-service-test
 target catalog-service
 
 [target:catalog-service]
+sourceTree catalog-service recipe
 version %(version)s.%(hg)s
 hg catalog-service
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:rba-barb
 
 [target:catalog-service-test]
+sourceTree catalog-service-private recipe
 version %(version)s.%(hg)s
 hg catalog-service-private
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:rba-barb
