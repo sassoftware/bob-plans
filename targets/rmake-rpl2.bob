@@ -9,7 +9,7 @@ hg rmake http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake
 hg rmake-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake-private
 
 target rmake
-target rmake-test
+#target rmake-test
 
 [target:rmake]
 sourceLabel testbits.rb.rpath.com@rpath:rmake-1
