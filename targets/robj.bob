@@ -1,0 +1,12 @@
+includeConfigFile ../config/rbuilder.conf
+includeConfigFile ../requires/xobj.conf
+
+macros version 0
+hg robj http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/robj
+
+target robj
+
+[target:robj]
+version %(version)s.%(hg)s
+hg robj
+flavor_set plain
