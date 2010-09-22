@@ -1,7 +1,7 @@
 includeConfigFile ../config/rbuilder.conf
 
 macros version 0.1
-hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/wmiclient
+hg wmiclient http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/wmiclient
 
 target wmiclient
 
