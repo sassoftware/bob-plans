@@ -3,34 +3,15 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
-sourceLabel products.rpath.com@rpath:upsrv-devel
 hg rbm http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbm
 # hg us2us http://scc.eng.rpath.com/proserv/raa-plugins/us2us-mirror-4.1
 
 target updateservice
-target raa-branding-custom
-target conary-web-common-upsrv
-target firewall-rules
 
 # main troves
 [target:updateservice]
+sourceTree rbm recipes/updateservice
 version %(version)s.%(hg)s
 macros shortVersion %(version)s
 hg rbm
-flavor_set plain
-
-# [target:raa-plugin-us2usmirror]
-# version %(version)s.%(hg)s
-# hg us2us
-
-# support troves
-[target:raa-branding-custom]
-version %(version)s
-flavor_set plain
-
-[target:conary-web-common-upsrv]
-flavor_set plain
-
-[target:firewall-rules]
-flavor_set plain
-
+flavor_set x86_64
