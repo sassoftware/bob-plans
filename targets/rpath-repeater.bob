@@ -6,9 +6,16 @@ macros version 0
 hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-repeater
 
 target rpath-repeater
+target rpath-repeater-test
 
 [target:rpath-repeater]
 sourceTree rpath-repeater recipes/rpath-repeater
+version %(version)s.%(hg)s
+hg rpath-repeater
+flavor_set x86_64
+
+[target:rpath-repeater-test]
+sourceTree rpath-repeater recipes/rpath-repeater-test
 version %(version)s.%(hg)s
 hg rpath-repeater
 flavor_set x86_64
