@@ -10,7 +10,7 @@ hg conary-policy http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/
 
 target conary
 target conary-policy
-#target conary-test
+target conary-test
 
 [target:conary]
 sourceTree conary recipes/rpl-2
