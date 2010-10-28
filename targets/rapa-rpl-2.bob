@@ -4,14 +4,12 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
-sourceLabel testbits.rb.rpath.com@rpath:rba-5.6-devel
 hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
 hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
 
 # target configuration
 installLabelPath %(distro_label)s %(master_label)s
 shortenGroupFlavors True
-recurseTroveRule -group-rapa
 
 target group-rapa
 target info-raa-web
@@ -20,25 +18,29 @@ target rapa-test
 target rapa-plugin-rPath
 
 [target:rapa]
+sourceTree rapa recipes/rapa
 version %(version)s.%(hg)s
 hg rapa
 flavor_set plain
 
 [target:group-rapa]
+sourceTree rapa recipes/group-rapa
 version %(version)s
 flavor_set plain
 after rapa
 
 [target:rapa-test]
+sourceTree rapa-test recipe
 version %(version)s.%(hg)s
 hg rapa-test
 flavor_set plain
 
 [target:rapa-plugin-rPath]
+sourceTree rapa recipes/rapa-plugin-rPath
 version %(version)s
 flavor_set plain
 
 [target:info-raa-web]
+sourceTree rapa recipes/info-raa-web
 version 1
 flavor is: x86
-

@@ -14,13 +14,13 @@ target conary-factory-test
 target pcreator
 
 [target:pcreator]
+sourceTree package-creator-service recipe
 version %(version)s.%(hg)s
 hg package-creator-service
 flavor_set x86_64
-sourceLabel testbits.rb.rpath.com@rpath:package-creator
 
 [target:conary-factory-test]
+sourceTree conary-factory-test recipe
 version %(version)s.%(hg)s
 hg conary-factory-test
 flavor_set x86_64
-sourceLabel testbits.rb.rpath.com@rpath:conary-factory
