@@ -1,7 +1,9 @@
-includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel %(platform_label)s
+targetLabel jules.eng.rpath.com@rpath:platform-claymore-devel
+resolveTroves []
+resolveTroves group-os=%(distro_label)s
+resolveTrovesOnly False
 
 target group-rpath-platform
 
@@ -11,3 +13,4 @@ hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipe
 version %(version)s
 sourceTree recipes group-rpath-platform
 flavor_set plain
+

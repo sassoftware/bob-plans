@@ -9,7 +9,7 @@ hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
 hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
 
 # target configuration
-installLabelPath %(distro_label)s %(contrib_label)s %(master_label)s
+installLabelPath %(distro_label)s %(master_label)s
 shortenGroupFlavors True
 recurseTroveRule -group-rapa
 
