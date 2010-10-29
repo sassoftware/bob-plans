@@ -17,6 +17,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/rmake3.conf
 
+resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
