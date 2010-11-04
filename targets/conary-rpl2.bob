@@ -13,7 +13,7 @@ target conary-policy
 target conary-test
 
 [target:conary]
-sourceTree conary recipes/rpl-2
+sourceTree conary recipes/rpl-2-py26
 version %(version)s.%(hg)s
 hg conary
 flavor_set plain
