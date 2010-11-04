@@ -1,5 +1,8 @@
 includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/conary.conf
+
+# XXX FIXME
+resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
