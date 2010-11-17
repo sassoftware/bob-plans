@@ -1,4 +1,5 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/job.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/restlib.conf
