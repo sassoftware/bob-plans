@@ -15,10 +15,10 @@ target rmake-test
 sourceTree rmake recipes/rpl-2
 version %(version)s.%(hg)s
 hg rmake
-flavor_set x86_64
+flavor_set plain
 
 [target:rmake-test]
 sourceTree rmake-private recipe
 version %(version)s.%(hg)s
 hg rmake-private
-flavor_set x86_64
+flavor_set plain
