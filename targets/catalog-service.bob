@@ -1,4 +1,5 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/job.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/restlib.conf
@@ -17,10 +18,12 @@ target catalog-service
 sourceTree catalog-service recipe
 version %(version)s.%(hg)s
 hg catalog-service
-flavor_set plain
+flavor_set x86_64
+#flavor_set plain
 
 [target:catalog-service-test]
 sourceTree catalog-service-private recipe
 version %(version)s.%(hg)s
 hg catalog-service-private
-flavor_set plain
+flavor_set x86_64
+#flavor_set plain
