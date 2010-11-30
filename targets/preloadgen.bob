@@ -5,7 +5,7 @@ includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-p1
+targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-py26
 
 target media-template-preload
 
