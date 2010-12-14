@@ -1,7 +1,7 @@
 includeConfigFile ../config/rbuilder.conf
 
-macros version 2.1.19
-macros policy_version 1.0.28
+macros version 2.2
+macros policy_version 1.0
 macros top_group group-os
 
 hg conary http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/conary
@@ -14,19 +14,19 @@ target conary-test
 
 [target:conary]
 sourceTree conary recipes/rpl-2-py26
-version %(version)s.%(hg)s
+version %(version)s_%(start_time)s_%(hg)s
 hg conary
 flavor_set plain
 
 [target:conary-policy]
 sourceTree conary-policy recipes/rpl-2
-version %(policy_version)s.%(hg)s
+version %(policy_version)s_%(start_time)s_%(hg)s
 hg conary-policy
 flavor_set plain
 
 [target:conary-test]
 sourceTree conary-test recipes/rpl-2
-version %(version)s.%(hg)s
+version %(version)s_%(start_time)s_%(hg)s
 hg conary-test
 flavor %rPL 2:x86%      conary-test.rpm, !conary-test.coverage
 flavor %rPL 2:x86_64%   conary-test.rpm, !conary-test.coverage
