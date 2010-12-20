@@ -15,7 +15,7 @@ hg rbuilder-ui http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rb
 target rbuilder-ui
 
 [target:rbuilder-ui]
+sourceTree rbuilder-ui recipes/rbuilder-ui
 version %(version)s.%(hg)s
 hg rbuilder-ui
 flavor rbuilder-ui.test is: x86
-
