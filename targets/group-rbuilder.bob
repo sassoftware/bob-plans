@@ -11,6 +11,6 @@ hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipe
 version %(version)s
 sourceTree recipes group-rbuilder-dist
 # x86_64: main product
-flavor %rPL 2:x86_64% !dom0   !rbuilder.rbo
+flavor %rPL 2:x86_64% !dom0,   !rbuilder.rbo
 # x86_64: domU for EC2 demos
 #flavor %rPL 2:x86_64%  xen, domU,!dom0,!vmware,   !rbuilder.rbo
