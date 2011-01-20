@@ -3,6 +3,7 @@ includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/mint.conf
+includeConfigFile ../requires/jobslave.conf
 
 target group-rbuilder-dist
 
