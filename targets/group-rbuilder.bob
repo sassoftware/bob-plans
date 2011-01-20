@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../config/rbuilder.conf
-includeConfigFile ../requires/jobslave.conf
+includeConfigFile ../requires/mint.conf
 
 target group-rbuilder-dist
 
