@@ -1,6 +1,6 @@
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel jules.eng.rpath.com@rpath:platform-claymore-p4-devel
+targetLabel jules.eng.rpath.com@rpath:platform-claymore-p5-devel
 resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTrovesOnly False
