@@ -19,7 +19,7 @@ target flexlibs
 version %(version)s.%(hg)s
 hg flexlibs
 flavor []
-flavor flexlibs.test is: x86
+#flavor flexlibs.test is: x86
 # uncomment below to run without tests
-# flavor is: x86
+flavor is: x86
 sourceLabel private.rb.rpath.com@rpl:devel
