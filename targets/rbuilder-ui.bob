@@ -18,6 +18,6 @@ target rbuilder-ui
 sourceTree rbuilder-ui recipes/rbuilder-ui
 version %(version)s.%(hg)s
 hg rbuilder-ui
-#flavor rbuilder-ui.test is: x86
+flavor rbuilder-ui.test is: x86
 # uncomment below to run without tests
-flavor is: x86
+#flavor is: x86
