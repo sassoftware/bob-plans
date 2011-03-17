@@ -12,6 +12,6 @@ targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-p6
 target media-template-preload
 
 [target:media-template-preload]
-version %(version)s
+version %(version)s_%(start_time)s
 flavor_set x86_64
 sourceTree jobslave recipes/media-template-preload
