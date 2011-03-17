@@ -5,6 +5,8 @@ includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
+hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
+
 targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-p6
 
 target media-template-preload
@@ -12,5 +14,4 @@ target media-template-preload
 [target:media-template-preload]
 version %(version)s
 flavor_set x86_64
-sourceLabel preloadgen.rb.rpath.com@rpath:rba-5.5-devel
-
+sourceTree jobslave recipes/media-template-preload
