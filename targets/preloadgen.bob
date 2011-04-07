@@ -5,9 +5,9 @@ includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
-hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
+targetLabel preloadgen.rb.rpath.com@rpath:rba-trunk
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-dirk
+hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
 
 target media-template-preload
 
