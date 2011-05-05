@@ -6,8 +6,7 @@ includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
 hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
-
-targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-p6
+targetLabel preloadgen.rb.rpath.com@rpath:rba-claymore-p7
 
 target media-template-preload
 
