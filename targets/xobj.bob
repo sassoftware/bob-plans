@@ -1,8 +1,8 @@
+includeConfigFile ../config/flex-devel-post.conf
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex-devel.conf
-includeConfigFile ../config/flex-devel-post.conf
 
 macros version 0
 hg xobj http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/xobj
