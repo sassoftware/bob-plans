@@ -1,8 +1,9 @@
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
-includeConfigFile ../config/flex-devel.conf
+
+includeConfigFile ../config/rbuilder.conf
+
 includeConfigFile ../config/flex-devel-post.conf
 
 macros version 0
