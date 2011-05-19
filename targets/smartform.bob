@@ -13,7 +13,7 @@ hg smartform http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/smar
 target smartform
 
 [target:smartform]
-sourceTree xobj recipes/xobj
+sourceTree smartform recipes/smartform
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain
