@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/flexsdk.conf
-includeConfigFile ../config/flex-devel.conf
+includeConfigFile ../config/flex.conf
 
 includeConfigFile ../config/rbuilder.conf
 
@@ -13,6 +13,7 @@ hg smartform http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/smar
 target smartform
 
 [target:smartform]
+sourceTree xobj recipes/xobj
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain
