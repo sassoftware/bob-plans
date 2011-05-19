@@ -16,10 +16,10 @@ hg flexlibs http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flexl
 target flexlibs
 
 [target:flexlibs]
+sourceTree flexlibs recipes/flexlibs
 version %(version)s.%(hg)s
 hg flexlibs
 flavor []
 flavor flexlibs.test is: x86
 # uncomment below to run without tests
 #flavor is: x86
-sourceLabel private.rb.rpath.com@rpl:devel
