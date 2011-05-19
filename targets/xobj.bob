@@ -12,6 +12,7 @@ hg xobj http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/xobj
 target xobj
 
 [target:xobj]
+sourceTree xobj recipes/xobj
 version %(version)s.%(hg)s
 hg xobj
 flavor_set plain
