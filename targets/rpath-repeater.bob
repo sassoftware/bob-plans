@@ -2,6 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/rmake3.conf
 includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/wmiclient.conf
 
 macros version 0
 hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-repeater
