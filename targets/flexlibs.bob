@@ -20,6 +20,7 @@ sourceTree flexlibs recipes/flexlibs
 version %(version)s.%(hg)s
 hg flexlibs
 flavor []
-flavor flexlibs.test is: x86
+# uncomment below to run with tests
+#flavor flexlibs.test is: x86
 # uncomment below to run without tests
-#flavor is: x86
+flavor is: x86
