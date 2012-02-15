@@ -9,7 +9,7 @@ hg conary-policy http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/
 
 target conary
 target conary-policy
-#target conary-test
+target conary-test
 
 [target:conary]
 sourceTree conary recipes/rpl-2-py26/conary
@@ -25,10 +25,14 @@ hg conary-policy
 flavor_set plain
 
 [target:conary-test]
-sourceTree conary-test recipes/rpl-2/conary-test
+sourceTree conary recipes/unified/conary-test
 after conary-policy
 version %(version)s_%(start_time)s_%(hg)s
-hg conary-test
+hg conary
+classVar plat 'rpath'
+classVar platver '2-py26'
+classVar encapsulated False
+classVar embedded False
 flavor %rPL 2:x86%      conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split1
 flavor %rPL 2:x86%      conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split2
 flavor %rPL 2:x86%      conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split3
