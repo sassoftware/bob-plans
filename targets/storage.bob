@@ -13,12 +13,11 @@ target rpath-storage
 [target:rpath-storage]
 version %(version)s.%(hg)s
 hg rpath-storage
+sourceTree rpath-storage recipes/rpath-storage
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:rpath-storage-test]
 version %(version)s.%(hg)s
 hg rpath-storage-private
+sourceTree rpath-storage-private recipes/rpath-storage-test
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-

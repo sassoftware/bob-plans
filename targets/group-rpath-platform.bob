@@ -1,6 +1,6 @@
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel jules.eng.rpath.com@rpath:platform-edge-p5-devel
+targetLabel jules.eng.rpath.com@rpath:platform-edge-p6-devel
 resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTrovesOnly False
