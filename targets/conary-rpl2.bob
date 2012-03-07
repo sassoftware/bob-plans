@@ -1,5 +1,4 @@
 includeConfigFile ../config/rbuilder.conf
-includeConfigFile ../requires/smartform.conf
 
 macros version 2.3
 macros policy_version 1.0
