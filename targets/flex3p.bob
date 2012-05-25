@@ -1,6 +1,8 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/smartform.conf
+includeConfigFile ../requires/flexlibs.conf
+includeConfigFile ../config/flex-devel.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
