@@ -15,7 +15,7 @@ hg flex3p http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flex3p
 # target configuration
 target flex3p
 
-[target:flex3p]]
+[target:flex3p]
 sourceTree flex3p recipes/flex3p
 version %(version)s.%(hg)s
 hg flex3p
