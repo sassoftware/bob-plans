@@ -5,7 +5,7 @@ includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-goad-p1
+targetLabel preloadgen.rb.rpath.com@rpath:rba-goad-p2
 
 hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
 
