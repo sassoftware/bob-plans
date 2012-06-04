@@ -1,6 +1,7 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/flexlibs.conf
-includeConfigFile ../requires/flex3p.conf
 includeConfigFile ../config/flex-devel.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
@@ -9,16 +10,19 @@ includeConfigFile ../config/rbuilder.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
+# source materials
 macros version 0
-hg rbuilder-ui http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbuilder-ui
+hg flex3p http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flex3p
 
 # target configuration
-target rbuilder-ui
+target flex3p
 
-[target:rbuilder-ui]
-sourceTree rbuilder-ui recipes/rbuilder-ui
+[target:flex3p]
+sourceTree flex3p recipes/flex3p
 version %(version)s.%(hg)s
-hg rbuilder-ui
+hg flex3p
+flavor []
 # uncomment below to run with tests
-#flavor rbuilder-ui.test is: x86
+#flavor flex3p.test is: x86
+# uncomment below to run without tests
 flavor is: x86
