@@ -10,5 +10,6 @@ target jobmaster
 [target:jobmaster]
 version %(version)s.%(hg)s
 hg jobmaster
+sourceTree jobmaster recipes/jobmaster
 flavor is: x86_64
 

@@ -10,14 +10,13 @@ target rpath-capsule-indexer-test
 target rpath-capsule-indexer
 
 [target:rpath-capsule-indexer]
+sourceTree rpath-capsule-indexer recipe
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:rpath-capsule-indexer-test]
+sourceTree rpath-capsule-indexer-test recipe
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer-test
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-

@@ -1,0 +1,16 @@
+includeConfigFile ../config/rbuilder.conf
+
+targetLabel jules.eng.rpath.com@rpath:platform-claymore-p8-devel
+resolveTroves []
+resolveTroves group-os=%(distro_label)s
+resolveTrovesOnly False
+
+target group-rpath-platform
+
+hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+
+[target:group-rpath-platform]
+version %(version)s
+sourceTree recipes group-rpath-platform
+flavor_set plain
+

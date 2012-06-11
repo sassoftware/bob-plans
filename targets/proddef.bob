@@ -11,13 +11,13 @@ target rpath-product-definition
 target rpath-product-definition-test
 
 [target:rpath-product-definition]
+sourceTree product-definition recipe
 version %(version)s.%(hg)s
 hg product-definition
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:rpath-product-definition-test]
+sourceTree product-definition-private recipe
 version %(version)s.%(hg)s
 hg product-definition-private
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common

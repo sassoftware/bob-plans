@@ -12,13 +12,13 @@ target rmake
 target rmake-test
 
 [target:rmake]
-sourceLabel testbits.rb.rpath.com@rpath:rmake-1
+sourceTree rmake recipes/rpl-2
 version %(version)s.%(hg)s
 hg rmake
 flavor_set x86_64
 
 [target:rmake-test]
-sourceLabel testbits.rb.rpath.com@rpath:rmake-1
+sourceTree rmake-private recipe
 version %(version)s.%(hg)s
 hg rmake-private
 flavor_set x86_64

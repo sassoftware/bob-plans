@@ -4,7 +4,6 @@ includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/capsule-indexer.conf
 includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/catalog-service.conf
-includeConfigFile ../requires/jobslave.conf
 includeConfigFile ../requires/crest.conf
 includeConfigFile ../requires/mcp.conf
 includeConfigFile ../requires/pcreator.conf
@@ -18,20 +17,14 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/rmake3.conf
 
-resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
+includeConfigFile ../requires/mint.conf
+
 includeConfigFile ../config/rbuilder.conf
 
 # source materials
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint
 
-target rbuilder
-#target rbuilder-test
-
-[target:rbuilder]
-sourceTree mint recipes/rbuilder
-version %(version)s.%(hg)s
-hg mint
-flavor !rbuilder.rbo is: x86_64
+target rbuilder-test
 
 [target:rbuilder-test]
 sourceTree mint recipes/rbuilder-test
