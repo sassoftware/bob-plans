@@ -18,4 +18,4 @@ sourceTree rpath-xmllib recipes/rpl-2
 version %(version)s.%(hg)s
 hg rpath-xmllib-private
 flavor_set plain
-sourceTree rpath-xmllib recipes/rpl-2
+sourceTree rpath-xmllib-private recipes/rpl-2
