@@ -10,12 +10,12 @@ target restlib-test
 
 [target:restlib]
 version %(version)s.%(hg)s
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceTree restlib recipes/rpl-2
 hg restlib
 flavor_set plain
 
 [target:restlib-test]
 version %(version)s.%(hg)s
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceTree restlib-private recipes/rpl-2
 hg restlib-private
 flavor_set plain

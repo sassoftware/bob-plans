@@ -14,11 +14,10 @@ target repodata
 version %(version)s.%(hg)s
 hg repodata
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceTree repodata recipes/rpl-2
 
 [target:repodata-test]
 version %(version)s.%(hg)s
 hg repodata-test
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-
+sourceTree repodata-test recipes/rpl-2
