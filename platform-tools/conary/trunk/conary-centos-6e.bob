@@ -1,4 +1,4 @@
-targetLabel jules.eng.rpath.com@rpath:centos-6-goad-p1-p1-p1-p1-p1
+targetLabel jules.eng.rpath.com@rpath:centos-6-goad-p1
 
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-centos-6e.conf
