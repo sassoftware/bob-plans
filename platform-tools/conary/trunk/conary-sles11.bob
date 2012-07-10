@@ -1,4 +1,4 @@
-targetLabel jules.eng.rpath.com@rpath:sles-11-%(rbuilder_forest)s
+targetLabel jules.eng.rpath.com@rpath:sles-11-goad
 
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-sles11.conf

@@ -1,4 +1,4 @@
-targetLabel jules.eng.rpath.com@rpath:centos-5-%(rbuilder_forest)s
+targetLabel jules.eng.rpath.com@rpath:centos-5-goad
 
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-centos-5e.conf
