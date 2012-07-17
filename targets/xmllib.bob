@@ -12,11 +12,10 @@ target rpath-xmllib
 version %(version)s.%(hg)s
 hg rpath-xmllib
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
+sourceTree rpath-xmllib recipes/rpl-2
 
 [target:rpath-xmllib-test]
 version %(version)s.%(hg)s
 hg rpath-xmllib-private
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-
+sourceTree rpath-xmllib-private recipes/rpl-2

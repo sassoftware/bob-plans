@@ -1,0 +1,14 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles10.conf
+includeConfigFile ../conf/version.conf
+includeConfigFile sources.conf
+
+target []
+target rpath-models
+
+[target:rpath-models]
+sourceTree rpath-models recipes/sles10
+version %(version)s.%(hg)s
+hg rpath-models
+flavor_set plain
+

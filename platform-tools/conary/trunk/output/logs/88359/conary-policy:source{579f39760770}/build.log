@@ -1,0 +1,708 @@
+11:44:28 - [resolve-command] - Running Command... (pid 25379)
++ Resolved:
+    conary-build:lib=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  trove: conary-build:config
+    Adding: conary-build:config=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  trove: conary:data
+    Adding: conary:data=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
++ Resolved:
+    conary:runtime=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  trove: conary:config
+    Adding: conary:config=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
++ Resolved:
+    conary-build:runtime=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  trove: conary-build:python
+    Adding: conary-build:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  soname: ELF32/libelf-lgpl.so.0(SysV x86)
+    Adding: libelf-lgpl:lib=centos6.rpath.com@rpath:centos-6-common/0.8.13-2-1[is: x86]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  python: M2Crypto(conary:2.6 conary:lib)
+               python: M2Crypto.SSL(conary:2.6 conary:lib)
+    Adding: m2crypto-conary:python=centos6.rpath.com@rpath:centos-6-common/0.20.2-3-1[is: x86]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  soname: ELF32/usr/conary/lib/libpython2.6.so.1.0(SysV x86)
+               python: Crypto(conary:2.6 conary:lib)
+               python: Crypto.Cipher(conary:2.6 conary:lib)
+               python: Crypto.Cipher.AES(conary:2.6 conary:lib)
+               python: Crypto.Cipher.Blowfish(conary:2.6 conary:lib)
+               ...
+    Adding: python-conary:lib=centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  file: /usr/conary/bin/python2.6
+    Adding: python-conary:runtime=centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
++ Resolved:
+    conary-build:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  python: codecs(conary:2.6 conary:lib)
+               python: cookielib(conary:2.6 conary:lib)
+               python: xml.etree(conary:2.6 conary:lib)
+               python: xml.etree.ElementTree(conary:2.6 conary:lib)
+    Adding: python-conary:lib=centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
++ Resolved:
+    conary-build:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  python: site(conary:2.6 conary:lib)
+    Adding: python-setuptools-conary:python=centos6.rpath.com@rpath:centos-6-common/0.6c9-3-1[is: x86]
++ Resolved:
+    conary:data=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  python: crypt(conary:2.6 conary:lib)
+    Adding: python-conary:lib=centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
++ Resolved:
+    xz:rpm=centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/liblzma.so.0(SysV x86)
+               rpm: xz-libs
+    Adding: xz-libs:rpm=centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    gzip:rpm=centos6.rpath.com@rpath:centos-6e/1.3.12_18.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  file: /sbin/install-info
+    Adding: info:rpm=centos6.rpath.com@rpath:centos-6e/4.13a_8.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    gzip:rpm=centos6.rpath.com@rpath:centos-6e/1.3.12_18.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: less
+    Adding: less:rpm=centos6.rpath.com@rpath:centos-6e/436_10.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    glibc:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: basesystem
+    Adding: basesystem:rpm=centos6.rpath.com@rpath:centos-6e/10.0_4.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    glibc:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: glibc-common
+    Adding: glibc-common:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    glibc:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: libgcc
+    Adding: libgcc:rpm=centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    glibc:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libfreebl3.so(NSSRAWHASH_3.12.3 SysV x86)
+    Adding: nss-softokn-freebl:rpm=centos6.rpath.com@rpath:centos-6e/3.12.9_11.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    findutils:rpm=centos6.rpath.com@rpath:centos-6e/4.4.2_6.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libselinux.so.1(SysV x86)
+    Adding: libselinux:rpm=centos6.rpath.com@rpath:centos-6e/2.0.94_5.2.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    grep:rpm=centos6.rpath.com@rpath:centos-6e/2.6.3_2.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libpcre.so.0(SysV x86)
+    Adding: pcre:rpm=centos6.rpath.com@rpath:centos-6e/7.8_3.1.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    file:rpm=centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libmagic.so.1(SysV x86)
+               rpm: file-libs
+    Adding: file-libs:rpm=centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    file:rpm=centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libz.so.1(SysV x86)
+    Adding: zlib:rpm=centos6.rpath.com@rpath:centos-6e/1.2.3_27.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  soname: ELF32/libcrypto.so.10(SysV x86)
+    Adding: openssl:rpm=centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    conary:python=centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    Required:  trove: rpm:python
+    Adding: rpm:python=centos6.rpath.com@rpath:centos-6e/4.8.0_19.el6_2.1-2-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libbz2.so.1(SysV x86)
+    Adding: bzip2-libs:rpm=centos6.rpath.com@rpath:centos-6e/1.0.5_7.el6_0-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libdb-4.7.so(SysV x86)
+    Adding: db4:rpm=centos6.rpath.com@rpath:centos-6e/4.7.25_16.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libexpat.so.1(EXPAT_2_0_1_RH SysV x86)
+    Adding: expat:rpm=centos6.rpath.com@rpath:centos-6e/2.0.1_11.el6_2-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libgdbm.so.2(SysV x86)
+    Adding: gdbm:rpm=centos6.rpath.com@rpath:centos-6e/1.8.0_36.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libffi.so.5(SysV x86)
+    Adding: libffi:rpm=centos6.rpath.com@rpath:centos-6e/3.0.5_3.2.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libncursesw.so.5(SysV x86)
+               soname: ELF32/libpanelw.so.5(SysV x86)
+               soname: ELF32/libtinfo.so.5(SysV x86)
+    Adding: ncurses-libs:rpm=centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libssl.so.10(SysV x86)
+    Adding: openssl:rpm=centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libpython2.6.so.1.0(SysV x86)
+    Adding: python-libs:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libreadline.so.6(SysV x86)
+    Adding: readline:rpm=centos6.rpath.com@rpath:centos-6e/6.0_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    python:rpm=centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libsqlite3.so.0(SysV x86)
+    Adding: sqlite:rpm=centos6.rpath.com@rpath:centos-6e/3.6.20_1.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: coreutils-libs
+    Adding: coreutils-libs:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libgmp.so.3(SysV x86)
+               rpm: gmp
+    Adding: gmp:rpm=centos6.rpath.com@rpath:centos-6e/4.3.1_7.el6_2.2-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libacl.so.1(ACL_1.0 ACL_1.2 SysV x86)
+    Adding: libacl:rpm=centos6.rpath.com@rpath:centos-6e/2.2.49_6.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libattr.so.1(ATTR_1.1 SysV x86)
+               rpm: libattr
+    Adding: libattr:rpm=centos6.rpath.com@rpath:centos-6e/2.4.44_7.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libcap.so.2(SysV x86)
+               rpm: libcap
+    Adding: libcap:rpm=centos6.rpath.com@rpath:centos-6e/2.16_5.5.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: libselinux
+    Adding: libselinux:rpm=centos6.rpath.com@rpath:centos-6e/2.0.94_5.2.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: ncurses
+    Adding: ncurses:rpm=centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    coreutils:rpm=centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libpam.so.0(LIBPAM_1.0 SysV x86)
+               soname: ELF32/libpam_misc.so.0(LIBPAM_MISC_1.0 SysV x86)
+               rpm: pam
+    Adding: pam:rpm=centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    bash:rpm=centos6.rpath.com@rpath:centos-6e/4.1.2_9.el6_2-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: ncurses-libs
+    Adding: ncurses-libs:rpm=centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Compress::Zlib
+    Adding: perl-Compress-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: ExtUtils::MM_AIX
+               perl: ExtUtils::MM_Any
+               perl: ExtUtils::MM_BeOS
+               perl: ExtUtils::MM_Cygwin
+               perl: ExtUtils::MM_DOS
+               ...
+    Adding: perl-ExtUtils-MakeMaker:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Module::CoreList
+    Adding: perl-Module-CoreList:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Module::Pluggable
+    Adding: perl-Module-Pluggable:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Pod::Simple
+               perl: Pod::Simple::RTF
+               perl: Pod::Simple::XMLOutStream
+    Adding: perl-Pod-Simple:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Time::HiRes
+    Adding: perl-Time-HiRes:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/usr/lib/perl5/CORE/libperl.so(SysV x86)
+               rpm: libperl.so
+               rpm: perl-libs
+    Adding: perl-libs:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: version
+    Adding: perl-version:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    tar:rpm=centos6.rpath.com@rpath:centos-6e/1.23_3.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: info
+    Adding: info:rpm=centos6.rpath.com@rpath:centos-6e/4.13a_8.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    tar:rpm=centos6.rpath.com@rpath:centos-6e/1.23_3.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libacl.so.1(ACL_1.0 SysV x86)
+    Adding: libacl:rpm=centos6.rpath.com@rpath:centos-6e/2.2.49_6.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    gmp:rpm=centos6.rpath.com@rpath:centos-6e/4.3.1_7.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libstdc++.so.6(CXXABI_1.3 GLIBCXX_3.4 GLIBCXX_3.4.11 SysV x86)
+    Adding: libstdc++:rpm=centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-ExtUtils-MakeMaker:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Archive::Tar
+    Adding: perl-Archive-Tar:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-ExtUtils-MakeMaker:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Module::Build
+               perl: Module::Build::Base
+               perl: Module::Build::Compat
+               perl: Module::Build::Config
+               perl: Module::Build::ConfigData
+               ...
+    Adding: perl-Module-Build:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-ExtUtils-MakeMaker:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Test::Harness
+    Adding: perl-Test-Harness:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-ExtUtils-MakeMaker:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: perl-devel
+    Adding: perl-devel:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    glibc-common:rpm=centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: tzdata
+    Adding: tzdata:rpm=centos6.rpath.com@rpath:centos-6e/2012c_1.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    ncurses-libs:rpm=centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: ncurses-base
+    Adding: ncurses-base:rpm=centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Compress-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Compress::Raw::Zlib
+    Adding: perl-Compress-Raw-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Compress-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: IO::Compress::Base::Common
+    Adding: perl-IO-Compress-Base:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Compress-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: IO::Compress::Gzip
+               perl: IO::Compress::Gzip::Constants
+               perl: IO::Uncompress::Gunzip
+    Adding: perl-IO-Compress-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    openssl:rpm=centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: ca-certificates
+    Adding: ca-certificates:rpm=centos6.rpath.com@rpath:centos-6e/2010.63_3.el6_1.5-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    openssl:rpm=centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libgssapi_krb5.so.2(SysV x86)
+               soname: ELF32/libk5crypto.so.3(SysV k5crypto_3_MIT x86)
+               soname: ELF32/libkrb5.so.3(SysV krb5_3_MIT x86)
+    Adding: krb5-libs:rpm=centos6.rpath.com@rpath:centos-6e/1.9_22.el6_2.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    openssl:rpm=centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libcom_err.so.2(SysV x86)
+    Adding: libcom_err:rpm=centos6.rpath.com@rpath:centos-6e/1.41.12_11.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    pcre:rpm=centos6.rpath.com@rpath:centos-6e/7.8_3.1.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libstdc++.so.6(CXXABI_1.3 GLIBCXX_3.4 GLIBCXX_3.4.9 SysV x86)
+    Adding: libstdc++:rpm=centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    pam:rpm=centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libaudit.so.1(SysV x86)
+               rpm: audit-libs
+    Adding: audit-libs:rpm=centos6.rpath.com@rpath:centos-6e/2.1.3_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    pam:rpm=centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: cracklib-dicts
+    Adding: cracklib-dicts:rpm=centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    pam:rpm=centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libcrack.so.2(SysV x86)
+               rpm: cracklib
+    Adding: cracklib:rpm=centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    less:rpm=centos6.rpath.com@rpath:centos-6e/436_10.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: groff
+    Adding: groff:rpm=centos6.rpath.com@rpath:centos-6e/1.18.1.4_21.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Pod-Simple:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Pod::Escapes
+    Adding: perl-Pod-Escapes:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    libselinux:rpm=centos6.rpath.com@rpath:centos-6e/2.0.94_5.2.el6-1-1[is: x86(i486,i586,i686)]
+    Required:  rpm: libsepol
+    Adding: libsepol:rpm=centos6.rpath.com@rpath:centos-6e/2.0.41_4.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Module-Build:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: CPAN
+               perl: CPAN::Shell
+    Adding: perl-CPAN:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Module-Build:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: ExtUtils::CBuilder
+    Adding: perl-ExtUtils-CBuilder:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Module-Build:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: ExtUtils::ParseXS
+    Adding: perl-ExtUtils-ParseXS:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    krb5-libs:rpm=centos6.rpath.com@rpath:centos-6e/1.9_22.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    Required:  soname: ELF32/libkeyutils.so.1(KEYUTILS_0.3 SysV x86)
+    Adding: keyutils-libs:rpm=centos6.rpath.com@rpath:centos-6e/1.4_3.el6-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Archive-Tar:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: IO::Zlib
+    Adding: perl-IO-Zlib:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-Archive-Tar:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Package::Constants
+    Adding: perl-Package-Constants:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-CPAN:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Digest::SHA
+    Adding: perl-Digest-SHA:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
++ Resolved:
+    perl-CPAN:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    Required:  perl: Parse::CPAN::Meta
+    Adding: perl-Parse-CPAN-Meta:rpm=centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+11:44:34 - [resolve-command] -    Resolved troves:
+11:44:34 - [resolve-command] -    Build Requirements:
+11:44:34 - [resolve-command] - audit-libs=/centos6.rpath.com@rpath:centos-6e/2.1.3_3.el6-1-1[is: x86(i486,i586,i686)]
+    audit-libs:rpm=/centos6.rpath.com@rpath:centos-6e/2.1.3_3.el6-1-1[is: x86(i486,i586,i686)]
+    basesystem=/centos6.rpath.com@rpath:centos-6e/10.0_4.el6-1-1[is: x86(i486,i586,i686)]
+    basesystem:rpm=/centos6.rpath.com@rpath:centos-6e/10.0_4.el6-1-1[is: x86(i486,i586,i686)]
+    bash=/centos6.rpath.com@rpath:centos-6e/4.1.2_9.el6_2-1-1[is: x86(i486,i586,i686)]
+    bash:rpm=/centos6.rpath.com@rpath:centos-6e/4.1.2_9.el6_2-1-1[is: x86(i486,i586,i686)]
+    bzip2=/centos6.rpath.com@rpath:centos-6e/1.0.5_7.el6_0-1-1[is: x86(i486,i586,i686)]
+    bzip2-libs=/centos6.rpath.com@rpath:centos-6e/1.0.5_7.el6_0-1-1[is: x86(i486,i586,i686)]
+    bzip2-libs:rpm=/centos6.rpath.com@rpath:centos-6e/1.0.5_7.el6_0-1-1[is: x86(i486,i586,i686)]
+    bzip2:rpm=/centos6.rpath.com@rpath:centos-6e/1.0.5_7.el6_0-1-1[is: x86(i486,i586,i686)]
+    ca-certificates=/centos6.rpath.com@rpath:centos-6e/2010.63_3.el6_1.5-1-1[is: x86(i486,i586,i686)]
+    ca-certificates:rpm=/centos6.rpath.com@rpath:centos-6e/2010.63_3.el6_1.5-1-1[is: x86(i486,i586,i686)]
+    conary=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-build=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-build:config=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-build:lib=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-build:python=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-build:runtime=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary-policy=/centos6.rpath.com@rpath:centos-6-common/1.0.29+b020738220e0_b020738220e0-1-1[is: x86]
+    conary-policy:lib=/centos6.rpath.com@rpath:centos-6-common/1.0.29+b020738220e0_b020738220e0-1-1[is: x86]
+    conary:config=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary:data=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary:python=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    conary:runtime=/centos6.rpath.com@rpath:centos-6-common/2.4.2-1-1[is: x86]
+    coreutils=/centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    coreutils-libs=/centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    coreutils-libs:rpm=/centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    coreutils:rpm=/centos6.rpath.com@rpath:centos-6e/8.4_16.el6-1-1[is: x86(i486,i586,i686)]
+    cpio=/centos6.rpath.com@rpath:centos-6e/2.10_9.el6-1-1[is: x86(i486,i586,i686)]
+    cpio:rpm=/centos6.rpath.com@rpath:centos-6e/2.10_9.el6-1-1[is: x86(i486,i586,i686)]
+    cracklib=/centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
+    cracklib-dicts=/centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
+    cracklib-dicts:rpm=/centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
+    cracklib:rpm=/centos6.rpath.com@rpath:centos-6e/2.8.16_4.el6-1-1[is: x86(i486,i586,i686)]
+    db4=/centos6.rpath.com@rpath:centos-6e/4.7.25_16.el6-1-1[is: x86(i486,i586,i686)]
+    db4:rpm=/centos6.rpath.com@rpath:centos-6e/4.7.25_16.el6-1-1[is: x86(i486,i586,i686)]
+    diffutils=/centos6.rpath.com@rpath:centos-6e/2.8.1_28.el6-1-1[is: x86(i486,i586,i686)]
+    diffutils:rpm=/centos6.rpath.com@rpath:centos-6e/2.8.1_28.el6-1-1[is: x86(i486,i586,i686)]
+    distro-policy=/centos6.rpath.com@rpath:centos-6-common/1.0.27-6-1[]
+    distro-policy:lib=/centos6.rpath.com@rpath:centos-6-common/1.0.27-6-1[]
+    expat=/centos6.rpath.com@rpath:centos-6e/2.0.1_11.el6_2-1-1[is: x86(i486,i586,i686)]
+    expat:rpm=/centos6.rpath.com@rpath:centos-6e/2.0.1_11.el6_2-1-1[is: x86(i486,i586,i686)]
+    file=/centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    file-libs=/centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    file-libs:rpm=/centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    file:rpm=/centos6.rpath.com@rpath:centos-6e/5.04_11.el6-1-1[is: x86(i486,i586,i686)]
+    filesystem:rpm=/centos6.rpath.com@rpath:centos-6e/2.4.30_3.el6-1-1[is: x86(i486,i586,i686)]
+    findutils:rpm=/centos6.rpath.com@rpath:centos-6e/4.4.2_6.el6-1-1[is: x86(i486,i586,i686)]
+    gawk:rpm=/centos6.rpath.com@rpath:centos-6e/3.1.7_6.el6-1-1[is: x86(i486,i586,i686)]
+    gdbm=/centos6.rpath.com@rpath:centos-6e/1.8.0_36.el6-1-1[is: x86(i486,i586,i686)]
+    gdbm:rpm=/centos6.rpath.com@rpath:centos-6e/1.8.0_36.el6-1-1[is: x86(i486,i586,i686)]
+    glibc-common=/centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    glibc-common:rpm=/centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    glibc:rpm=/centos6.rpath.com@rpath:centos-6e/2.12_1.47.el6_2.12-1-1[is: x86(i486,i586,i686)]
+    gmp=/centos6.rpath.com@rpath:centos-6e/4.3.1_7.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    gmp:rpm=/centos6.rpath.com@rpath:centos-6e/4.3.1_7.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    grep=/centos6.rpath.com@rpath:centos-6e/2.6.3_2.el6-1-1[is: x86(i486,i586,i686)]
+    grep:rpm=/centos6.rpath.com@rpath:centos-6e/2.6.3_2.el6-1-1[is: x86(i486,i586,i686)]
+    groff=/centos6.rpath.com@rpath:centos-6e/1.18.1.4_21.el6-1-1[is: x86(i486,i586,i686)]
+    groff:rpm=/centos6.rpath.com@rpath:centos-6e/1.18.1.4_21.el6-1-1[is: x86(i486,i586,i686)]
+    gzip:rpm=/centos6.rpath.com@rpath:centos-6e/1.3.12_18.el6-1-1[is: x86(i486,i586,i686)]
+    info=/centos6.rpath.com@rpath:centos-6e/4.13a_8.el6-1-1[is: x86(i486,i586,i686)]
+    info:rpm=/centos6.rpath.com@rpath:centos-6e/4.13a_8.el6-1-1[is: x86(i486,i586,i686)]
+    keyutils-libs=/centos6.rpath.com@rpath:centos-6e/1.4_3.el6-1-1[is: x86(i486,i586,i686)]
+    keyutils-libs:rpm=/centos6.rpath.com@rpath:centos-6e/1.4_3.el6-1-1[is: x86(i486,i586,i686)]
+    krb5-libs=/centos6.rpath.com@rpath:centos-6e/1.9_22.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    krb5-libs:rpm=/centos6.rpath.com@rpath:centos-6e/1.9_22.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    less=/centos6.rpath.com@rpath:centos-6e/436_10.el6-1-1[is: x86(i486,i586,i686)]
+    less:rpm=/centos6.rpath.com@rpath:centos-6e/436_10.el6-1-1[is: x86(i486,i586,i686)]
+    libacl=/centos6.rpath.com@rpath:centos-6e/2.2.49_6.el6-1-1[is: x86(i486,i586,i686)]
+    libacl:rpm=/centos6.rpath.com@rpath:centos-6e/2.2.49_6.el6-1-1[is: x86(i486,i586,i686)]
+    libattr=/centos6.rpath.com@rpath:centos-6e/2.4.44_7.el6-1-1[is: x86(i486,i586,i686)]
+    libattr:rpm=/centos6.rpath.com@rpath:centos-6e/2.4.44_7.el6-1-1[is: x86(i486,i586,i686)]
+    libcap=/centos6.rpath.com@rpath:centos-6e/2.16_5.5.el6-1-1[is: x86(i486,i586,i686)]
+    libcap:rpm=/centos6.rpath.com@rpath:centos-6e/2.16_5.5.el6-1-1[is: x86(i486,i586,i686)]
+    libcom_err=/centos6.rpath.com@rpath:centos-6e/1.41.12_11.el6-1-1[is: x86(i486,i586,i686)]
+    libcom_err:rpm=/centos6.rpath.com@rpath:centos-6e/1.41.12_11.el6-1-1[is: x86(i486,i586,i686)]
+    libelf-lgpl=/centos6.rpath.com@rpath:centos-6-common/0.8.13-2-1[is: x86]
+    libelf-lgpl:lib=/centos6.rpath.com@rpath:centos-6-common/0.8.13-2-1[is: x86]
+    libffi=/centos6.rpath.com@rpath:centos-6e/3.0.5_3.2.el6-1-1[is: x86(i486,i586,i686)]
+    libffi:rpm=/centos6.rpath.com@rpath:centos-6e/3.0.5_3.2.el6-1-1[is: x86(i486,i586,i686)]
+    libgcc=/centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
+    libgcc:rpm=/centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
+    libselinux=/centos6.rpath.com@rpath:centos-6e/2.0.94_5.2.el6-1-1[is: x86(i486,i586,i686)]
+    libselinux:rpm=/centos6.rpath.com@rpath:centos-6e/2.0.94_5.2.el6-1-1[is: x86(i486,i586,i686)]
+    libsepol=/centos6.rpath.com@rpath:centos-6e/2.0.41_4.el6-1-1[is: x86(i486,i586,i686)]
+    libsepol:rpm=/centos6.rpath.com@rpath:centos-6e/2.0.41_4.el6-1-1[is: x86(i486,i586,i686)]
+    libstdc++=/centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
+    libstdc++:rpm=/centos6.rpath.com@rpath:centos-6e/4.4.6_3.el6-1-1[is: x86(i486,i586,i686)]
+    m2crypto-conary=/centos6.rpath.com@rpath:centos-6-common/0.20.2-3-1[is: x86]
+    m2crypto-conary:python=/centos6.rpath.com@rpath:centos-6-common/0.20.2-3-1[is: x86]
+    make:rpm=/centos6.rpath.com@rpath:centos-6e/3.81_19.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses-base=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses-base:rpm=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses-libs=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses-libs:rpm=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    ncurses:rpm=/centos6.rpath.com@rpath:centos-6e/5.7_3.20090208.el6-1-1[is: x86(i486,i586,i686)]
+    net-tools=/centos6.rpath.com@rpath:centos-6e/1.60_110.el6_2-1-1[is: x86(i486,i586,i686)]
+    net-tools:rpm=/centos6.rpath.com@rpath:centos-6e/1.60_110.el6_2-1-1[is: x86(i486,i586,i686)]
+    nss-softokn-freebl=/centos6.rpath.com@rpath:centos-6e/3.12.9_11.el6-1-1[is: x86(i486,i586,i686)]
+    nss-softokn-freebl:rpm=/centos6.rpath.com@rpath:centos-6e/3.12.9_11.el6-1-1[is: x86(i486,i586,i686)]
+    openssl=/centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
+    openssl:rpm=/centos6.rpath.com@rpath:centos-6e/1.0.0_20.el6_2.5-1-1[is: x86(i486,i586,i686)]
+    pam=/centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    pam:rpm=/centos6.rpath.com@rpath:centos-6e/1.1.1_10.el6_2.1-1-1[is: x86(i486,i586,i686)]
+    patch=/centos6.rpath.com@rpath:centos-6e/2.6_6.el6-1-1[is: x86(i486,i586,i686)]
+    patch:rpm=/centos6.rpath.com@rpath:centos-6e/2.6_6.el6-1-1[is: x86(i486,i586,i686)]
+    pcre=/centos6.rpath.com@rpath:centos-6e/7.8_3.1.el6-1-1[is: x86(i486,i586,i686)]
+    pcre:rpm=/centos6.rpath.com@rpath:centos-6e/7.8_3.1.el6-1-1[is: x86(i486,i586,i686)]
+    perl=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Archive-Tar=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Archive-Tar:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-CPAN=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-CPAN:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Compress-Raw-Zlib=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Compress-Raw-Zlib:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Compress-Zlib=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Compress-Zlib:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Digest-SHA=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Digest-SHA:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-CBuilder=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-CBuilder:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-MakeMaker=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-MakeMaker:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-ParseXS=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-ExtUtils-ParseXS:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Compress-Base=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Compress-Base:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Compress-Zlib=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Compress-Zlib:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Zlib=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-IO-Zlib:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-Build=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-Build:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-CoreList=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-CoreList:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-Pluggable=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Module-Pluggable:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Package-Constants=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Package-Constants:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Parse-CPAN-Meta=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Parse-CPAN-Meta:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Pod-Escapes=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Pod-Escapes:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Pod-Simple=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Pod-Simple:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Test-Harness=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Test-Harness:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Time-HiRes=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-Time-HiRes:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-devel=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-devel:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-libs=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-libs:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-version=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl-version:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    perl:rpm=/centos6.rpath.com@rpath:centos-6e/5.10.1_119.el6_1.1-1-1[is: x86(i486,i586,i686)]
+    python-conary=/centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
+    python-conary:lib=/centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
+    python-conary:runtime=/centos6.rpath.com@rpath:centos-6-common/2.6.3-12-1[is: x86]
+    python-libs=/centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    python-libs:rpm=/centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    python-setuptools-conary=/centos6.rpath.com@rpath:centos-6-common/0.6c9-3-1[is: x86]
+    python-setuptools-conary:python=/centos6.rpath.com@rpath:centos-6-common/0.6c9-3-1[is: x86]
+    python:rpm=/centos6.rpath.com@rpath:centos-6e/2.6.6_29.el6_2.2-1-1[is: x86(i486,i586,i686)]
+    readline=/centos6.rpath.com@rpath:centos-6e/6.0_3.el6-1-1[is: x86(i486,i586,i686)]
+    readline:rpm=/centos6.rpath.com@rpath:centos-6e/6.0_3.el6-1-1[is: x86(i486,i586,i686)]
+    rpm=/centos6.rpath.com@rpath:centos-6e/4.8.0_19.el6_2.1-2-1[is: x86(i486,i586,i686)]
+    rpm:python=/centos6.rpath.com@rpath:centos-6e/4.8.0_19.el6_2.1-2-1[is: x86(i486,i586,i686)]
+    sed:rpm=/centos6.rpath.com@rpath:centos-6e/4.2.1_7.el6-1-1[is: x86(i486,i586,i686)]
+    setup=/centos6.rpath.com@rpath:centos-6e/2.8.14_13.el6-1-1[is: x86(i486,i586,i686)]
+    setup:rpm=/centos6.rpath.com@rpath:centos-6e/2.8.14_13.el6-1-1[is: x86(i486,i586,i686)]
+    sqlite=/centos6.rpath.com@rpath:centos-6e/3.6.20_1.el6-1-1[is: x86(i486,i586,i686)]
+    sqlite:rpm=/centos6.rpath.com@rpath:centos-6e/3.6.20_1.el6-1-1[is: x86(i486,i586,i686)]
+    tag-cacheable-font=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-cacheable-font:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-desktop-file=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-desktop-file:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gdk-pixbuf-loader=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gdk-pixbuf-loader:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gtk-input-method=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gtk-input-method:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gtk-update-icon-cache=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-gtk-update-icon-cache:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-info-file=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-info-file:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-initscript=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-initscript:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-mime-database=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-mime-database:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-pangomodule=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-pangomodule:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-shell=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-shell:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-usergroup-info=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-usergroup-info:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-usergroup-info:taghandler=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-x-font=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tag-x-font:tagdescription=/centos6.rpath.com@rpath:centos-6-common/20120224-1-1[]
+    tar=/centos6.rpath.com@rpath:centos-6e/1.23_3.el6-1-1[is: x86(i486,i586,i686)]
+    tar:rpm=/centos6.rpath.com@rpath:centos-6e/1.23_3.el6-1-1[is: x86(i486,i586,i686)]
+    tzdata=/centos6.rpath.com@rpath:centos-6e/2012c_1.el6-1-1[is: x86(i486,i586,i686)]
+    tzdata:rpm=/centos6.rpath.com@rpath:centos-6e/2012c_1.el6-1-1[is: x86(i486,i586,i686)]
+    xz=/centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
+    xz-libs=/centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
+    xz-libs:rpm=/centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
+    xz:rpm=/centos6.rpath.com@rpath:centos-6e/4.999.9_0.3.beta.20091007git.el6-1-1[is: x86(i486,i586,i686)]
+    zlib=/centos6.rpath.com@rpath:centos-6e/1.2.3_27.el6-1-1[is: x86(i486,i586,i686)]
+    zlib:rpm=/centos6.rpath.com@rpath:centos-6e/1.2.3_27.el6-1-1[is: x86(i486,i586,i686)]
+11:44:36 - [build-command] - Running Command... (pid 17234)
+warning: /etc/gshadow created as /etc/gshadow.rpmnew
+11:44:51 - [conary] - warning: /etc/gshadow created as /etc/gshadow.rpmnew
+warning: /etc/shadow created as /etc/shadow.rpmnew
+11:44:51 - [conary] - warning: /etc/shadow created as /etc/shadow.rpmnew
+Using interpreter /usr/conary/bin/python2.6
+/usr/conary/lib/python2.6/xmlrpclib.py:612: DeprecationWarning: The xmllib module is obsolete.  Use xml.sax instead.
+  import xmllib # lazy subclassing (!)
+11:45:15 ping            - SocketAuth(pid=17234, uid=201, gid=201)
+11:45:15 storeConfig     - SocketAuth(pid=17234, uid=201, gid=201)
+11:45:15 checkoutPackage - SocketAuth(pid=17234, uid=201, gid=201)
+11:45:16 buildTrove      - SocketAuth(pid=17234, uid=201, gid=201)
++ Cook process started (pid 17342)
+11:45:16 subscribeToBuild - SocketAuth(pid=17234, uid=201, gid=201)
+11:45:16 subscribeToBuild - SocketAuth(pid=17234, uid=201, gid=201)
++ Methods called:
+  ConaryPolicy.setup
++ Unused methods:
+  PackageRecipe.rpathSetup
+  PackageRecipe.rpathPythonSetup
++ Building conary-policy=jules.eng.rpath.com@rpath:centos-6-goad[]
++ found lookaside://scc.eng.rpath.com_products_rbuilder_goad_conary-policy/conary-policy--ca756a9cf7de.tar.bz2 in repository
++ /scc.eng.rpath.com_products_rbuilder_goad_conary-policy/conary-policy--ca756a9cf7de.tar.bz2 not yet cached, fetching...
++ unpacking archive conary-policy--ca756a9cf7de.tar.bz2
++ cd '/tmp/rmake/builds/conary-policy/conary-policy--ca756a9cf7de/'; CFLAGS="-O2 -march=i686 -g -D_FORTIFY_SOURCE=2 -fstack-protector" CXXFLAGS="-O2 -march=i686 -g -D_FORTIFY_SOURCE=2 -fstack-protector " CPPFLAGS="" CLASSPATH=""  LDFLAGS="-g -O1 " CC=gcc CXX=g++  make   DESTDIR=/tmp/rmake/builds/conary-policy/_ROOT_ install 
+mkdir -p /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/
+install -m 644 policy/*.py /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/
++ python -c 'from compileall import *; compile_dir("/tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy", 10, "/usr/lib/conary/policy")'; python -O -c 'from compileall import *; compile_dir("/tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy", 10, "/usr/lib/conary/policy")'
+Listing /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/autodoc.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/badfilecontents.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/badpathnames.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/bootstraptrovedeps.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/eggrequires.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/enforcebuildreqs.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/group_versionconflicts.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/httpdconf.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/lang.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/libraries.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/manifest.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/metadata.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/nonpackagefiles.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/normalize.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/permissions.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/phprequires.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/pkgconfig.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/resolvefiledeps.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/strip.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/stubs.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/symlinks.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/xinetd.py ...
+Listing /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/autodoc.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/badfilecontents.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/badpathnames.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/bootstraptrovedeps.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/eggrequires.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/enforcebuildreqs.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/group_versionconflicts.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/httpdconf.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/lang.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/libraries.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/manifest.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/metadata.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/nonpackagefiles.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/normalize.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/permissions.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/phprequires.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/pkgconfig.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/resolvefiledeps.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/strip.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/stubs.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/symlinks.py ...
+Compiling /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib/conary/policy/xinetd.py ...
++ Processing conary-policy
+Running policy: TestSuiteLinks                                                Running policy: TestSuiteFiles                                                Running policy: FixDirModes                                                   Running policy: AutoSharedLibrary                                             Running policy: FixBuilddirSymlink                                            Running policy: FixObsoletePaths                                              Running policy: AutoDoc                                                       Running policy: FixupManpagePaths                                             Running policy: FixupMultilibPaths                                            Running policy: ExecutableLibraries                                           Running policy: NormalizeLibrarySymlinks                                      + /sbin/ldconfig -n /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib
++ /sbin/ldconfig -n /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib
++ /sbin/ldconfig -n /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib
++ /sbin/ldconfig -n /tmp/rmake/builds/conary-policy/_ROOT_//usr/lib
+Running policy: Strip                                                         Running policy: RemoveNonPackageFiles                                         Running policy: NormalizeAppDefaults                                          Running policy: NormalizeCompression                                          Running policy: NormalizeInfoPages                                            Running policy: NormalizeInitscriptLocation                                   Running policy: RelativeSymlinks                                              Running policy: NormalizeInitscriptContents                                   Running policy: NormalizeInterpreterPaths                                     Running policy: NormalizeManPages                                             Running policy: ReadableDocs                                                  Running policy: NormalizePamConfig                                            Running policy: NormalizePkgConfig                                            Running policy: NormalizePythonEggs                                           Running policy: NormalizePythonInterpreterVersion                             Running policy: Config                                                        Running policy: ComponentSpec                                                 Running policy: PackageSpec                                                   Running policy: ByDefault                                                     Running policy: InitialContents                                               Running policy: LinkCount                                                     Running policy: LinkType                                                      Running policy: MakeDevices                                                   Running policy: Ownership                                                     Running policy: Properties                                                    Running policy: Provides                                                      Running policy: EggRequires                                                   Running policy: HttpdConfigRequires                                           Running policy: KmodRequires                                                  Running policy: PHPRequires                                                   Running policy: PkgConfigRequires                                             Running policy: SymlinkTargetRequires                                         Running policy: TagDescription                                                Running policy: TagHandler                                                    Running policy: TagSpec                                                       Running policy: Transient                                                     Running policy: UtilizeGroup                                                  Running policy: UtilizeUser                                                   Running policy: Requires                                                      pydeps bootstrap proxy initializing: sys.path ['/usr/lib/python26.zip', '/usr/lib/python2.6', '/usr/lib/python2.6/plat-linux2', '/usr/lib/python2.6/lib-tk', '/usr/lib/python2.6/lib-old', '/usr/lib/python2.6/lib-dynload', '/usr/lib/python2.6/site-packages']
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/autodoc.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/autodoc.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/badfilecontents.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/badfilecontents.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/badpathnames.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/badpathnames.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/bootstraptrovedeps.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/bootstraptrovedeps.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/eggrequires.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/eggrequires.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/enforcebuildreqs.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/enforcebuildreqs.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/group_versionconflicts.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/group_versionconflicts.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/httpdconf.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/httpdconf.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/lang.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/lang.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/libraries.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/libraries.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/manifest.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/manifest.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/metadata.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/metadata.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/nonpackagefiles.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/nonpackagefiles.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/normalize.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/normalize.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/permissions.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/permissions.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/phprequires.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/phprequires.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/pkgconfig.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/pkgconfig.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/resolvefiledeps.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/resolvefiledeps.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/strip.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/strip.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/stubs.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/stubs.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/symlinks.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/symlinks.pyc (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/xinetd.py (file)
+pydeps inspecting /tmp/rmake/builds/conary-policy/_ROOT_/usr/lib/conary/policy/xinetd.pyc (file)
+Running policy: ProcessGroupInfoPackage                                       Running policy: ProcessUserInfoPackage                                        Running policy: RemoveSelfProvidedRequires                                    Running policy: XinetdConfigRequires                                          Running policy: setModes                                                      Running policy: ExcludeDirectories                                            Running policy: ComponentProvides                                             Running policy: ComponentRequires                                             Running policy: Flavor                                                        + Copying forward metadata to newly built items...
+Running policy: DanglingSymlinks                                              Running policy: Description                                                   Running policy: Licenses                                                      Running policy: ParseManifest                                                 Running policy: RemoveBootstrapTroveDependencies                              Running policy: ResetKeyValueMetadata                                         Running policy: ResolveFileDependencies                                       Running policy: ScriptPostErase                                               Running policy: ScriptPostInstall                                             Running policy: ScriptPostRollback                                            Running policy: ScriptPostUpdate                                              Running policy: ScriptPreErase                                                Running policy: ScriptPreInstall                                              Running policy: ScriptPreRollback                                             Running policy: ScriptPreUpdate                                               Running policy: SharedLibrary                                                 Running policy: TagLocale                                                     Running policy: BadFilenames                                                  Running policy: BadInterpreterPaths                                           Running policy: CheckDesktopFiles                                             Running policy: CheckDestDir                                                  Running policy: CheckSonames                                                  Running policy: EnforceCILBuildRequirements                                   Running policy: EnforceCMakeCacheBuildRequirements                            Running policy: EnforceConfigLogBuildRequirements                             Running policy: EnforceFlagBuildRequirements                                  Running policy: EnforceJavaBuildRequirements                                  Running policy: EnforceLocalizationBuildRequirements                          Running policy: EnforcePerlBuildRequirements                                  Running policy: EnforcePythonBuildRequirements                                Running policy: EnforceStaticLibBuildRequirements                             Running policy: EnforceSonameBuildRequirements                                Running policy: EtcConfig                                                     Running policy: FilesForDirectories                                           Running policy: FilesInMandir                                                 Running policy: IgnoredSetuid                                                 Running policy: ImproperlyShared                                              Running policy: InstallBucket                                                 Running policy: NonBinariesInBindirs                                          Running policy: NonLSBPaths                                                   Running policy: NonMultilibComponent                                          Running policy: NonMultilibDirectories                                        Running policy: NonUTF8Filenames                                              Running policy: ObsoletePaths                                                 Running policy: PythonEggs                                                    Running policy: RequireChkconfig                                              Running policy: WarnScriptSharedLibrary                                       Running policy: WarnWriteable                                                 Running policy: WorldWriteableExecutables                                     Running policy: reportErrors                                                  Running policy: reportExcessBuildRequires                                     Running policy: reportMissingBuildRequires                                    + looking up pathids from repository history
++ pathId lookup complete
++ deleting [tree] /tmp/rmake/builds/conary-policy
+11:46:18 checkResults    - SocketAuth(pid=17234, uid=201, gid=201)
+11:46:19 stop            - SocketAuth(pid=17234, uid=201, gid=201)
+11:46:19 - [chroot] - Shutting down server
+11:46:19 - [root] - Shutting down server
