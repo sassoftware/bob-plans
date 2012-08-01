@@ -1,0 +1,9 @@
+targetLabel jules.eng.rpath.com@rpath:centos-5-goad-p1
+
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-5e.conf
+includeConfigFile tree.conf
+
+target []
+target conary
+#target conary-policy

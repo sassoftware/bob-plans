@@ -1,0 +1,21 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles10.conf
+includeConfigFile ../conf/version.conf
+includeConfigFile sources.conf
+
+target []
+target iconfig
+#target iconfig-test
+
+[target:iconfig]
+sourceTree iconfig recipes/sles-11/iconfig
+version %(version)s.%(hg)s
+hg iconfig
+flavor_set plain
+
+[target:iconfig-test]
+sourceTree iconfig recipes/sles-11/iconfig-test
+version %(version)s.%(hg)s
+hg iconfig
+flavor_set plain
+

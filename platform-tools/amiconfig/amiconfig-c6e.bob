@@ -1,0 +1,7 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile ../conf/version.conf
+
+target []
+target amiconfig
+target #amiconfig-test

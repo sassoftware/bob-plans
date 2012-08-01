@@ -9,5 +9,4 @@ target rpath-models
 version %(version)s.%(hg)s
 hg rpath-models
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-
+sourceTree rpath-models recipes/rpl-2

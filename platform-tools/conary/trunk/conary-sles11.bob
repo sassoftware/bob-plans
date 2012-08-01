@@ -1,0 +1,5 @@
+targetLabel jules.eng.rpath.com@rpath:sles-11-goad-p1
+
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles11.conf
+includeConfigFile tree.conf

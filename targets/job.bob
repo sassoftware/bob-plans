@@ -11,5 +11,4 @@ target rpath-job
 version %(version)s.%(hg)s
 hg rpath-job
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-
+sourceTree rpath-job recipes/rpl-2

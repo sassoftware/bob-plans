@@ -1,0 +1,21 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles10.conf
+includeConfigFile ../conf/version.conf
+includeConfigFile sources.conf
+
+target []
+target rpath-tools
+#target rpath-tools-test
+
+[target:rpath-tools]
+sourceTree rpath-tools recipes/sles-11
+version %(version)s.%(hg)s
+hg rpath-tools
+flavor_set plain
+
+[target:rpath-tools-test]
+sourceTree rpath-tools-test recipe
+version %(version)s.%(hg)s
+hg rpath-tools-test
+flavor_set plain
+
