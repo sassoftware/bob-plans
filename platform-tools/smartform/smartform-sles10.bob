@@ -1,5 +1,5 @@
 includeConfigFile ../conf/common.conf
-includeConfigFile ../conf/platform-sles11.conf
+includeConfigFile ../conf/platform-sles10.conf
 includeConfigFile ../conf/version.conf
 includeConfigFile sources.conf
 
