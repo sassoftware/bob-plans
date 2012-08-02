@@ -1,0 +1,13 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles11.conf
+includeConfigFile ../conf/version.conf
+includeConfigFile sources.conf
+
+target []
+target smartform
+
+[target:smartform]
+sourceTree smartform recipes/centos-6e
+version %(version)s.%(hg)s
+hg smartform
+flavor_set plain
