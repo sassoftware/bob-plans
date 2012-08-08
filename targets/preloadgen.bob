@@ -1,11 +1,9 @@
-# XXX temporary fix for a failure in preloadgen plan
-resolveTroves mtools=conary.rpath.com@rpl:2
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/jobmaster.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile ../config/rbuilder.conf
 
-targetLabel preloadgen.rb.rpath.com@rpath:rba-goad-p2
+targetLabel %(preload_label)s
 
 hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
 
