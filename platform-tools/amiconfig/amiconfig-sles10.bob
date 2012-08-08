@@ -1,6 +1,5 @@
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-sles10.conf
-includeConfigFile ../conf/version.conf
 
 target []
 target amiconfig

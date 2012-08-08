@@ -1,6 +1,5 @@
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-centos-5e.conf
-includeConfigFile ../conf/version.conf
 includeConfigFile sources.conf
 
 target []
