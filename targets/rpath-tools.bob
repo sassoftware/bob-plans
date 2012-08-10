@@ -1,5 +1,6 @@
 includeConfigFile ../config/rbuilder.conf
 includeConfigFile ../requires/models.conf
+includeConfigFile ../requires/smartform.conf
 
 macros version 3.0
 hg rpath-tools http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-tools
