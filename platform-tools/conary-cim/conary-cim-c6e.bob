@@ -1,4 +1,5 @@
 includeConfigFile ../conf/common.conf
+includeConfigFile requires.conf
 includeConfigFile ../conf/platform-centos-6e.conf
 includeConfigFile sources.conf
 
