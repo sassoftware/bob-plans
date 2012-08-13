@@ -6,7 +6,7 @@ target []
 target smartform
 
 [target:smartform]
-sourceTree smartform recipes/centos-6e
+sourceTree smartform recipes/sles10
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain
