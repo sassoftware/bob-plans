@@ -12,3 +12,4 @@ target pyovf
 version %(version)s.%(hg)s
 hg pyovf
 flavor_set plain
+sourceTree pyovf recipes/rpl-2
