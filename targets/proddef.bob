@@ -5,19 +5,18 @@ includeConfigFile ../config/rbuilder.conf
 
 macros version 4.3
 hg product-definition http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition
-hg product-definition-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition-private
 
 target rpath-product-definition
 target rpath-product-definition-test
 
 [target:rpath-product-definition]
-sourceTree product-definition recipe
+sourceTree product-definition recipes/rpl-2/rpath-product-definition
 version %(version)s.%(hg)s
 hg product-definition
 flavor_set plain
 
 [target:rpath-product-definition-test]
-sourceTree product-definition-private recipe
+sourceTree product-definition recipes/rpl-2/rpath-product-definition-test
 version %(version)s.%(hg)s
-hg product-definition-private
+hg product-definition
 flavor_set plain
