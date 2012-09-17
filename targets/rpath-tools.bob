@@ -1,4 +1,4 @@
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
 

@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/xobj.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 hg crest http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/crest
 hg crest-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/crest-test

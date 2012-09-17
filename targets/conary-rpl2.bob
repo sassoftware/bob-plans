@@ -1,4 +1,4 @@
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 2.4
 macros policy_version 1.0

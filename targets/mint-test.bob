@@ -19,7 +19,7 @@ includeConfigFile ../requires/rmake3.conf
 
 includeConfigFile ../requires/mint.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 # source materials
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint

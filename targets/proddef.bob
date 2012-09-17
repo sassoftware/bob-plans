@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xmllib.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 4.3
 hg product-definition http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition

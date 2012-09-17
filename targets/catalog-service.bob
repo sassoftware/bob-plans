@@ -6,7 +6,7 @@ includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/smartform.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 hg catalog-service http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/catalog-service
 hg catalog-service-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/catalog-service-private

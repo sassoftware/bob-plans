@@ -3,7 +3,7 @@ includeConfigFile ../requires/pyovf.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/proddef.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
 

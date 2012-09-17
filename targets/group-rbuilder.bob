@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/rpath-repeater.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 target group-rbuilder-dist
 

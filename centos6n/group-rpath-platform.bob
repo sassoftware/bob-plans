@@ -3,6 +3,8 @@ includeConfigFile common.conf
 targetLabel %(platform_label)s
 resolveTroves []
 resolveTroves group-os=%(distro_label)s
+resolveTroves group-rpath-packages=%(common_label)s
+resolveTrovesOnly True
 
 target group-rpath-platform
 
@@ -10,6 +12,5 @@ hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipe
 
 [target:group-rpath-platform]
 version %(version)s
-sourceTree recipes group-rpath-platform
-flavor_set plain
-
+sourceTree recipes centos-6n/group-rpath-platform
+flavor_set x86_64

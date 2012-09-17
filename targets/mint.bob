@@ -19,7 +19,7 @@ includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/rmake3.conf
 
 resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 # source materials
 hg mint http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mint

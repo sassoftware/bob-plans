@@ -4,7 +4,7 @@ includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/smartform.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 # source materials
 macros version 2.0

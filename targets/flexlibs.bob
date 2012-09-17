@@ -5,7 +5,7 @@ includeConfigFile ../requires/flex3p.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 

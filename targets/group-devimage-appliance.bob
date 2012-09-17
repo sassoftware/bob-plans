@@ -1,5 +1,5 @@
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros rbuild_label jules.eng.rpath.com@rpath:rbuild-rpl2-py26
 

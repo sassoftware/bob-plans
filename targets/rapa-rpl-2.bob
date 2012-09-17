@@ -1,7 +1,7 @@
 # internal dependencies
 includeConfigFile ../requires/conary.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 # source materials
 hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa

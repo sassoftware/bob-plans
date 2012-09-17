@@ -4,7 +4,7 @@ includeConfigFile ../requires/rpath-tools.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/wmiclient.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 0
 hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-repeater

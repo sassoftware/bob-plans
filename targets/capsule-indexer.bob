@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/xmllib.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 macros version 0.1
 hg rpath-capsule-indexer http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer
 hg rpath-capsule-indexer-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer-test
