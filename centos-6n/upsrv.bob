@@ -1,13 +1,8 @@
-includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/conary.conf
-
-# XXX FIXME
-resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
 includeConfigFile common.conf
 
 # source materials
 hg rbm http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbm
-# hg us2us http://scc.eng.rpath.com/proserv/raa-plugins/us2us-mirror-4.1
 
 target updateservice
 
