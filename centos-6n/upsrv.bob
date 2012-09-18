@@ -1,4 +1,3 @@
-includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
