@@ -1,6 +1,5 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/flexsdk.conf
-includeConfigFile ../requires/xml_resources.conf
 includeConfigFile ../config/flex.conf
 
 includeConfigFile common.conf
