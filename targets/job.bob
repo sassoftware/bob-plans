@@ -1,3 +1,4 @@
+includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/xmllib.conf
 
 includeConfigFile common.conf
