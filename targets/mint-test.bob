@@ -30,4 +30,4 @@ target rbuilder-test
 sourceTree mint recipes/rbuilder-test
 version %(version)s.%(hg)s
 hg mint
-flavor !rbuilder.rbo, !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64
+flavor !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64
