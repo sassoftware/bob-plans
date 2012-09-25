@@ -1,4 +1,3 @@
-includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rmake3.conf
 includeConfigFile ../requires/rpath-tools.conf

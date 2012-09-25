@@ -3,6 +3,7 @@ includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/rpath-job.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/smartform.conf
 
