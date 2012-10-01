@@ -6,7 +6,7 @@ target []
 target smartform-conary
 
 [target:smartform-conary]
-sourceTree smartform-conary recipes/centos-6e
+sourceTree smartform recipes/centos-6e
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain

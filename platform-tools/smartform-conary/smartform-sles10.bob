@@ -6,7 +6,7 @@ target []
 target smartform-conary
 
 [target:smartform-conary]
-sourceTree smartform-conary recipes/sles10
+sourceTree smartform recipes/sles10
 version %(version)s.%(hg)s
 hg smartform
 flavor_set plain
