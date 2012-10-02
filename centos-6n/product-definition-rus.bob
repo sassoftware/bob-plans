@@ -3,6 +3,7 @@ includeConfigFile common.conf
 
 target product-definition
 targetLabel %(master_label)s-updateservice
+macros release_label %(targetLabel)s
 
 hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
 
