@@ -1,15 +1,13 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
-macros rbuild_label jules.eng.rpath.com@rpath:rbuild-rpl2-py26
-
-target group-devimage-appliance
+target product-definition
 targetLabel %(master_label)s-devimage
 
 hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
 
-[target:group-devimage-appliance]
+[target:product-definition]
 version %(version)s
-sourceTree recipes centos-6n/group-devimage-appliance
+sourceTree recipes product-definitions/devimage/product-definition
 # x86_64: main product
 flavor %rPL 2:x86_64% !dom0

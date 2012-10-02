@@ -2,6 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 target group-updateservice-appliance
+targetLabel %(master_label)s-updateservice
 
 hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
 
