@@ -1,8 +1,8 @@
 includeConfigFile common.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
+resolveTroves xml_resources=jules.eng.rpath.com@rpath:rba-%(rbuilder_forest)s
 
-macros version 3.0
 hg rpath-tools http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-tools
 
 target rpath-tools
