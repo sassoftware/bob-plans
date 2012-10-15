@@ -1,5 +1,0 @@
-targetLabel jules.eng.rpath.com@rpath:sles-11-%(rbuilder_forest)s
-
-includeConfigFile ../conf/common.conf
-includeConfigFile ../conf/platform-sles11.conf
-includeConfigFile tree.conf
