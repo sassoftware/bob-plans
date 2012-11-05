@@ -5,7 +5,7 @@ includeConfigFile ../requires/proddef.conf
 
 includeConfigFile common.conf
 
-hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
+hg jobslave %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobslave
 
 target group-jobslave
 target jobslave

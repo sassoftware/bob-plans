@@ -1,4 +1,4 @@
-targetLabel jules.eng.rpath.com@rpath:centos-6-%(rbuilder_forest)s
+targetLabel %(target_host)s@rpath:centos-6-%(rbuilder_forest)s
 
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-centos-6e.conf

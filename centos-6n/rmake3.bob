@@ -4,7 +4,7 @@ includeConfigFile common.conf
 
 macros version 3.0
 
-hg rmake http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake3
+hg rmake %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake3
 
 target rmake3
 

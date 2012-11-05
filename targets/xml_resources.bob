@@ -3,7 +3,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0
-hg xml_resources http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/xml_resources
+hg xml_resources %(scc)s/products/rbuilder/%(rbuilder_forest)s/xml_resources
 
 # target configuration
 target xml_resources

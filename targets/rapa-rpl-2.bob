@@ -4,8 +4,8 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 # source materials
-hg rapa http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa
-hg rapa-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/raa-test
+hg rapa %(scc)s/products/rbuilder/%(rbuilder_forest)s/raa
+hg rapa-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/raa-test
 
 # target configuration
 shortenGroupFlavors True

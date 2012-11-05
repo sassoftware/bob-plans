@@ -4,7 +4,7 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg rpath-job http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-job
+hg rpath-job %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-job
 
 target rpath-job
 

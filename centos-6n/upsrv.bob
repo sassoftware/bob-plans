@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 # source materials
-hg rbm http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbm
+hg rbm %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbm
 
 target updateservice
 

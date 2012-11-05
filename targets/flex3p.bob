@@ -11,7 +11,7 @@ includeConfigFile ../config/flex-devel-post.conf
 
 # source materials
 macros version 0
-hg flex3p http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flex3p
+hg flex3p %(scc)s/products/rbuilder/%(rbuilder_forest)s/flex3p
 
 # target configuration
 target flex3p

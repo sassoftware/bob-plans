@@ -3,7 +3,7 @@ includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xml_resources.conf
 
-hg rpath-tools http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-tools
+hg rpath-tools %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-tools
 
 target rpath-tools
 

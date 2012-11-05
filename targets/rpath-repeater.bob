@@ -7,7 +7,7 @@ includeConfigFile ../requires/wmiclient.conf
 includeConfigFile common.conf
 
 macros version 0
-hg rpath-repeater http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-repeater
+hg rpath-repeater %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-repeater
 
 target rpath-repeater
 target rpath-repeater-test

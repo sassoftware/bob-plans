@@ -3,8 +3,8 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg repodata http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/repodata
-hg repodata-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/repodata-private
+hg repodata %(scc)s/products/rbuilder/%(rbuilder_forest)s/repodata
+hg repodata-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/repodata-private
 
 target repodata-test
 target repodata
