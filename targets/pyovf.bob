@@ -4,7 +4,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-hg pyovf http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pyovf
+hg pyovf %(scc)s/products/rbuilder/%(rbuilder_forest)s/pyovf
 
 target pyovf
 

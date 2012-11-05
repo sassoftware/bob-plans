@@ -12,7 +12,7 @@ includeConfigFile ../config/flex-devel-post.conf
 
 # source materials
 macros version 0
-hg flexlibs http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flexlibs
+hg flexlibs %(scc)s/products/rbuilder/%(rbuilder_forest)s/flexlibs
 
 # target configuration
 target flexlibs

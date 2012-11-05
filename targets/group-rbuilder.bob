@@ -5,7 +5,7 @@ includeConfigFile common.conf
 
 target group-rbuilder-dist
 
-hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-rbuilder-dist]
 version %(version)s

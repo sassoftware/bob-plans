@@ -5,7 +5,7 @@ target product-definition
 targetLabel %(master_label)s-devimage-infra
 macros release_label infra.rpath.com@rpath:devimage-%(major_version)s
 
-hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:product-definition]
 version %(version)s

@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
-hg mcp http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mcp
+hg mcp %(scc)s/products/rbuilder/%(rbuilder_forest)s/mcp
 
 target mcp
 

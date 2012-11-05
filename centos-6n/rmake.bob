@@ -5,8 +5,8 @@ includeConfigFile common.conf
 macros version 2.1
 macros base_version %(version)s
 
-hg rmake http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake
-hg rmake-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rmake-private
+hg rmake %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake
+hg rmake-private %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake-private
 
 target rmake
 #target rmake-test

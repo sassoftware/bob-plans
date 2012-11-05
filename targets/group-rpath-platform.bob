@@ -6,7 +6,7 @@ resolveTroves group-os=%(distro_label)s
 
 target group-rpath-platform
 
-hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-rpath-platform]
 version %(version)s

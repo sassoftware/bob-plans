@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg restlib http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/restlib
+hg restlib %(scc)s/products/rbuilder/%(rbuilder_forest)s/restlib
 
 target restlib
 target restlib-test

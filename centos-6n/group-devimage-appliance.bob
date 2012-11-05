@@ -1,12 +1,12 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
-macros rbuild_label jules.eng.rpath.com@rpath:rbuild-rpl2-py26
+macros rbuild_label %(target_host)s@rpath:rbuild-rpl2-py26
 
 target group-devimage-appliance
 targetLabel %(master_label)s-devimage
 
-hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-devimage-appliance]
 version %(version)s

@@ -8,7 +8,7 @@ includeConfigFile common.conf
 includeConfigFile ../config/flex-devel-post.conf
 
 macros version 0
-hg smartform http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/smartform
+hg smartform %(scc)s/products/rbuilder/%(rbuilder_forest)s/smartform
 
 target smartform
 

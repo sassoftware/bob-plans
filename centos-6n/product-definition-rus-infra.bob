@@ -5,7 +5,7 @@ target product-definition
 targetLabel %(master_label)s-updateservice-infra
 macros release_label infra.rpath.com@rpath:rus-7
 
-hg recipes http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:product-definition]
 version %(version)s
