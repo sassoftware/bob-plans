@@ -1,0 +1,13 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile sources.conf
+
+target []
+target rpath-models
+
+[target:rpath-models]
+sourceTree rpath-models recipes/centos-6
+version %(version)s.%(hg)s
+hg rpath-models
+flavor_set plain
+

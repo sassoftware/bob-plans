@@ -1,10 +1,10 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 0
-hg pyovf http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pyovf
+hg pyovf %(scc)s/products/rbuilder/%(rbuilder_forest)s/pyovf
 
 target pyovf
 
@@ -12,3 +12,4 @@ target pyovf
 version %(version)s.%(hg)s
 hg pyovf
 flavor_set plain
+sourceTree pyovf recipes/rpl-2

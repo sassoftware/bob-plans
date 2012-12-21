@@ -1,0 +1,20 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile requires.conf
+includeConfigFile ../conf/platform-sles11.conf
+includeConfigFile sources.conf
+
+target []
+target conary-cim
+#target conary-cim-test
+
+[target:conary-cim]
+sourceTree conary-cim recipe/sles-11
+version %(version)s.%(hg)s
+hg conary-cim
+flavor_set plain
+
+[target:conary-cim-test]
+sourceTree conary-cim-private recipe
+version %(version)s.%(hg)s
+hg conary-cim-private
+flavor_set plain

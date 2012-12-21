@@ -1,23 +1,22 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/xmllib.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 macros version 0.1
-hg rpath-capsule-indexer http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer
-hg rpath-capsule-indexer-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer-test
+hg rpath-capsule-indexer %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer
+hg rpath-capsule-indexer-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer-test
 
 target rpath-capsule-indexer-test
 target rpath-capsule-indexer
 
 [target:rpath-capsule-indexer]
+sourceTree rpath-capsule-indexer recipe
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
 
 [target:rpath-capsule-indexer-test]
+sourceTree rpath-capsule-indexer-test recipe
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer-test
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-

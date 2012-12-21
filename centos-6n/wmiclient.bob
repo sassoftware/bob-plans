@@ -1,0 +1,12 @@
+includeConfigFile common.conf
+
+macros version 0.1
+hg wmiclient %(scc)s/products/rbuilder/%(rbuilder_forest)s/wmiclient
+
+target wmiclient
+
+[target:wmiclient]
+sourceTree wmiclient recipes/centos-6n
+version %(version)s.%(hg)s
+hg wmiclient
+flavor_set x86_64

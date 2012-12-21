@@ -1,7 +1,7 @@
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 1.0
-hg rpath-models http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-models
+hg rpath-models %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-models
 
 target rpath-models
 
@@ -9,5 +9,4 @@ target rpath-models
 version %(version)s.%(hg)s
 hg rpath-models
 flavor_set plain
-sourceLabel testbits.rb.rpath.com@rpath:common
-
+sourceTree rpath-models recipes/rpl-2

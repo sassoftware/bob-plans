@@ -1,32 +1,26 @@
-recurseTroveRule -group-jobslave
-
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/pyovf.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/proddef.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
-hg jobslave http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobslave
+hg jobslave %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobslave
 
 target group-jobslave
 target jobslave
-target rbuilder-mcp
 
 [target:jobslave]
-sourceLabel products.rpath.com@rpath:js-devel
+sourceTree jobslave recipes/jobslave
 version %(version)s.%(hg)s
 hg jobslave
 flavor_set x86_64
 
 [target:group-jobslave]
-sourceLabel products.rpath.com@rpath:js-devel
+# We only need this for e2fsimage
+macros contrib_label contrib.rpath.org@rpl:2
+macros anaconda_label foresight.rpath.org@fl:2-devel
+sourceTree jobslave recipes/group-jobslave
 version %(jobslave_version)s
 after jobslave
 flavor_set x86_64
-
-[target:rbuilder-mcp]
-sourceLabel products.rpath.com@rpath:rba-devel
-version %(jobslave_version)s
-flavor is: x86_64
-

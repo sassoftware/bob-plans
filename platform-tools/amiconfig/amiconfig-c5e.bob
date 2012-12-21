@@ -1,0 +1,9 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-5e.conf
+includeConfigFile sources.conf
+
+target []
+target amiconfig
+#target amiconfig-test
+
+

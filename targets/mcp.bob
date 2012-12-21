@@ -1,11 +1,12 @@
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
-hg mcp http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/mcp
+hg mcp %(scc)s/products/rbuilder/%(rbuilder_forest)s/mcp
 
 target mcp
 
 [target:mcp]
+sourceTree mcp recipe
 version %(version)s.%(hg)s
 hg mcp
 flavor_set x86_64

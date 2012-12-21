@@ -1,0 +1,14 @@
+includeConfigFile common.conf
+includeConfigFile ../requires/models.conf
+includeConfigFile ../requires/smartform.conf
+includeConfigFile ../requires/xml_resources.conf
+
+hg rpath-tools %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-tools
+
+target rpath-tools
+
+[target:rpath-tools]
+version %(version)s.%(hg)s
+hg rpath-tools
+flavor_set x86_64
+sourceTree rpath-tools recipes/rpl-2-py26

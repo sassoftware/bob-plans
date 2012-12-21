@@ -1,0 +1,33 @@
+# internal dependencies
+includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rapa.conf
+includeConfigFile ../requires/capsule-indexer.conf
+includeConfigFile ../requires/repodata.conf
+includeConfigFile ../requires/catalog-service.conf
+includeConfigFile ../requires/crest.conf
+includeConfigFile ../requires/mcp.conf
+includeConfigFile ../requires/pcreator.conf
+includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/smartform.conf
+includeConfigFile ../requires/storage.conf
+includeConfigFile ../requires/rpath-job.conf
+includeConfigFile ../requires/models.conf
+includeConfigFile ../requires/xmllib.conf
+includeConfigFile ../requires/xobj.conf
+includeConfigFile ../requires/rpath-repeater.conf
+includeConfigFile ../requires/rmake3.conf
+
+includeConfigFile ../requires/mint.conf
+
+includeConfigFile common.conf
+
+# source materials
+hg mint %(scc)s/products/rbuilder/%(rbuilder_forest)s/mint
+
+target rbuilder-test
+
+[target:rbuilder-test]
+sourceTree mint recipes/rbuilder-test
+version %(version)s.%(hg)s
+hg mint
+flavor !rbuilder-test.db_mysql, !rbuilder-test.db_pgsql is: x86_64

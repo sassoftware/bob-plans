@@ -1,15 +1,16 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rapa.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile ../requires/rpath-repeater.conf
+includeConfigFile common.conf
 
-# don't try to build child packages
-recurseTroveRule -group-rbuilder-dist
 target group-rbuilder-dist
+
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-rbuilder-dist]
 version %(version)s
-sourceLabel products.rpath.com@rpath:rba-devel
+sourceTree recipes group-rbuilder-dist
 # x86_64: main product
-flavor %rPL 2:x86_64% !xen,!domU,!dom0,!vmware,   !rbuilder.rbo
+flavor %rPL 2:x86_64% !dom0
 # x86_64: domU for EC2 demos
-flavor %rPL 2:x86_64%  xen, domU,!dom0,!vmware,   !rbuilder.rbo
+#flavor %rPL 2:x86_64%  xen, domU,!dom0,!vmware

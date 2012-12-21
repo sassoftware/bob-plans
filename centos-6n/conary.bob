@@ -1,0 +1,41 @@
+includeConfigFile common.conf
+
+macros version 2.4
+macros policy_version 1.0
+
+hg conary %(scc)s/products/rbuilder/%(rbuilder_forest)s/conary
+hg conary-policy %(scc)s/products/rbuilder/%(rbuilder_forest)s/conary-policy
+
+target conary
+target conary-policy
+target conary-test
+
+[target:conary]
+sourceTree conary recipes/unified/conary
+classVar plat 'centos'
+classVar platver '6'
+classVar embedded False
+classVar encapsulated True
+version %(version)s_%(start_time)s_%(hg)s
+hg conary
+flavor_set x86_64
+
+[target:conary-policy]
+sourceTree conary-policy recipes/rpl-2
+after conary
+version %(policy_version)s_%(start_time)s_%(hg)s
+hg conary-policy
+flavor_set x86_64
+
+[target:conary-test]
+sourceTree conary recipes/unified/conary-test
+after conary-policy
+version %(version)s_%(start_time)s_%(hg)s
+hg conary
+classVar plat 'centos'
+classVar platver '6'
+classVar encapsulated True
+flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split1
+flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split2
+flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split3
+flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split4

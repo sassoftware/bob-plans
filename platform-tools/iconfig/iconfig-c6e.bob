@@ -1,0 +1,20 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile sources.conf
+
+target []
+target iconfig
+#target iconfig-test
+
+[target:iconfig]
+sourceTree iconfig recipes/centos-6e/iconfig
+version %(version)s.%(hg)s
+hg iconfig
+flavor_set plain
+
+[target:iconfig-test]
+sourceTree iconfig recipes/centos-6e/iconfig-test
+version %(version)s.%(hg)s
+hg iconfig
+flavor_set plain
+

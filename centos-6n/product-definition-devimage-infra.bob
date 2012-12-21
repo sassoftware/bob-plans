@@ -1,0 +1,14 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile common.conf
+
+target product-definition
+targetLabel %(master_label)s-devimage-infra
+macros release_label infra.rpath.com@rpath:devimage-%(major_version)s
+
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+
+[target:product-definition]
+version %(version)s
+sourceTree recipes product-definitions/devimage/product-definition
+# x86_64: main product
+flavor %rPL 2:x86_64% !dom0

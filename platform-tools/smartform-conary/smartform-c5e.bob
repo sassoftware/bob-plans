@@ -1,0 +1,12 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-5e.conf
+includeConfigFile sources.conf
+
+target []
+target smartform-conary
+
+[target:smartform-conary]
+sourceTree smartform recipes/centos-6e
+version %(version)s.%(hg)s
+hg smartform
+flavor_set plain

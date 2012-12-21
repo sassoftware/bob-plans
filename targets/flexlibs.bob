@@ -1,23 +1,28 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/smartform.conf
+includeConfigFile ../requires/xml_resources.conf
+includeConfigFile ../requires/flex3p.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
 # source materials
 macros version 0
-hg flexlibs http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/flexlibs
+hg flexlibs %(scc)s/products/rbuilder/%(rbuilder_forest)s/flexlibs
 
 # target configuration
 target flexlibs
 
 [target:flexlibs]
+sourceTree flexlibs recipes/flexlibs
 version %(version)s.%(hg)s
 hg flexlibs
 flavor []
-flavor flexlibs.test is: x86
-sourceLabel private.rb.rpath.com@rpl:devel
+# uncomment below to run with tests
+#flavor flexlibs.test is: x86
+# uncomment below to run without tests
+flavor is: x86

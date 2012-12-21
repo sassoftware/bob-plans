@@ -1,0 +1,13 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles11.conf
+includeConfigFile sources.conf
+
+target []
+target rpath-models
+
+[target:rpath-models]
+sourceTree rpath-models recipes/sles11
+version %(version)s.%(hg)s
+hg rpath-models
+flavor_set plain
+

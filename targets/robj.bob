@@ -1,0 +1,20 @@
+includeConfigFile common.conf
+includeConfigFile ../requires/xobj.conf
+
+macros version 0
+hg robj %(scc)s/products/rbuilder/%(rbuilder_forest)s/robj
+
+target robj
+target robj-test
+
+[target:robj]
+version %(version)s.%(hg)s
+hg robj
+flavor_set plain
+sourceTree robj recipes/rpl-2/robj
+
+[target:robj-test]
+version %(version)s.%(hg)s
+hg robj
+flavor_set plain
+sourceTree robj recipes/rpl-2/robj-test

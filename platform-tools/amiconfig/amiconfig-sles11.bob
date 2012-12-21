@@ -1,0 +1,6 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-sles11.conf
+
+target []
+target amiconfig
+target #amiconfig-test
