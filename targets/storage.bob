@@ -1,11 +1,11 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xmllib.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 0.1
-hg rpath-storage http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-storage
-hg rpath-storage-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rpath-storage-private
+hg rpath-storage %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-storage
+hg rpath-storage-private %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-storage-private
 
 target rpath-storage-test
 target rpath-storage

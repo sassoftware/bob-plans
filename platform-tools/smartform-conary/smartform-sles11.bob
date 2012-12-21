@@ -1,11 +1,11 @@
 includeConfigFile ../conf/common.conf
-includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile ../conf/platform-sles11.conf
 includeConfigFile sources.conf
 
 target []
-target smartform
+target smartform-conary
 
-[target:smartform]
+[target:smartform-conary]
 sourceTree smartform recipes/centos-6e
 version %(version)s.%(hg)s
 hg smartform

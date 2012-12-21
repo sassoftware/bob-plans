@@ -5,12 +5,12 @@ includeConfigFile ../config/flex-devel.conf
 includeConfigFile ../requires/flexsdk.conf
 includeConfigFile ../config/flex.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 includeConfigFile ../config/flex-devel-post.conf
 
 macros version 0
-hg rbuilder-ui http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/rbuilder-ui
+hg rbuilder-ui %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbuilder-ui
 
 # target configuration
 target rbuilder-ui

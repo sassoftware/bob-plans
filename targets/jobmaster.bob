@@ -1,9 +1,9 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/mcp.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
-hg jobmaster http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/jobmaster
+hg jobmaster %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobmaster
 
 target jobmaster
 

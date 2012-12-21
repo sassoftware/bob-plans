@@ -4,12 +4,12 @@ includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/smartform.conf
 
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 # source materials
 macros version 2.0
-hg conary-factory-test http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator-test
-hg package-creator-service http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/pcreator
+hg conary-factory-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/pcreator-test
+hg package-creator-service %(scc)s/products/rbuilder/%(rbuilder_forest)s/pcreator
 
 # target configuration
 target conary-factory-test

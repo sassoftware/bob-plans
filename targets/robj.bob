@@ -1,8 +1,8 @@
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 includeConfigFile ../requires/xobj.conf
 
 macros version 0
-hg robj http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/robj
+hg robj %(scc)s/products/rbuilder/%(rbuilder_forest)s/robj
 
 target robj
 target robj-test

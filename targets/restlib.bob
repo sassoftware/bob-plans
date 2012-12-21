@@ -1,21 +1,20 @@
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../config/rbuilder.conf
+includeConfigFile common.conf
 
 macros version 0.1
-hg restlib http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/restlib
-hg restlib-private http://scc.eng.rpath.com/products/rbuilder/%(rbuilder_forest)s/restlib-private
+hg restlib %(scc)s/products/rbuilder/%(rbuilder_forest)s/restlib
 
 target restlib
 target restlib-test
 
 [target:restlib]
 version %(version)s.%(hg)s
-sourceTree restlib recipes/rpl-2
+sourceTree restlib recipes/rpl-2/restlib
 hg restlib
 flavor_set plain
 
 [target:restlib-test]
 version %(version)s.%(hg)s
-sourceTree restlib-private recipes/rpl-2
-hg restlib-private
+sourceTree restlib recipes/rpl-2/restlib-test
+hg restlib
 flavor_set plain
