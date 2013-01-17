@@ -14,8 +14,8 @@ hg rpath-tools
 flavor_set plain
 
 [target:rpath-tools-test]
-sourceTree rpath-tools-test recipe
+sourceTree rpath-tools recipes/rpl-2-py26/rpath-tools-test
 version %(version)s.%(hg)s
-hg rpath-tools-test
+hg rpath-tools
 flavor_set plain
 
