@@ -18,6 +18,6 @@ flavor_set plain
 [target:crest-test]
 sourceTree crest recipes/crest-test
 version 0.%(hg)s
-hg crest-test
+hg crest
 flavor_set plain
 
