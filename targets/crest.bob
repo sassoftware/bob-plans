@@ -5,19 +5,18 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 hg crest %(scc)s/products/rbuilder/%(rbuilder_forest)s/crest
-hg crest-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/crest-test
 
 target conary-rest
 target crest-test
 
 [target:conary-rest]
-sourceTree crest recipe
+sourceTree crest recipes/conary-rest
 version 0.%(hg)s
 hg crest
 flavor_set plain
 
 [target:crest-test]
-sourceTree crest-test recipe
+sourceTree crest recipes/crest-test
 version 0.%(hg)s
 hg crest-test
 flavor_set plain
