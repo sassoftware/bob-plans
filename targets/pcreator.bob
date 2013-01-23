@@ -8,7 +8,6 @@ includeConfigFile common.conf
 
 # source materials
 macros version 2.0
-hg conary-factory-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/pcreator-test
 hg package-creator-service %(scc)s/products/rbuilder/%(rbuilder_forest)s/pcreator
 
 # target configuration
@@ -16,13 +15,13 @@ target conary-factory-test
 target pcreator
 
 [target:pcreator]
-sourceTree package-creator-service recipe
+sourceTree package-creator-service recipes/rpl-2-py26/pcreator
 version %(version)s.%(hg)s
 hg package-creator-service
 flavor_set x86_64
 
 [target:conary-factory-test]
-sourceTree conary-factory-test recipe
+sourceTree pcreator recipes/rpl-2-py26/conary-factory-test
 version %(version)s.%(hg)s
 hg conary-factory-test
 flavor_set x86_64
