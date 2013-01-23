@@ -23,5 +23,5 @@ flavor_set x86_64
 [target:conary-factory-test]
 sourceTree package-creator-service recipes/rpl-2-py26/conary-factory-test
 version %(version)s.%(hg)s
-hg conary-factory-test
+hg package-creator-service
 flavor_set x86_64
