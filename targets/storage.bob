@@ -5,7 +5,6 @@ includeConfigFile common.conf
 
 macros version 0.1
 hg rpath-storage %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-storage
-hg rpath-storage-private %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-storage-private
 
 target rpath-storage-test
 target rpath-storage
@@ -18,6 +17,6 @@ flavor_set plain
 
 [target:rpath-storage-test]
 version %(version)s.%(hg)s
-hg rpath-storage-private
-sourceTree rpath-storage-private recipes/rpath-storage-test
+hg rpath-storage
+sourceTree rpath-storage recipes/rpath-storage-test
 flavor_set plain
