@@ -4,19 +4,18 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 macros version 0.1
 hg rpath-capsule-indexer %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer
-hg rpath-capsule-indexer-test %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-capsule-indexer-test
 
 target rpath-capsule-indexer-test
 target rpath-capsule-indexer
 
 [target:rpath-capsule-indexer]
-sourceTree rpath-capsule-indexer recipe
+sourceTree rpath-capsule-indexer recipes/rpath-capsule-indexer
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer
 flavor_set plain
 
 [target:rpath-capsule-indexer-test]
-sourceTree rpath-capsule-indexer-test recipe
+sourceTree rpath-capsule-indexer recipes/rpath-capsule-indexer-test
 version %(version)s.%(hg)s
-hg rpath-capsule-indexer-test
+hg rpath-capsule-indexer
 flavor_set plain
