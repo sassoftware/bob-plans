@@ -7,3 +7,9 @@ target amiconfig
 #target amiconfig-test
 
 
+[target:amiconfig]
+sourceTree amiconfig recipes/centos-5
+version %(version)s.%(hg)s
+hg amiconfig
+flavor_set plain
+
