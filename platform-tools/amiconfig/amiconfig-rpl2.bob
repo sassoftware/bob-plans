@@ -1,0 +1,9 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-rpl2.conf
+includeConfigFile sources.conf
+
+target []
+target amiconfig
+#target amiconfig-test
+
+
