@@ -8,7 +8,7 @@ target amiconfig
 
 
 [target:amiconfig]
-sourceTree amiconfig recipes/centos-5
+sourceTree amiconfig recipes/rpl2
 version %(version)s.%(hg)s
 hg amiconfig
 flavor_set plain
