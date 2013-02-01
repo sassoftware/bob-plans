@@ -1,6 +1,15 @@
 includeConfigFile ../conf/common.conf
 includeConfigFile ../conf/platform-sles10.conf
+includeConfigFile sources.conf
 
 target []
 target amiconfig
-target #amiconfig-test
+#target amiconfig-test
+
+
+[target:amiconfig]
+sourceTree amiconfig recipes/sles-11
+version %(version)s.%(hg)s
+hg amiconfig
+flavor_set plain
+
