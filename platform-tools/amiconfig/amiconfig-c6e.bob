@@ -4,10 +4,17 @@ includeConfigFile sources.conf
 
 target []
 target amiconfig
-#target amiconfig-test
+target amiconfig-test
 
 [target:amiconfig]
 sourceTree amiconfig recipes/centos-6
 version %(version)s.%(hg)s
 hg amiconfig
 flavor_set plain
+
+[target:amiconfig-test]
+sourceTree amiconfig recipes/centos-6
+version %(version)s.%(hg)s
+hg amiconfig
+flavor_set plain
+
