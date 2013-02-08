@@ -3,7 +3,7 @@ includeConfigFile common.conf
 
 target product-definition
 targetLabel %(master_label)s-updateservice-infra
-macros release_label infra.rpath.com@rpath:rus-7
+macros release_label pdt.cny.sas.com@sas:rus-%(major_version)s
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
