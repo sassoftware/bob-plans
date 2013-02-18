@@ -11,10 +11,10 @@ target restlib-test
 version %(version)s.%(hg)s
 sourceTree restlib recipes/rpl-2/restlib
 hg restlib
-flavor_set plain
+flavor_set x86_64
 
 [target:restlib-test]
 version %(version)s.%(hg)s
 sourceTree restlib recipes/rpl-2/restlib-test
 hg restlib
-flavor_set plain
+flavor_set x86_64

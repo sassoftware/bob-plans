@@ -8,5 +8,5 @@ target rpath-models
 [target:rpath-models]
 version %(version)s.%(hg)s
 hg rpath-models
-flavor_set plain
+flavor_set x86_64
 sourceTree rpath-models recipes/rpl-2

@@ -13,11 +13,11 @@ target crest-test
 sourceTree crest recipes/conary-rest
 version 0.%(hg)s
 hg crest
-flavor_set plain
+flavor_set x86_64
 
 [target:crest-test]
 sourceTree crest recipes/crest-test
 version 0.%(hg)s
 hg crest
-flavor_set plain
+flavor_set x86_64
 

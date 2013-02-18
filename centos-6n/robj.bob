@@ -10,11 +10,11 @@ target robj-test
 [target:robj]
 version %(version)s.%(hg)s
 hg robj
-flavor_set plain
+flavor_set x86_64
 sourceTree robj recipes/rpl-2/robj
 
 [target:robj-test]
 version %(version)s.%(hg)s
 hg robj
-flavor_set plain
+flavor_set x86_64
 sourceTree robj recipes/rpl-2/robj-test

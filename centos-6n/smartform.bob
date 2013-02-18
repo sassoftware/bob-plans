@@ -16,4 +16,4 @@ target smartform
 sourceTree smartform recipes/smartform
 version %(version)s.%(hg)s
 hg smartform
-flavor_set plain
+flavor_set x86_64

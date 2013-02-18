@@ -10,11 +10,11 @@ target rpath-xmllib
 [target:rpath-xmllib]
 version %(version)s.%(hg)s
 hg rpath-xmllib
-flavor_set plain
-sourceTree rpath-xmllib recipes/rpl-2/rpath-xmllib
+flavor_set x86_64
+sourceTree rpath-xmllib recipes/centos-6n/rpath-xmllib
 
 [target:rpath-xmllib-test]
 version %(version)s.%(hg)s
 hg rpath-xmllib
-flavor_set plain
-sourceTree rpath-xmllib recipes/rpl-2/rpath-xmllib-test
+flavor_set x86_64
+sourceTree rpath-xmllib recipes/centos-6n/rpath-xmllib-test

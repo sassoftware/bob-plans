@@ -11,5 +11,5 @@ target rpath-job
 [target:rpath-job]
 version %(version)s.%(hg)s
 hg rpath-job
-flavor_set plain
+flavor_set x86_64
 sourceTree rpath-job recipes/rpl-2

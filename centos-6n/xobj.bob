@@ -15,4 +15,4 @@ target xobj
 sourceTree xobj recipes/xobj
 version %(version)s.%(hg)s
 hg xobj
-flavor_set plain
+flavor_set x86_64

@@ -12,11 +12,11 @@ target repodata
 [target:repodata]
 version %(version)s.%(hg)s
 hg repodata
-flavor_set plain
+flavor_set x86_64
 sourceTree repodata recipes/rpl-2/repodata
 
 [target:repodata-test]
 version %(version)s.%(hg)s
 hg repodata
-flavor_set plain
+flavor_set x86_64
 sourceTree repodata recipes/rpl-2/repodata-test

@@ -20,24 +20,24 @@ target rapa-plugin-rPath
 sourceTree rapa recipes/rapa
 version %(version)s.%(hg)s
 hg rapa
-flavor_set plain
+flavor_set x86_64
 
 [target:group-rapa]
 sourceTree rapa recipes/group-rapa
 version %(version)s
-flavor_set plain
+flavor_set x86_64
 after rapa
 
 [target:rapa-test]
 sourceTree rapa-test recipe
 version %(version)s.%(hg)s
 hg rapa-test
-flavor_set plain
+flavor_set x86_64
 
 [target:rapa-plugin-rPath]
 sourceTree rapa recipes/rapa-plugin-rPath
 version %(version)s
-flavor_set plain
+flavor_set x86_64
 
 [target:info-raa-web]
 sourceTree rapa recipes/info-raa-web

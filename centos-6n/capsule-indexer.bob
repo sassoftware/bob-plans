@@ -12,10 +12,10 @@ target rpath-capsule-indexer
 sourceTree rpath-capsule-indexer recipes/rpath-capsule-indexer
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer
-flavor_set plain
+flavor_set x86_64
 
 [target:rpath-capsule-indexer-test]
 sourceTree rpath-capsule-indexer recipes/rpath-capsule-indexer-test
 version %(version)s.%(hg)s
 hg rpath-capsule-indexer
-flavor_set plain
+flavor_set x86_64
