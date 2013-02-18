@@ -12,4 +12,4 @@ target xml_resources
 sourceTree xml_resources recipes/xml_resources
 version %(version)s.%(hg)s
 hg xml_resources
-flavor xml_resources.test is: x86
+flavor_set x86_64

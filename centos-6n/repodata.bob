@@ -13,10 +13,10 @@ target repodata
 version %(version)s.%(hg)s
 hg repodata
 flavor_set x86_64
-sourceTree repodata recipes/rpl-2/repodata
+sourceTree repodata recipes/centos-6n/repodata
 
 [target:repodata-test]
 version %(version)s.%(hg)s
 hg repodata
 flavor_set x86_64
-sourceTree repodata recipes/rpl-2/repodata-test
+sourceTree repodata recipes/centos-6n/repodata-test
