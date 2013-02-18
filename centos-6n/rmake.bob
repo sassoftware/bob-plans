@@ -6,10 +6,9 @@ macros version 2.1
 macros base_version %(version)s
 
 hg rmake %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake
-hg rmake-private %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake-private
 
 target rmake
-#target rmake-test
+target rmake-test
 
 [target:rmake]
 sourceTree rmake recipes/centos-6n/rmake
@@ -18,7 +17,8 @@ hg rmake
 flavor_set x86_64
 
 [target:rmake-test]
-sourceTree rmake-private recipes/centos-6n/rmake-test
+sourceTree rmake recipes/centos-6n/rmake-test
 version %(version)s.%(hg)s
-hg rmake-private
-flavor_set x86_64
+hg rmake
+# FIXME?
+flavor %rPL 2:x86_64% !rmake-test.test
