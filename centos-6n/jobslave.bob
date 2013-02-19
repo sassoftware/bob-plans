@@ -7,7 +7,7 @@ includeConfigFile common.conf
 
 hg jobslave %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobslave
 
-target group-jobslave
+#target group-jobslave
 target jobslave
 
 [target:jobslave]
