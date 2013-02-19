@@ -1,7 +1,7 @@
-includeConfigFile common.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xml_resources.conf
+includeConfigFile common.conf
 
 hg rpath-tools %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-tools
 

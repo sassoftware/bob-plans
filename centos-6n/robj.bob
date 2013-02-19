@@ -1,5 +1,6 @@
-includeConfigFile common.conf
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/xobj.conf
+includeConfigFile common.conf
 
 macros version 0
 hg robj %(scc)s/products/rbuilder/%(rbuilder_forest)s/robj
@@ -11,10 +12,10 @@ target robj-test
 version %(version)s.%(hg)s
 hg robj
 flavor_set x86_64
-sourceTree robj recipes/rpl-2/robj
+sourceTree robj recipes/centos-6n/robj
 
 [target:robj-test]
 version %(version)s.%(hg)s
 hg robj
 flavor_set x86_64
-sourceTree robj recipes/rpl-2/robj-test
+sourceTree robj recipes/centos-6n/robj-test
