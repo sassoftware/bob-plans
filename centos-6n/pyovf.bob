@@ -12,4 +12,4 @@ target pyovf
 version %(version)s.%(hg)s
 hg pyovf
 flavor_set x86_64
-sourceTree pyovf recipes/rpl-2
+sourceTree pyovf recipes/centos-6n

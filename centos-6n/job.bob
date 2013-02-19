@@ -12,4 +12,4 @@ target rpath-job
 version %(version)s.%(hg)s
 hg rpath-job
 flavor_set x86_64
-sourceTree rpath-job recipes/rpl-2
+sourceTree rpath-job recipes/centos-6n

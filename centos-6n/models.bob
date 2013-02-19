@@ -9,4 +9,4 @@ target rpath-models
 version %(version)s.%(hg)s
 hg rpath-models
 flavor_set x86_64
-sourceTree rpath-models recipes/rpl-2
+sourceTree rpath-models recipes/centos-6n
