@@ -1,22 +1,23 @@
 # internal dependencies
-includeConfigFile ../requires/conary.conf
-includeConfigFile ../requires/rapa.conf
 includeConfigFile ../requires/capsule-indexer.conf
-includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/catalog-service.conf
-includeConfigFile ../requires/jobslave.conf
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/crest.conf
+includeConfigFile ../requires/jobslave.conf
 includeConfigFile ../requires/mcp.conf
+includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/pcreator.conf
+includeConfigFile ../requires/rapa.conf
+includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/restlib.conf
+includeConfigFile ../requires/rmake3.conf
+includeConfigFile ../requires/robj.conf
+includeConfigFile ../requires/rpath-job.conf
+includeConfigFile ../requires/rpath-repeater.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/storage.conf
-includeConfigFile ../requires/rpath-job.conf
-includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/xmllib.conf
 includeConfigFile ../requires/xobj.conf
-includeConfigFile ../requires/rpath-repeater.conf
-includeConfigFile ../requires/rmake3.conf
 
 resolveTroves python-pgsql=conary.rpath.com@rpl:2-py26-devel
 includeConfigFile common.conf
