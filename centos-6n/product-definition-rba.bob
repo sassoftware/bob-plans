@@ -3,6 +3,7 @@ includeConfigFile common.conf
 
 target product-definition
 targetLabel %(master_label)s-rba
+macros project_name newton
 macros release_label %(target_label)s
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes

@@ -3,6 +3,7 @@ includeConfigFile common.conf
 
 target product-definition
 targetLabel %(master_label)s-updateservice-infra
+macros project_name pdt
 macros release_label pdt.cny.sas.com@sas:rus-%(major_version)s
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes

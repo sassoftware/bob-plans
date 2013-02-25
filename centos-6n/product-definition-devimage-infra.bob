@@ -3,6 +3,7 @@ includeConfigFile common.conf
 
 target product-definition
 targetLabel %(master_label)s-devimage-infra
+macros project_name pdt
 macros release_label pdt.cny.sas.com@sas:devimage-%(major_version)s
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
