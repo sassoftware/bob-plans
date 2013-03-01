@@ -7,7 +7,7 @@ includeConfigFile common.conf
 
 hg jobslave %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobslave
 
-#target group-jobslave
+target group-jobslave
 target jobslave
 
 [target:jobslave]
@@ -17,9 +17,6 @@ hg jobslave
 flavor_set x86_64
 
 [target:group-jobslave]
-# We only need this for e2fsimage
-macros contrib_label contrib.rpath.org@rpl:2
-macros anaconda_label foresight.rpath.org@fl:2-devel
 sourceTree jobslave recipes/group-jobslave
 version %(jobslave_version)s
 after jobslave
