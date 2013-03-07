@@ -28,7 +28,7 @@ flavor_set x86_64
 after rapa
 
 [target:rapa-test]
-sourceTree rapa-test recipe
+sourceTree rapa-test recipes/centos-6n/rapa-test
 version %(version)s.%(hg)s
 hg rapa-test
 #flavor_set x86_64
