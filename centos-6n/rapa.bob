@@ -13,7 +13,7 @@ shortenGroupFlavors True
 target group-rapa
 target info-raa-web
 target rapa
-#target rapa-test
+target rapa-test
 
 [target:rapa]
 sourceTree rapa recipes/centos-6n/rapa
@@ -27,11 +27,12 @@ version %(version)s
 flavor_set x86_64
 after rapa
 
-#[target:rapa-test]
-#sourceTree rapa-test recipe
-#version %(version)s.%(hg)s
-#hg rapa-test
+[target:rapa-test]
+sourceTree rapa-test recipe
+version %(version)s.%(hg)s
+hg rapa-test
 #flavor_set x86_64
+flavor %rPL 2:x86_64% !rapa-test.test
 
 [target:info-raa-web]
 sourceTree rapa recipes/centos-6n/info-raa-web
