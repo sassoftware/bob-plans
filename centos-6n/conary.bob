@@ -1,3 +1,4 @@
+includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
 macros version 2.4

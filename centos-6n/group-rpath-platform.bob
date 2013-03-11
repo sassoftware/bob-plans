@@ -1,3 +1,4 @@
+includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
 targetLabel %(platform_label)s

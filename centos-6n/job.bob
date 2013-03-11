@@ -1,3 +1,4 @@
+includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/storage.conf
 includeConfigFile ../requires/xmllib.conf
 
