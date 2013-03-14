@@ -17,4 +17,4 @@ target group-rpath-packages
 version %(version)s.%(hg)s
 sourceTree recipes platforms/group-rpath-packages
 hg recipes
-flavor_set x86_64
+flavor_set plain
