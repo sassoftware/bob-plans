@@ -4,11 +4,10 @@ includeConfigFile common.conf
 target group-rbuilder-dist
 targetLabel %(master_label)s-rba
 
-hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+#hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+hg recipes /home/elliot/hg/rbuilder-citrine/recipes
 
 [target:group-rbuilder-dist]
 version %(version)s
 sourceTree recipes centos-6n/group-rbuilder-dist
 flavor_set x86_64
-# FIXME: pinned platform versions
-macros distro_label centos6.rpath.com@rpath:centos-6e/2013.03.12_2112.31-1-1
