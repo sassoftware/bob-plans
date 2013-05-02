@@ -4,8 +4,7 @@ includeConfigFile common.conf
 target group-rbuilder-dist
 targetLabel %(master_label)s-rba
 
-#hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
-hg recipes /home/elliot/hg/rbuilder-citrine/recipes
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-rbuilder-dist]
 version %(version)s
