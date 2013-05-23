@@ -1,0 +1,15 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile common.conf
+
+target product-definition
+targetLabel %(master_label)s-rwbs-infra
+macros project_name pdt
+macros release_label pdt.cny.sas.com@sas:rwbs-%(major_version)s
+
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+
+[target:product-definition]
+version %(version)s
+sourceTree recipes product-definitions/rwbs/product-definition
+# x86_64: main product
+flavor %rPL 2:x86_64% !dom0
