@@ -12,3 +12,4 @@ hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 version %(version)s
 sourceTree recipes centos-6n/group-rwbs-appliance
 flavor %rPL 2:x86_64% !dom0
+

@@ -11,5 +11,5 @@ version %(version)s
 sourceTree recipes centos-6n/group-updateservice-appliance
 # x86_64: main product
 flavor %rPL 2:x86_64% !dom0
-# x86_64: domU for EC2 demos
-#flavor %rPL 2:x86_64%  xen, domU,!dom0,!vmware
+# FIXME: pinned platform versions
+macros distro_label centos6.rpath.com@rpath:centos-6e/2013.03.12_2112.31-1-1

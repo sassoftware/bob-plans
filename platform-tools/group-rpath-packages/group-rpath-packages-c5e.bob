@@ -11,10 +11,3 @@ resolveTrovesOnly True
 
 target []
 target group-rpath-packages
-
-
-[target:group-rpath-packages]
-version %(version)s.%(hg)s
-sourceTree recipes platforms/group-rpath-packages
-hg recipes
-flavor_set plain
