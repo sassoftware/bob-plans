@@ -3,11 +3,6 @@ includeConfigFile ../conf/platform-windows.conf
 includeConfigFile sources.conf
 
 
-resolveTroves []
-resolveTroves group-os=%(distro_label)s
-resolveTroves group-rpath-packages=%(common_label)s
-resolveTrovesOnly True
-
 
 target []
 
