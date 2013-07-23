@@ -18,4 +18,3 @@ sourceTree recipes platforms/platform-definition/rhel6newton
 flavor %rPL 2:x86_64% !dom0
 
 
-~                            
