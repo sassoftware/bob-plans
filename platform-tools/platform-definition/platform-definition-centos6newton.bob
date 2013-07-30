@@ -1,0 +1,20 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile sources.conf
+
+target platform-definition
+targetLabel %(master_label)s
+
+macros release_label %(master_label)s
+macros group_rpath_label %(master_label)s
+# proddef must have a unique branch version
+macros major_version %(rbuilder_forest)s
+
+
+[target:platform-definition]
+version %(version)s
+sourceTree recipes platforms/platform-definition/centos6newton
+# x86_64: main product
+flavor %rPL 2:x86_64% !dom0
+
+

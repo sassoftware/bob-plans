@@ -1,0 +1,14 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/mint.conf
+includeConfigFile common.conf
+
+macros version 1.0
+hg entsrv %(scc)s/products/rbuilder/%(rbuilder_forest)s/entsrv
+
+target entsrv
+
+[target:entsrv]
+version %(version)s_%(start_time)s_%(hg)s
+sourceTree entsrv recipes/entsrv
+hg entsrv
+flavor_set x86_64

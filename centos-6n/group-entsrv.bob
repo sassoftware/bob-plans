@@ -1,0 +1,12 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile common.conf
+
+target group-entsrv-appliance
+targetLabel %(master_label)s-entsrv
+
+hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+
+[target:group-entsrv-appliance]
+version %(version)s
+sourceTree recipes centos-6n/group-entsrv-appliance
+flavor_set x86_64
