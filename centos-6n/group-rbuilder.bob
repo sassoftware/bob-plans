@@ -4,6 +4,8 @@ includeConfigFile common.conf
 target group-rbuilder-dist
 targetLabel %(master_label)s-rba
 
+macros aemon_label %(taget_host)s@rpath:centos-6n-aemon-trunk
+
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
 [target:group-rbuilder-dist]

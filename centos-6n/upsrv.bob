@@ -5,11 +5,18 @@ includeConfigFile common.conf
 hg rbm %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbm
 
 target updateservice
+target upsrv-test
 
 # main troves
 [target:updateservice]
 sourceTree rbm recipes/updateservice
-version %(version)s.%(hg)s
+version %(version)s_%(start_time)s_%(hg)s
 macros shortVersion %(version)s
+hg rbm
+flavor_set x86_64
+
+[target:upsrv-test]
+sourceTree rbm recipes/upsrv-test
+version %(version)s_%(start_time)s_%(hg)s
 hg rbm
 flavor_set x86_64

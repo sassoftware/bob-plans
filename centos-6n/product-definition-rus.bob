@@ -5,6 +5,8 @@ target product-definition
 targetLabel %(master_label)s-updateservice
 macros project_name newton
 macros release_label %(target_label)s
+# proddef must have a unique branch version
+macros major_version %(rbuilder_forest)s
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 
