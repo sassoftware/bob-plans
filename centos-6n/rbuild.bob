@@ -1,0 +1,22 @@
+includeConfigFile ../requires/proddef.conf
+includeConfigFile ../requires/rmake.conf
+includeConfigFile ../requires/robj.conf
+includeConfigFile common.conf
+
+macros version 1.2
+hg rbuild %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbuild
+
+target rbuild
+target rbuild-test
+
+[target:rbuild]
+version %(version)s_%(start_time)s_%(hg)s
+hg rbuild
+flavor_set x86_64
+sourceTree rbuild recipes/unified/rbuild
+
+[target:rbuild-test]
+version %(version)s_%(start_time)s_%(hg)s
+hg rbuild
+flavor_set x86_64
+sourceTree rbuild recipes/unified/rbuild-test
