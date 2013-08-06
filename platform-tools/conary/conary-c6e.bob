@@ -14,11 +14,11 @@ classVar embedded True
 classVar encapsulated True
 version %(version)s_%(start_time)s_%(hg)s
 hg conary
-flavor_set x86_64
+flavor_set plain
 
 [target:conary-policy]
 sourceTree conary-policy recipes/rpl-2
 after conary
 version %(policy_version)s_%(start_time)s_%(hg)s
 hg conary-policy
-flavor_set x86_64
+flavor_set plain
