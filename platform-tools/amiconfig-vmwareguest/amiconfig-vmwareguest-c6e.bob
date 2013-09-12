@@ -4,6 +4,7 @@ includeConfigFile sources.conf
 
 target []
 target amiconfig-vmwareguest
+target amiconfig-vmwareguest-test
 
 [target:amiconfig-vmwareguest]
 sourceTree amiconfig-vmwareguest recipes/centos-6
