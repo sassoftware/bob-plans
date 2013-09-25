@@ -1,7 +1,7 @@
 includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
-macros version 2.4
+macros version 2.5
 macros policy_version 1.0
 
 hg conary %(scc)s/products/rbuilder/%(rbuilder_forest)s/conary
@@ -36,7 +36,7 @@ hg conary
 classVar plat 'centos'
 classVar platver '6'
 classVar encapsulated True
-flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split1
-flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split2
-flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split3
-flavor %rPL 2:x86_64%   conary-test.srv_apache_cached, !conary-test.coverage, conary-test.split4
+flavor %rPL 2:x86_64%   conary-test.coverage, conary-test.split1
+flavor %rPL 2:x86_64%   conary-test.coverage, conary-test.split2
+flavor %rPL 2:x86_64%   conary-test.coverage, conary-test.split3
+flavor %rPL 2:x86_64%   conary-test.coverage, conary-test.split4
