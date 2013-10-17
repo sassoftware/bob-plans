@@ -1,7 +1,8 @@
 includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
-targetLabel %(platform_label)s
+# Commit group here, then jenkins will squash it to %(platform_label)s
+targetLabel %(initial_platform_label)s
 resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
