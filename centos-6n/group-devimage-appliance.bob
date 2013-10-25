@@ -2,12 +2,20 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 target group-devimage-appliance
+target devimage-custom
+
 targetLabel %(master_label)s-devimage
 
 hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+
+[target:devimage-custom]
+sourceTree recipes centos-6n/devimage-custom
+version %(version)s_%(start_time)s
+flavor_set x86_64
 
 [target:group-devimage-appliance]
 version %(version)s
 sourceTree recipes centos-6n/group-devimage-appliance
 # x86_64: main product
 flavor %rPL 2:x86_64% !dom0
+after devimage-custom
