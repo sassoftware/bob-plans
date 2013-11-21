@@ -11,7 +11,7 @@ macros version 2.0
 hg package-creator-service %(scc)s/products/rbuilder/%(rbuilder_forest)s/pcreator
 
 # target configuration
-target conary-factory-test
+#target conary-factory-test
 target pcreator
 
 [target:pcreator]
