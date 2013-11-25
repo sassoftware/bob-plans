@@ -1,0 +1,35 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile common.conf
+
+macros version 0.6.1
+hg amiconfig %(scc)s/products/rbuilder/%(rbuilder_forest)s/amiconfig
+hg amiconfig-vmwareguest %(scc)s/products/rbuilder/%(rbuilder_forest)s/amiconfig-vmwareguest
+
+target amiconfig
+target amiconfig-test
+target amiconfig-vmwareguest
+target amiconfig-vmwareguest-test
+
+[target:amiconfig]
+sourceTree amiconfig recipes/unified/amiconfig
+version %(version)s.%(hg)s
+hg amiconfig
+flavor_set x86_64
+
+[target:amiconfig-test]
+sourceTree amiconfig recipes/unified/amiconfig-test
+version %(version)s.%(hg)s
+hg amiconfig
+flavor_set x86_64
+
+[target:amiconfig-vmwareguest]
+sourceTree amiconfig-vmwareguest recipes/unified/amiconfig-vmwareguest
+version %(version)s.%(hg)s
+hg amiconfig-vmwareguest
+flavor_set x86_64
+
+[target:amiconfig-vmwareguest-test]
+sourceTree amiconfig-vmwareguest recipes/unified/amiconfig-vmwareguest-test
+version %(version)s.%(hg)s
+hg amiconfig-vmwareguest
+flavor_set x86_64
