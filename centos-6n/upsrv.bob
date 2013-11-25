@@ -1,4 +1,5 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rmake3.conf
 includeConfigFile common.conf
 
 # source materials
