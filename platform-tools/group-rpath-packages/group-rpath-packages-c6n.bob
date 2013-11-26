@@ -1,0 +1,14 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6n.conf
+includeConfigFile sources.conf
+
+
+resolveTroves []
+resolveTroves group-os=%(distro_label)s
+resolveTroves group-rpath-packages=%(common_label)s
+resolveTrovesOnly True
+
+targetLabel %(group_label)s
+
+target []
+target group-rpath-packages
