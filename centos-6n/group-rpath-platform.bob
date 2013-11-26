@@ -15,4 +15,4 @@ hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
 [target:group-rpath-platform]
 version %(version)s
 sourceTree recipes centos-6n/group-rpath-platform
-flavor_set x86_64
+flavor_set plain

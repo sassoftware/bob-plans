@@ -14,7 +14,7 @@ target amiconfig-vmwareguest-test
 sourceTree amiconfig recipes/unified/amiconfig
 version %(version)s.%(hg)s
 hg amiconfig
-flavor_set x86_64
+flavor_set plain
 
 [target:amiconfig-test]
 sourceTree amiconfig recipes/unified/amiconfig-test
@@ -26,7 +26,7 @@ flavor_set x86_64
 sourceTree amiconfig-vmwareguest recipes/unified/amiconfig-vmwareguest
 version %(version)s.%(hg)s
 hg amiconfig-vmwareguest
-flavor_set x86_64
+flavor_set plain
 
 [target:amiconfig-vmwareguest-test]
 sourceTree amiconfig-vmwareguest recipes/unified/amiconfig-vmwareguest-test

@@ -11,4 +11,4 @@ target xobj
 sourceTree xobj recipes/centos-6n/xobj
 version %(version)s.%(hg)s
 hg xobj
-flavor_set x86_64
+flavor_set plain

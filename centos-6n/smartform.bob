@@ -11,4 +11,4 @@ target smartform
 sourceTree smartform recipes/centos-6n
 version %(version)s.%(hg)s
 hg smartform
-flavor_set x86_64
+flavor_set plain

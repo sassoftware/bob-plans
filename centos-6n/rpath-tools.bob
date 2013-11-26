@@ -11,7 +11,7 @@ target rpath-tools
 [target:rpath-tools]
 version %(version)s.%(hg)s
 hg rpath-tools
-flavor_set x86_64
+flavor_set plain
 classVar plat 'centos'
 classVar platver '6'
 classVar embedded False
