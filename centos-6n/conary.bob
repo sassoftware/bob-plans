@@ -36,6 +36,7 @@ hg conary
 classVar plat 'centos'
 classVar platver '6'
 classVar encapsulated True
+flavor %rPL 2:x86%   !conary-test.test
 flavor %rPL 2:x86_64%   !conary-test.coverage, conary-test.split1
 flavor %rPL 2:x86_64%   !conary-test.coverage, conary-test.split2
 flavor %rPL 2:x86_64%   !conary-test.coverage, conary-test.split3
