@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg restlib %(scc)s/products/rbuilder/%(rbuilder_forest)s/restlib
+scm restlib wms scc/restlib %(rbuilder_forest)s
 
 target restlib
 target restlib-test
@@ -10,11 +10,11 @@ target restlib-test
 [target:restlib]
 version %(version)s.%(hg)s
 sourceTree restlib recipes/centos-6n/restlib
-hg restlib
+scm restlib
 flavor_set x86_64
 
 [target:restlib-test]
 version %(version)s.%(hg)s
 sourceTree restlib recipes/centos-6n/restlib-test
-hg restlib
+scm restlib
 flavor_set x86_64

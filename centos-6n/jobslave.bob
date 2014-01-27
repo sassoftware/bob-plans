@@ -5,7 +5,7 @@ includeConfigFile ../requires/proddef.conf
 
 includeConfigFile common.conf
 
-hg jobslave %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobslave
+scm jobslave wms scc/jobslave %(rbuilder_forest)s
 
 target group-jobslave
 target jobslave
@@ -13,7 +13,7 @@ target jobslave
 [target:jobslave]
 sourceTree jobslave recipes/jobslave
 version %(version)s.%(hg)s
-hg jobslave
+scm jobslave
 flavor_set x86_64
 
 [target:group-jobslave]

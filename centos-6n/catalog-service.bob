@@ -11,7 +11,7 @@ includeConfigFile ../requires/smartform.conf
 
 includeConfigFile common.conf
 
-hg catalog-service %(scc)s/products/rbuilder/%(rbuilder_forest)s/catalog-service
+scm catalog-service wms scc/catalog-service %(rbuilder_forest)s
 
 target catalog-service-test
 target catalog-service
@@ -19,13 +19,13 @@ target catalog-service
 [target:catalog-service]
 sourceTree catalog-service recipes/catalog-service
 version %(version)s.%(hg)s
-hg catalog-service
+scm catalog-service
 flavor_set x86_64
 #flavor_set plain
 
 [target:catalog-service-test]
 sourceTree catalog-service recipes/catalog-service-test
 version %(version)s.%(hg)s
-hg catalog-service
+scm catalog-service
 flavor_set x86_64
 #flavor_set plain

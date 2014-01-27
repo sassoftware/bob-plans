@@ -3,12 +3,12 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-hg smartform %(scc)s/products/rbuilder/%(rbuilder_forest)s/smartform
+scm smartform wms scc/smartform %(rbuilder_forest)s
 
 target smartform
 
 [target:smartform]
 sourceTree smartform recipes/centos-6n
 version %(version)s.%(hg)s
-hg smartform
+scm smartform
 flavor_set plain

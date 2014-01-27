@@ -9,12 +9,12 @@ target amiconfig-vmwareguest-test
 [target:amiconfig-vmwareguest]
 sourceTree amiconfig-vmwareguest recipes/centos-6
 version %(version)s.%(hg)s
-hg amiconfig-vmwareguest
+scm amiconfig-vmwareguest
 flavor_set plain
 
 [target:amiconfig-vmwareguest-test]
 sourceTree amiconfig-vmwareguest recipes/centos-6
 version %(version)s.%(hg)s
-hg amiconfig-vmwareguest
+scm amiconfig-vmwareguest
 flavor_set plain
 

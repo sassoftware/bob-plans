@@ -7,7 +7,7 @@ includeConfigFile ../requires/wmiclient.conf
 includeConfigFile common.conf
 
 macros version 0
-hg rpath-repeater %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-repeater
+scm rpath-repeater wms scc/rpath-repeater %(rbuilder_forest)s
 
 target rpath-repeater
 target rpath-repeater-test
@@ -15,11 +15,11 @@ target rpath-repeater-test
 [target:rpath-repeater]
 sourceTree rpath-repeater recipes/rpath-repeater
 version %(version)s.%(hg)s
-hg rpath-repeater
+scm rpath-repeater
 flavor_set x86_64
 
 [target:rpath-repeater-test]
 sourceTree rpath-repeater recipes/rpath-repeater-test
 version %(version)s.%(hg)s
-hg rpath-repeater
+scm rpath-repeater
 flavor_set x86_64

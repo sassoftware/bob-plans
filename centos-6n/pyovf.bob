@@ -4,12 +4,12 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-hg pyovf %(scc)s/products/rbuilder/%(rbuilder_forest)s/pyovf
+scm pyovf wms scc/pyovf %(rbuilder_forest)s
 
 target pyovf
 
 [target:pyovf]
 version %(version)s.%(hg)s
-hg pyovf
+scm pyovf
 flavor_set x86_64
 sourceTree pyovf recipes/centos-6n

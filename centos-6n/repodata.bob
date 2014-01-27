@@ -3,7 +3,7 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg repodata %(scc)s/products/rbuilder/%(rbuilder_forest)s/repodata
+scm repodata wms scc/repodata %(rbuilder_forest)s
 
 target repodata-test
 target repodata
@@ -11,12 +11,12 @@ target repodata
 
 [target:repodata]
 version %(version)s.%(hg)s
-hg repodata
+scm repodata
 flavor_set x86_64
 sourceTree repodata recipes/centos-6n/repodata
 
 [target:repodata-test]
 version %(version)s.%(hg)s
-hg repodata
+scm repodata
 flavor_set x86_64
 sourceTree repodata recipes/centos-6n/repodata-test

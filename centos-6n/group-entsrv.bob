@@ -4,7 +4,7 @@ includeConfigFile common.conf
 target group-entsrv-appliance
 targetLabel %(master_label)s-entsrv
 
-hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+scm recipes wms scc/recipes %(rbuilder_forest)s
 
 [target:group-entsrv-appliance]
 version %(version)s

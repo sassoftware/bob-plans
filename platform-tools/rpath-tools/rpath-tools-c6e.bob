@@ -9,7 +9,7 @@ target rpath-tools
 [target:rpath-tools]
 sourceTree rpath-tools recipes/unified/rpath-tools
 version %(version)s.%(hg)s
-hg rpath-tools
+scm rpath-tools
 flavor_set plain
 classVar plat 'centos'
 classVar platver '6'

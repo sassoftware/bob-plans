@@ -4,19 +4,19 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg rpath-storage %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-storage
+scm rpath-storage wms scc/rpath-storage %(rbuilder_forest)s
 
 target rpath-storage-test
 target rpath-storage
 
 [target:rpath-storage]
 version %(version)s.%(hg)s
-hg rpath-storage
+scm rpath-storage
 sourceTree rpath-storage recipes/rpath-storage
 flavor_set x86_64
 
 [target:rpath-storage-test]
 version %(version)s.%(hg)s
-hg rpath-storage
+scm rpath-storage
 sourceTree rpath-storage recipes/rpath-storage-test
 flavor_set x86_64

@@ -6,7 +6,7 @@ targetLabel %(master_label)s-rwbs-infra
 macros project_name pdt
 macros release_label pdt.cny.sas.com@sas:rwbs-%(major_version)s
 
-hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+scm recipes wms scc/recipes %(rbuilder_forest)s
 
 [target:product-definition]
 version %(version)s

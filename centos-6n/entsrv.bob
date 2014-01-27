@@ -3,12 +3,12 @@ includeConfigFile ../requires/mint.conf
 includeConfigFile common.conf
 
 macros version 1.0
-hg entsrv %(scc)s/products/rbuilder/%(rbuilder_forest)s/entsrv
+scm entsrv wms scc/entsrv %(rbuilder_forest)s
 
 target entsrv
 
 [target:entsrv]
 version %(version)s_%(start_time)s_%(hg)s
 sourceTree entsrv recipes/entsrv
-hg entsrv
+scm entsrv
 flavor_set x86_64

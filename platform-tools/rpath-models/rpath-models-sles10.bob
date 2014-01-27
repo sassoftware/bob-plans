@@ -8,6 +8,6 @@ target rpath-models
 [target:rpath-models]
 sourceTree rpath-models recipes/sles10
 version %(version)s.%(hg)s
-hg rpath-models
+scm rpath-models
 flavor_set plain
 

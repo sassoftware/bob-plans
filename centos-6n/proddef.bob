@@ -4,7 +4,7 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 4.5
-hg product-definition %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-product-definition
+scm product-definition wms scc/rpath-product-definition %(rbuilder_forest)s
 
 target rpath-product-definition
 target rpath-product-definition-test
@@ -12,11 +12,11 @@ target rpath-product-definition-test
 [target:rpath-product-definition]
 sourceTree product-definition recipes/centos-6n/rpath-product-definition
 version %(version)s.%(hg)s
-hg product-definition
+scm product-definition
 flavor_set x86_64
 
 [target:rpath-product-definition-test]
 sourceTree product-definition recipes/centos-6n/rpath-product-definition-test
 version %(version)s.%(hg)s
-hg product-definition
+scm product-definition
 flavor_set x86_64

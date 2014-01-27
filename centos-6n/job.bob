@@ -5,12 +5,12 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg rpath-job %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-job
+scm rpath-job wms scc/rpath-job %(rbuilder_forest)s
 
 target rpath-job
 
 [target:rpath-job]
 version %(version)s.%(hg)s
-hg rpath-job
+scm rpath-job
 flavor_set x86_64
 sourceTree rpath-job recipes/centos-6n

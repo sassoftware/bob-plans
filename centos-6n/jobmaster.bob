@@ -4,13 +4,13 @@ includeConfigFile ../requires/mcp.conf
 
 includeConfigFile common.conf
 
-hg jobmaster %(scc)s/products/rbuilder/%(rbuilder_forest)s/jobmaster
+scm jobmaster wms scc/jobmaster %(rbuilder_forest)s
 
 target jobmaster
 
 [target:jobmaster]
 version %(version)s.%(hg)s
-hg jobmaster
+scm jobmaster
 sourceTree jobmaster recipes/jobmaster
 flavor is: x86_64
 

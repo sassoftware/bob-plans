@@ -5,19 +5,19 @@ includeConfigFile ../requires/smartform.conf
 includeConfigFile common.conf
 
 macros version 1.2
-hg rbuild %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbuild
+scm rbuild wms scc/rbuild %(rbuilder_forest)s
 
 target rbuild
 target rbuild-test
 
 [target:rbuild]
 version %(version)s_%(start_time)s_%(hg)s
-hg rbuild
+scm rbuild
 flavor_set x86_64
 sourceTree rbuild recipes/unified/rbuild
 
 [target:rbuild-test]
 version %(version)s_%(start_time)s_%(hg)s
-hg rbuild
+scm rbuild
 flavor_set x86_64
 sourceTree rbuild recipes/unified/rbuild-test

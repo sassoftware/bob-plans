@@ -4,13 +4,13 @@ includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xml_resources.conf
 includeConfigFile common.conf
 
-hg rpath-tools %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-tools
+scm rpath-tools wms scc/rpath-tools %(rbuilder_forest)s
 
 target rpath-tools
 
 [target:rpath-tools]
 version %(version)s.%(hg)s
-hg rpath-tools
+scm rpath-tools
 flavor_set plain
 classVar plat 'centos'
 classVar platver '6'

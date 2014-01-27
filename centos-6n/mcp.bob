@@ -2,12 +2,12 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rmake.conf
 includeConfigFile common.conf
 
-hg mcp %(scc)s/products/rbuilder/%(rbuilder_forest)s/mcp
+scm mcp wms scc/mcp %(rbuilder_forest)s
 
 target mcp
 
 [target:mcp]
 sourceTree mcp recipe
 version %(version)s.%(hg)s
-hg mcp
+scm mcp
 flavor_set x86_64

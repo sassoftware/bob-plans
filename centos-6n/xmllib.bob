@@ -2,19 +2,19 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0.1
-hg rpath-xmllib %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-xmllib
+scm rpath-xmllib wms scc/rpath-xmllib %(rbuilder_forest)s
 
 target rpath-xmllib-test
 target rpath-xmllib
 
 [target:rpath-xmllib]
 version %(version)s.%(hg)s
-hg rpath-xmllib
+scm rpath-xmllib
 flavor_set x86_64
 sourceTree rpath-xmllib recipes/centos-6n/rpath-xmllib
 
 [target:rpath-xmllib-test]
 version %(version)s.%(hg)s
-hg rpath-xmllib
+scm rpath-xmllib
 flavor_set x86_64
 sourceTree rpath-xmllib recipes/centos-6n/rpath-xmllib-test

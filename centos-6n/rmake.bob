@@ -5,7 +5,7 @@ includeConfigFile common.conf
 macros version 2.1
 macros base_version %(version)s
 
-hg rmake %(scc)s/products/rbuilder/%(rbuilder_forest)s/rmake
+scm rmake wms scc/rmake %(rbuilder_forest)s
 
 target rmake
 target rmake-test
@@ -13,12 +13,12 @@ target rmake-test
 [target:rmake]
 sourceTree rmake recipes/centos-6n/rmake
 version %(version)s.%(hg)s
-hg rmake
+scm rmake
 flavor_set plain
 
 [target:rmake-test]
 sourceTree rmake recipes/centos-6n/rmake-test
 version %(version)s.%(hg)s
-hg rmake
+scm rmake
 # FIXME?
 flavor %rPL 2:x86_64% !rmake-test.test

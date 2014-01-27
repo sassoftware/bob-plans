@@ -4,8 +4,8 @@ includeConfigFile common.conf
 macros version 2.5
 macros policy_version 1.0
 
-hg conary %(scc)s/products/rbuilder/%(rbuilder_forest)s/conary
-hg conary-policy %(scc)s/products/rbuilder/%(rbuilder_forest)s/conary-policy
+scm conary wms scc/conary %(rbuilder_forest)s
+scm conary-policy wms scc/conary-policy %(rbuilder_forest)s
 
 target conary
 target conary-policy
@@ -18,21 +18,21 @@ classVar platver '6'
 classVar embedded False
 classVar encapsulated True
 version %(version)s_%(start_time)s_%(hg)s
-hg conary
+scm conary
 flavor_set plain
 
 [target:conary-policy]
 sourceTree conary-policy recipes/rpl-2
 after conary
 version %(policy_version)s_%(start_time)s_%(hg)s
-hg conary-policy
+scm conary-policy
 flavor_set plain
 
 [target:conary-test]
 sourceTree conary recipes/unified/conary-test
 after conary-policy
 version %(version)s_%(start_time)s_%(hg)s
-hg conary
+scm conary
 classVar plat 'centos'
 classVar platver '6'
 classVar encapsulated True

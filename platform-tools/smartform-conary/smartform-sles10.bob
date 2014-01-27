@@ -8,5 +8,5 @@ target smartform-conary
 [target:smartform-conary]
 sourceTree smartform recipes/sles10
 version %(version)s.%(hg)s
-hg smartform
+scm smartform
 flavor_set plain

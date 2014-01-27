@@ -2,12 +2,12 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 1.0
-hg rpath-models %(scc)s/products/rbuilder/%(rbuilder_forest)s/rpath-models
+scm rpath-models wms scc/rpath-models %(rbuilder_forest)s
 
 target rpath-models
 
 [target:rpath-models]
 version %(version)s.%(hg)s
-hg rpath-models
+scm rpath-models
 flavor_set plain
 sourceTree rpath-models recipes/centos-6n

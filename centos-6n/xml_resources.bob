@@ -3,7 +3,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0
-hg xml_resources %(scc)s/products/rbuilder/%(rbuilder_forest)s/xml_resources
+scm xml_resources wms scc/xml_resources %(rbuilder_forest)s
 
 # target configuration
 target xml_resources
@@ -11,5 +11,5 @@ target xml_resources
 [target:xml_resources]
 sourceTree xml_resources recipes/xml_resources
 version %(version)s.%(hg)s
-hg xml_resources
+scm xml_resources
 flavor_set x86_64

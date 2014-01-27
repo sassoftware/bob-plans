@@ -9,12 +9,12 @@ target iconfig
 [target:iconfig]
 sourceTree iconfig recipes/centos-5e/iconfig
 version %(version)s.%(hg)s
-hg iconfig
+scm iconfig
 flavor_set plain
 
 [target:iconfig-test]
 sourceTree iconfig recipes/centos-5e/iconfig-test
 version %(version)s.%(hg)s
-hg iconfig
+scm iconfig
 flavor_set plain
 

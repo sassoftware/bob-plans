@@ -5,7 +5,7 @@ includeConfigFile ../requires/flexsdk.conf
 includeConfigFile common.conf
 
 macros version 0
-hg rbuilder-ui %(scc)s/products/rbuilder/%(rbuilder_forest)s/rbuilder-ui
+scm rbuilder-ui wms scc/rbuilder-ui %(rbuilder_forest)s
 
 # target configuration
 target rbuilder-ui
@@ -13,5 +13,5 @@ target rbuilder-ui
 [target:rbuilder-ui]
 sourceTree rbuilder-ui recipes/rbuilder-ui
 version %(version)s.%(hg)s
-hg rbuilder-ui
+scm rbuilder-ui
 flavor_set x86_64

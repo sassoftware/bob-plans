@@ -3,19 +3,19 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-hg robj %(scc)s/products/rbuilder/%(rbuilder_forest)s/robj
+scm robj wms scc/robj %(rbuilder_forest)s
 
 target robj
 target robj-test
 
 [target:robj]
 version %(version)s.%(hg)s
-hg robj
+scm robj
 flavor_set x86_64
 sourceTree robj recipes/centos-6n/robj
 
 [target:robj-test]
 version %(version)s.%(hg)s
-hg robj
+scm robj
 flavor_set x86_64
 sourceTree robj recipes/centos-6n/robj-test

@@ -6,7 +6,7 @@ target devimage-custom
 
 targetLabel %(master_label)s-devimage
 
-hg recipes %(scc)s/products/rbuilder/%(rbuilder_forest)s/recipes
+scm recipes wms scc/recipes %(rbuilder_forest)s
 
 [target:devimage-custom]
 sourceTree recipes centos-6n/devimage-custom
