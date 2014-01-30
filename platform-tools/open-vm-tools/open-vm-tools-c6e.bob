@@ -3,8 +3,8 @@ includeConfigFile ../conf/platform-centos-6e.conf
 includeConfigFile sources.conf
 
 resolveTroves []
-resolveTroves group-os=%(distro_label)s
-resolveTroves group-rpath-packages=%(common_label)s
+resolveTroves group-os=centos6.rpath.com@rpath:centos-6e/2013.02.28_0205.21-1-1
+resolveTroves group-rpath-packages=centos6.rpath.com@rpath:centos-6-common/201302141511-1-2
 resolveTrovesOnly True
 
 macros version 9.4.0_1280544
