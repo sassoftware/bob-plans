@@ -1,0 +1,19 @@
+# FIXME: temporary until 2.5.2 is released
+resolveTroves \
+    conary=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
+    conary-build=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
+    conary-repository=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1
+includeConfigFile ../requires/upstream.conf
+includeConfigFile common.conf
+
+macros version 1.3
+
+scm conary-policy wms scc/conary-policy %(rbuilder_forest)s
+
+target conary-policy
+
+[target:conary-policy]
+sourceTree conary-policy recipes/rpl-2
+version %(version)s_%(start_time)s_%(hg)s
+scm conary-policy
+flavor_set plain

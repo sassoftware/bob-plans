@@ -3,17 +3,15 @@ resolveTroves \
     conary=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
     conary-build=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
     conary-repository=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1
+includeConfigFile ../requires/conary-policy.conf
 includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
 macros version 2.5
-macros policy_version 1.0
 
 scm conary wms scc/conary %(rbuilder_forest)s
-scm conary-policy wms scc/conary-policy %(rbuilder_forest)s
 
 target conary
-target conary-policy
 target conary-test
 
 [target:conary]
@@ -26,16 +24,9 @@ version %(version)s_%(start_time)s_%(hg)s
 scm conary
 flavor_set plain
 
-[target:conary-policy]
-sourceTree conary-policy recipes/rpl-2
-after conary
-version %(policy_version)s_%(start_time)s_%(hg)s
-scm conary-policy
-flavor_set plain
-
 [target:conary-test]
 sourceTree conary recipes/unified/conary-test
-after conary-policy
+after conary
 version %(version)s_%(start_time)s_%(hg)s
 scm conary
 classVar plat 'centos'
