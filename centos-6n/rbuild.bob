@@ -1,6 +1,7 @@
 includeConfigFile ../requires/proddef.conf
 includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/robj.conf
+includeConfigFile ../requires/smartform.conf
 includeConfigFile common.conf
 
 macros version 1.2
