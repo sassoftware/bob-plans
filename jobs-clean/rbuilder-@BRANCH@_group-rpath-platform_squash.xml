@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project>
+  <actions />
+  <description />
+  <keepDependencies>false</keepDependencies>
+  <properties />
+  <scm class="hudson.plugins.mercurial.MercurialSCM" plugin="mercurial@1.49">
+    <source>http://scc.unx.sas.com/infra/promote-scripts</source>
+    <modules />
+    <clean>false</clean>
+    <browser class="hudson.plugins.mercurial.browser.HgWeb">
+      <url>http://scc.unx.sas.com/infra/promote-scripts/</url>
+    </browser>
+    <credentialsId />
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers />
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>./promote_safe.py --clear \ /newton.eng.rpath.com@sas:rba-@BRANCH@-platform \ group-rpath-platform=newton.eng.rpath.com@sas:platform-@BRANCH@-devel \ --message='Automated flattening of platform group'</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers />
+</project>
