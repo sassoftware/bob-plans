@@ -38,7 +38,7 @@ case "$cmd" in
         # Rewrite SCM watch paths and inter-job dependencies to match the .bob files
         bob-deps centos-6n --scm --graph >meta/graph.py
         python meta/jenkins_deps.py
-        git add -u jobs-clean
+        git add -u meta/graph.py jobs-clean
         git status
         echo "Deps updated, now run './manage.sh push $branch' and 'git commit'"
         ;;
