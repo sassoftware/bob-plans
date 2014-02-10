@@ -63,6 +63,7 @@ case "$cmd" in
             fi
             rm -f "jobs/$name"
         done
+        rm -f "$existing"
         echo "Pushed all jobs in branch '$branch' to jenkins"
         extra=$(ls jobs)
         if [[ -n "$extra" ]]
