@@ -109,9 +109,12 @@ def main():
         xml = jobs_xml[job]
         out = os.path.join(top, job)
         with open(out + '.tmp', 'w') as f:
-            p = subprocess.Popen(['tidy -i -xml -quiet -wrap 0'],
+            print >>f, "<?xml version='1.0' encoding='utf-8'?>"
+            f.flush()
+            p = subprocess.Popen(['tidy -i -xml -quiet -wrap 0 -utf8'],
                     stdin=subprocess.PIPE, stdout=f, shell=True)
-            p.communicate(etree.tostring(xml.getroot()))
+            xml.write(p.stdin)
+            p.stdin.close()
             if p.wait():
                 sys.exit("tidy failed")
         os.rename(out + '.tmp', out)
