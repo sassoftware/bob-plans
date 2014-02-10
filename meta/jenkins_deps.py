@@ -6,7 +6,7 @@
 import os
 import subprocess
 import sys
-from lxml import etree
+from xml.etree import ElementTree as etree
 try:
     from graph import dep_graph, scm_deps
 except ImportError:
@@ -111,7 +111,7 @@ def main():
         with open(out + '.tmp', 'w') as f:
             p = subprocess.Popen(['tidy -i -xml -quiet -wrap 0'],
                     stdin=subprocess.PIPE, stdout=f, shell=True)
-            p.communicate(etree.tostring(xml))
+            p.communicate(etree.tostring(xml.getroot()))
             if p.wait():
                 sys.exit("tidy failed")
         os.rename(out + '.tmp', out)

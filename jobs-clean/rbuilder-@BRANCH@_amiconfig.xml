@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <project>
   <actions />
   <description />
@@ -34,11 +35,11 @@
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
         <watchRepo>scc/amiconfig-vmwareguest</watchRepo>
-        <watchPath></watchPath>
+        <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
         <watchRepo>scc/amiconfig</watchRepo>
-        <watchPath></watchPath>
+        <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
   </scm>

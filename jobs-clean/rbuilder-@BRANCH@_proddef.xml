@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <project>
   <actions />
   <description />
@@ -43,7 +44,7 @@
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
         <watchRepo>scc/rpath-product-definition</watchRepo>
-        <watchPath></watchPath>
+        <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
   </scm>
