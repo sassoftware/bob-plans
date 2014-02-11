@@ -1,0 +1,6 @@
+contact                   jenkins@jenkins2.unx.sas.com
+name                      Jenkins
+user                      bob thebuilder
+quiet                     False
+serverUrl                 https://rba.cny.sas.com
+rmakeurl                  https://build100.unx.sas.com
