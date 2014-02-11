@@ -4,6 +4,16 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+    <path>scc/appengine</path>
+    <branch>@BRANCH@</branch>
+    <watchPaths>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>scc/recipes</watchRepo>
+        <watchPath>centos-6n/group-updateservice-appliance</watchPath>
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+    </watchPaths>
+  </scm>
   <quietPeriod>15</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -24,9 +34,6 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/group-updatese
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher plugin="blame-upstream-commiters@1.2">
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.8">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
@@ -34,17 +41,5 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/group-updatese
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
   </publishers>
-  <buildWrappers>
-    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.7" />
-  </buildWrappers>
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
-    <branch>@BRANCH@</branch>
-    <watchPaths>
-      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/recipes</watchRepo>
-        <watchPath>centos-6n/group-updateservice-appliance</watchPath>
-      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-    </watchPaths>
-  </scm>
+  <buildWrappers />
 </project>

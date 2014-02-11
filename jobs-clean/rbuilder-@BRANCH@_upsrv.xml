@@ -4,6 +4,16 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+    <path>scc/appengine</path>
+    <branch>@BRANCH@</branch>
+    <watchPaths>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>scc/rbm</watchRepo>
+        <watchPath />
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+    </watchPaths>
+  </scm>
   <quietPeriod>15</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -24,10 +34,16 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/upsrv.bob
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher plugin="blame-upstream-commiters@1.2">
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.8">
+    <hudson.tasks.BuildTrigger>
+      <childProjects>rbuilder-@BRANCH@_group-updateservice</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
@@ -43,17 +59,5 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/upsrv.bob
       </threshold>
     </hudson.tasks.BuildTrigger>
   </publishers>
-  <buildWrappers>
-    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.7" />
-  </buildWrappers>
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
-    <branch>@BRANCH@</branch>
-    <watchPaths>
-      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/rbm</watchRepo>
-        <watchPath />
-      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-    </watchPaths>
-  </scm>
+  <buildWrappers />
 </project>

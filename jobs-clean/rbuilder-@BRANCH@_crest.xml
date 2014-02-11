@@ -4,6 +4,16 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+    <path>scc/appengine</path>
+    <branch>@BRANCH@</branch>
+    <watchPaths>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>scc/crest</watchRepo>
+        <watchPath />
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+    </watchPaths>
+  </scm>
   <quietPeriod>15</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -29,6 +39,12 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/crest.bob
       <keepLongStdio>false</keepLongStdio>
       <testDataPublishers />
     </hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
+      <regexp>Revisions built: (.*)</regexp>
+      <regexpForFailed />
+      <description>\1</description>
+      <setForMatrix>false</setForMatrix>
+    </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
       <childProjects>rbuilder-@BRANCH@_mint</childProjects>
       <threshold>
@@ -40,14 +56,4 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/crest.bob
     </hudson.tasks.BuildTrigger>
   </publishers>
   <buildWrappers />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
-    <branch>@BRANCH@</branch>
-    <watchPaths>
-      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/crest</watchRepo>
-        <watchPath />
-      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-    </watchPaths>
-  </scm>
 </project>

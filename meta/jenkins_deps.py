@@ -72,6 +72,16 @@ def main():
             if publisher.tag == 'hudson.tasks.BuildTrigger':
                 children.update(publisher.find('childProjects').text.split(', '))
                 publishers.remove(publisher)
+            elif publisher.tag == 'hudson.plugins.descriptionsetter.DescriptionSetterPublisher':
+                publishers.remove(publisher)
+
+        publisher = etree.SubElement(publishers, 'hudson.plugins.descriptionsetter.DescriptionSetterPublisher')
+        publisher.attrib['plugin'] = 'description-setter'
+        etree.SubElement(publisher, 'regexp').text = 'Revisions built: (.*)'
+        etree.SubElement(publisher, 'regexpForFailed')
+        etree.SubElement(publisher, 'description').text = '\\1'
+        etree.SubElement(publisher, 'setForMatrix').text = 'false'
+
         publisher = etree.SubElement(publishers, 'hudson.tasks.BuildTrigger')
         etree.SubElement(publisher, 'childProjects').text = ', '.join(sorted(children))
         threshold = etree.SubElement(publisher, 'threshold')
@@ -93,7 +103,10 @@ def main():
         scm = xml.find('scm')
         if scm is not None:
             project.remove(scm)
-        scm = etree.SubElement(project, 'scm')
+        scm = etree.Element('scm')
+        index = project.getchildren().index(project.find('properties')) + 1
+        project.insert(index, scm)
+
         scm.attrib['class'] = 'org.jenkinsci.plugins.git_wms.GitWMSAgent'
         etree.SubElement(scm, 'path').text = forest
         etree.SubElement(scm, 'branch').text = '@BRANCH@'

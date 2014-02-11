@@ -4,6 +4,20 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+    <path>scc/appengine</path>
+    <branch>@BRANCH@</branch>
+    <watchPaths>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>scc/amiconfig-vmwareguest</watchRepo>
+        <watchPath />
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>scc/amiconfig</watchRepo>
+        <watchPath />
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+    </watchPaths>
+  </scm>
   <quietPeriod>15</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -31,18 +45,4 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/amiconfig.bob
     </hudson.tasks.junit.JUnitResultArchiver>
   </publishers>
   <buildWrappers />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
-    <branch>@BRANCH@</branch>
-    <watchPaths>
-      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/amiconfig-vmwareguest</watchRepo>
-        <watchPath />
-      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/amiconfig</watchRepo>
-        <watchPath />
-      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-    </watchPaths>
-  </scm>
 </project>
