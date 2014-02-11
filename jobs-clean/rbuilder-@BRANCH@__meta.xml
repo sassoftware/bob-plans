@@ -39,6 +39,7 @@
     <hudson.tasks.Shell>
       <command>
 ./manage.sh fetch @BRANCH@ || exit 1
+./manage.sh update-deps @BRANCH@ || exit 1
 if ! git diff-index --quiet HEAD
 then
   git branch -D meta-import &gt;&amp;/dev/null ||:
