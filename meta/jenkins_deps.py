@@ -68,7 +68,7 @@ def main():
 
         publishers = xml.find('publishers')
         children = set(x.rsplit('.', 1)[0] for x in after_jobs)
-        for publisher in publishers.getchildren():
+        for publisher in list(publishers.getchildren()):
             if publisher.tag == 'hudson.tasks.BuildTrigger':
                 children.update(publisher.find('childProjects').text.split(', '))
                 publishers.remove(publisher)

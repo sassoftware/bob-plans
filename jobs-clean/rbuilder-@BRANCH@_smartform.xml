@@ -34,15 +34,6 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/smartform.bob
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_flexlibs, rbuilder-@BRANCH@_pcreator, rbuilder-@BRANCH@_rbuild, rbuilder-@BRANCH@_rpath-tools</childProjects>
-      <threshold>
-        <name>SUCCESS</name>
-        <ordinal>0</ordinal>
-        <color>BLUE</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </hudson.tasks.BuildTrigger>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
