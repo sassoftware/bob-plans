@@ -18,7 +18,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/home/mithar/code/infra/bob-4/bin/bob-jenkins --base-uri http://wheresmystuff.unx.sas.com --repo scc/bob-plans --plan centos-6n/wmiclient.bob</command>
+      <command>bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/wmiclient.bob</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
