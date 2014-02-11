@@ -23,7 +23,7 @@ mkdir -p "$image_dir"
     -o "$temp_name"
 find "$label_dir" -type d -exec chmod 0755 {} +
 find "$label_dir" -type f -exec chmod 0644 {} +
-#explodeiso "$temp_name" "$image_dir/contents"
+explodeiso "$temp_name" "$image_dir/contents"
 mv "$temp_name" "$image_name"
 ln -fn "$image_name" "$label_dir/$image_base"
 ln -sfn "$image_dir" "$label_dir/current"
