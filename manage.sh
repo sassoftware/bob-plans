@@ -26,7 +26,7 @@ case "$cmd" in
         for job in jobs/*.xml
         do
             name=$(echo $(basename $job) | sed -e "s/${branch}/@BRANCH@/g")
-            sed -e "s/$branch/@BRANCH@/g" "$job" | tidy -i -xml -quiet -wrap 0 >"jobs-clean/$name"
+            sed -e "s/$branch/@BRANCH@/g" "$job" | tidy -config meta/tidy.conf >"jobs-clean/$name"
         done
         git add jobs-clean
         git add -u jobs-clean

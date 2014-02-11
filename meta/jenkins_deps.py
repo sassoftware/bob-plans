@@ -111,7 +111,7 @@ def main():
         with open(out + '.tmp', 'w') as f:
             print >>f, "<?xml version='1.0' encoding='utf-8'?>"
             f.flush()
-            p = subprocess.Popen(['tidy -i -xml -quiet -wrap 0 -utf8'],
+            p = subprocess.Popen(['tidy -config meta/tidy.conf'],
                     stdin=subprocess.PIPE, stdout=f, shell=True)
             xml.write(p.stdin)
             p.stdin.close()

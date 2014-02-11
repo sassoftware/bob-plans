@@ -18,7 +18,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/xmllib.bob</command>
+      <command>
+bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/xmllib.bob
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
