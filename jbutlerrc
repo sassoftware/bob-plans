@@ -1,1 +1,2 @@
-server http://mithar-devimage.na.sas.com:8080
+server https://jenkins2.unx.sas.com
+ssl_verify false
