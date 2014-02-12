@@ -1,0 +1,41 @@
+kmod-virtualbox-addons=4.3.6_91406-12-1[~!kmod-virtualbox-addons.debug]
+  Provides:
+    trove: kmod-virtualbox-addons
+
+  Requires:
+     None
+
+  kmod-virtualbox-addons:lib=4.3.6_91406-12-1[~!kmod-virtualbox-addons.debug]
+    Provides:
+      trove: kmod-virtualbox-addons:lib
+      soname: ELF64/lib/modules/2.6.32-131.21.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-131.21.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-131.21.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-220.23.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-220.23.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-220.23.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-279.22.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-279.22.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-279.22.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-358.23.2.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-358.23.2.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-358.23.2.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-431.3.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-431.3.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-431.3.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-71.29.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxguest.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-71.29.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxsf.ko(SysV x86_64)
+      soname: ELF64/lib/modules/2.6.32-71.29.1.el6.x86_64/kernel/extra/virtualbox-addons/vboxvideo.ko(SysV x86_64)
+
+    Requires:
+      abi: ELF64(SysV x86_64)
+      trove: tag-kernel:taghandler
+      rpm: kernel(__bitmap_weight:0x4cbbd171 __create_workqueue_key:0x9c14f8c3 __free_pages:0xffd35acd __get_vm_area:0x09fc2c3f __init_waitqueue_head:0xffc7c184 __kmalloc:0x5a34a45c __list_add:0x0343a1a8 __pci_register_driver:0x5f07b9f3 __phys_addr:0xe52947e7 __release_region:0x7c61340c __request_region:0x1fedf0f4 __stack_chk_fail:0xf0fdf6cb __tracepoint_kmalloc:0x105e2727 __wake_up:0x642e54ac _cond_resched:0xa1c76e0a _spin_lock:0x973873ab _spin_lock_irq:0xecde1418 _spin_lock_irqsave:0x712aa29b _spin_unlock_irqrestore:0x4b07e779 alloc_pages_current:0x4f3bf785 autoremove_wake_function:0xc8b57c27 bdi_destroy:0x060432bc bdi_init:0x757a5059 bdi_register:0xd47b15b8 clear_page:0x3d9ee9f0 copy_from_user:0x3302b500 copy_to_user:0x85f8a266 cpu_online_mask:0x950ffff2 cpu_possible_mask:0x76a495c1 cpu_present_mask:0x0e81f0e4 d_alloc_root:0x7cb29e4b d_instantiate:0x870235ff d_rehash:0x907c1964 destroy_workqueue:0x20f26c14 do_mmap_pgoff:0x7e806b86 do_munmap:0x38109995 down:0x748caf40 down_read:0xb4b0ee4e down_write:0x45d55543 drm_core_get_map_ofs:0xd63d6819 drm_core_get_reg_ofs:0xe59c00fb drm_core_reclaim_buffers:0x141e3336 drm_core_reclaim_buffers:0x932bc504 drm_core_reclaim_buffers:0xae22357b drm_core_reclaim_buffers:0xbc841850 drm_exit:0x544d44f6 drm_exit:0xe5b39c8e drm_init:0x5a655cc5 drm_init:0x7a3642f5 drm_ioctl:0x2a7bee0a drm_mmap:0xcf723e09 drm_open:0xc6552073 drm_pci_exit:0x4f206992 drm_pci_exit:0x9f3b486d drm_pci_exit:0xb8c99684 drm_pci_exit:0xf56aed23 drm_pci_init:0x80f8a049 drm_pci_init:0xb8ef8760 drm_pci_init:0xc3cb40f9 drm_pci_init:0xdf61917d drm_poll:0xbd548298 drm_release:0x3965bff1 drm_vblank_init:0x41b4a76b drm_vblank_init:0x86d3e206 drm_vblank_init:0x9c791a7d drm_vblank_init:0xd922e47e drm_vblank_init:0xe5757bca drm_vblank_init:0xf64b1696 fasync_helper:0x208f6781 filemap_fdatawait:0x36a493a8 filemap_fdatawrite:0x6567485d find_vma:0x38e4e189 finish_wait:0x9ccb2622 flush_workqueue:0x21c9ef83 free_irq:0xf20dabd8 free_pages:0x4302d0eb generic_file_aio_read:0x574237ff generic_file_aio_write:0x7b286bd7 generic_file_llseek:0x8b3eb7b8 generic_file_splice_read:0xac003bb6 generic_fillattr:0x6bb515ee generic_read_dir:0x06856361 generic_readlink:0x049b1a88 get_sb_nodev:0x5c7e09d7 get_user_pages:0x6e293b8e get_zeroed_page:0x9b388444 getnstimeofday:0x52760ca9 high_memory:0x8a7d1c31 iget_locked:0x45303fbc ilookup:0xad7e9f73 input_allocate_device:0x0e18a9d2 input_event:0x2c1f221b input_free_device:0x73c2ea39 input_register_device:0xde7f4bd1 input_unregister_device:0xda779191 iomem_resource:0x69a358a6 ioremap_nocache:0x42c8de35 iounmap:0xedc03953 iput:0x6f7237e5 iunique:0x6ef080a8 jiffies:0x7d11c268 kfree:0x037a0cba kill_anon_super:0x0bf0087f kill_fasync:0x3399cc18 kmem_cache_alloc_notrace:0xf85ccdae kmem_cache_alloc_trace:0x2044fa9e kthread_create:0xc185e3ce ktime_get_ts:0xefdd5a63 list_del:0x0521445b load_nls:0x47e04149 malloc_sizes:0xd691cba2 map_vm_area:0x4e1f025d mcount:0xb4390f9a memchr:0xc740c64a memcpy:0x236c8c64 memmove:0xa3a5be95 memset:0xde0bdcff misc_deregister:0x16c0b339 misc_register:0x3acac6d7 module_layout:0x14522340 msecs_to_jiffies:0x3bd1b1f6 no_llseek:0xcf923c5f nr_cpu_ids:0xfe7c4287 on_each_cpu:0xc33f6f4c panic:0x0e52592a param_get_int:0x6980fe91 param_set_int:0xff964b25 pci_disable_device:0x00a30682 pci_enable_device:0xa12add91 pci_unregister_driver:0x68f7c535 per_cpu__cpu_number:0x9629486a per_cpu__current_task:0x4f1939c7 per_cpu__kernel_stack:0x6dcaeb88 prepare_to_wait:0x33d92f9a printk:0xea147363 put_page:0x72b295a3 pv_irq_ops:0x78764f4e pv_mmu_ops:0x897a5a81 queue_work:0x7ef6ef76 register_cpu_notifier:0x4550ba8a register_filesystem:0x78b31f3f remap_pfn_range:0xc911f7f0 request_threaded_irq:0x859c6dc7 sched_setscheduler:0x440131c4 schedule:0x01000e51 schedule_hrtimeout_range:0x65bbbc78 schedule_timeout:0xd62c833f set_pages_nx:0x2596d606 set_pages_x:0x3a6304b5 simple_sync_file:0xb22f1ce6 simple_write_begin:0x3640a126 slab_buffer_size:0xfa2e111f smp_call_function:0x56f494e0 smp_call_function_single:0xd6a78d08 strchr:0x349cba85 strlcpy:0x672144bd strlen:0x25ec1b28 strncmp:0x85abc85f unload_nls:0x8291ca8f unlock_new_inode:0x6dc5dd8b unlock_page:0x6803f8dd unregister_cpu_notifier:0x74cc1cbe unregister_filesystem:0x95667111 up:0x3f1899f1 up_read:0xe23d7acb up_write:0xd851af78 utf32_to_utf8:0xfcc2a43c utf8_to_utf32:0xb2682405 vfree:0x999e8297 vm_insert_page:0x44986362 vmalloc:0xd6ee688f vmap:0x823e5df1 vunmap:0x94961283 wake_up_process:0x266c7c38 yield:0x760a0f4f)
+
+  kmod-virtualbox-addons:supdoc=4.3.6_91406-12-1[~!kmod-virtualbox-addons.debug]
+    Provides:
+      trove: kmod-virtualbox-addons:supdoc
+
+    Requires:
+       None
+
