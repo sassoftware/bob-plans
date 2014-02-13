@@ -1,11 +1,9 @@
-# FIXME: temporary until 2.5.2 is released
-resolveTroves \
-    conary=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
-    conary-build=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1 \
-    conary-repository=newton.eng.rpath.com@sas:rba-feldspar/2.5_20140130_172026_e0c43cd267ee-1-1
 includeConfigFile ../requires/conary-policy.conf
 includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
+
+# FIXME: temporary until 2.5.2 is released
+ephemeral false
 
 macros version 2.5
 
