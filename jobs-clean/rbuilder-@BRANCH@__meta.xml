@@ -58,6 +58,8 @@ then
   echo ... git remote add jenkins ssh://$(id -nu)@$(hostname)/$(pwd)
   echo ... git fetch --prune jenkins
   echo ... git merge jenkins/meta-import
+  echo ... ./manage.sh push @BRANCH@
+  echo ... git push
   echo
   exit 1
 fi
