@@ -1,0 +1,13 @@
+includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rpath-tools.conf
+includeConfigFile common.conf
+
+target group-rpath-packages
+targetLabel %(master_label)s-centos-6n
+
+scm recipes wms scc/recipes %(rbuilder_forest)s
+
+[target:group-rpath-packages]
+version %(start_time)s
+sourceTree recipes centos-6n/group-rpath-packages
+flavor_set plain
