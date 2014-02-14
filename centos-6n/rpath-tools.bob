@@ -9,11 +9,9 @@ scm rpath-tools wms scc/rpath-tools %(rbuilder_forest)s
 target rpath-tools
 
 [target:rpath-tools]
-version %(version)s.%(hg)s
+version %(version)s_%(scm)s_%(start_time)s
 scm rpath-tools
 flavor_set plain
 classVar plat 'centos'
 classVar platver '6'
-classVar embedded False
-classVar libonly True
 sourceTree rpath-tools recipes/unified/rpath-tools
