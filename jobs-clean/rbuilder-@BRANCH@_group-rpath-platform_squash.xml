@@ -31,7 +31,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
+      <childProjects>rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

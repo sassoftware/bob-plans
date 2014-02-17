@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/smartform.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_flexlibs, rbuilder-@BRANCH@_pcreator, rbuilder-@BRANCH@_rbuild, rbuilder-@BRANCH@_rpath-tools</childProjects>
+      <childProjects>rbuilder-@BRANCH@_flexlibs, rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_pcreator,rbuilder-@BRANCH@_rbuild,rbuilder-@BRANCH@_rpath-tools, rbuilder-@BRANCH@_pcreator, rbuilder-@BRANCH@_rbuild, rbuilder-@BRANCH@_rpath-tools</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
