@@ -1,6 +1,5 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rmake3.conf
-includeConfigFile ../requires/rpath-tools.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xobj.conf
 includeConfigFile ../requires/wmiclient.conf
