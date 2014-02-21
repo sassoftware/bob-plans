@@ -1,0 +1,27 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile sources.conf
+
+
+resolveTroves []
+resolveTroves group-os=%(distro_label)s
+resolveTroves group-rpath-packages=%(common_label)s
+resolveTrovesOnly True
+
+macros distro_label     centos6.rpath.com@rpath:centos-6e
+macros common_label     centos6.rpath.com@rpath:centos-6-common-devel
+macros contrib_label    contrib.rpath.org@rpath:centos-6e
+macros contrib_py_label contrib.rpath.org@rpath:centos-6n
+
+macros group_label  %(target_host)s@rpath:centos-6-%(rbuilder_forest)s
+
+targetLabel %(group_label)s
+
+target []
+target group-kernel-devel
+
+[target:group-kernel-devel]
+hg recipes
+flavor_set plain
+sourceTree recipes platforms/group-kernel-devel/
+version %(start_time)s
