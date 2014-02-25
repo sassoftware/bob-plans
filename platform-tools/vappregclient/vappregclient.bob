@@ -11,5 +11,5 @@ sourceTree vappregclient recipes
 version %(version)s.%(hg)s
 hg vappregclient
 flavor_set plain
-classVar plat 'centos'
-classVar platver '6'
+#classVar plat 'centos'
+#classVar platver '6'
