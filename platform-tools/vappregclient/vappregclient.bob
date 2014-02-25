@@ -1,0 +1,15 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile requires.conf
+includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile sources.conf
+
+target []
+target vappregclient
+
+[target:vappregclient]
+sourceTree vappregclient recipes
+version %(version)s.%(hg)s
+hg vappregclient
+flavor_set plain
+classVar plat 'centos'
+classVar platver '6'
