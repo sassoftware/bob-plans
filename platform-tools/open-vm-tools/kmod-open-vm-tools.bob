@@ -1,0 +1,26 @@
+includeConfigFile ../conf/common.conf
+includeConfigFile ../conf/platform-centos-6n.conf
+includeConfigFile sources.conf
+
+resolveTroves []
+
+# LATEST
+resolveTroves group-os=%(distro_label)s
+resolveTroves group-rpath-packages=%(common_label)s
+
+resolveTroves group-kernel-devel=%(group_label)s
+resolveTroves open-vm-tools=%(group_label)s
+
+
+resolveTrovesOnly True
+
+macros version 9.4.0_1280544
+
+target []
+target kmod-open-vm-tools
+
+[target:kmod-open-vm-tools]
+sourceTree recipes platforms/open-vm-tools
+version %(version)s
+flavor_set plain
+
