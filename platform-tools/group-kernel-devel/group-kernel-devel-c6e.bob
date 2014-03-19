@@ -21,7 +21,7 @@ target []
 target group-kernel-devel
 
 [target:group-kernel-devel]
-hg recipes
+scm recipes
 flavor_set plain
 sourceTree recipes platforms/group-kernel-devel/
 version %(start_time)s
