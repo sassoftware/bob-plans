@@ -1,5 +1,5 @@
 includeConfigFile ../conf/common.conf
-includeConfigFile ../conf/platform-centos-6e.conf
+includeConfigFile ../conf/platform-centos-6n.conf
 includeConfigFile sources.conf
 
 resolveTroves []
@@ -8,10 +8,13 @@ resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
 
+resolveTroves group-kernel-devel=%(group_label)s
 
 resolveTrovesOnly True
 
 macros version 9.4.0_1280544
+
+targetLabel %(group_label)s
 
 
 target []
