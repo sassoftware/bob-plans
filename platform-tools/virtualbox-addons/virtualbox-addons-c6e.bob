@@ -4,14 +4,6 @@ includeConfigFile sources.conf
 
 resolveTroves []
 
-# Kernel 279
-#resolveTroves group-os=centos6.rpath.com@rpath:centos-6e/2013.02.28_0205.21-1-1
-#resolveTroves group-rpath-packages=centos6.rpath.com@rpath:centos-6-common/201302141511-1-2
-
-#Kernel 131
-#resolveTroves group-os=centos6.rpath.com@rpath:centos-6e/2012.01.18_1910.54-1-1
-#resolveTroves group-rpath-packages=centos6.rpath.com@rpath:centos-6-common/201201182201-1-6
-
 # LATEST
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
@@ -20,15 +12,13 @@ resolveTroves fltk-conary=centos6.rpath.com@rpath:centos-6-common
 resolveTroves libjpeg-turbo=centos6.rpath.com@rpath:centos-6e-devel
 
 resolveTroves group-kernel-devel=%(master_label)s
-resolveTroves virtualbox-addons=%(master_label)s
-
 
 resolveTrovesOnly True
 
 macros version 4.3.6_91406
 
 target []
-#target virtualbox-addons
+target virtualbox-addons
 target kmod-virtualbox-addons
 
 [target:virtualbox-addons]
@@ -39,6 +29,6 @@ flavor_set plain
 [target:kmod-virtualbox-addons]
 sourceTree recipes platforms/virtualbox-addons
 version %(version)s
-#after virtualbox-addons
+after virtualbox-addons
 flavor_set plain
 
