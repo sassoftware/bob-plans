@@ -20,6 +20,6 @@ target group-kernel-devel
 
 [target:group-kernel-devel]
 scm recipes
-version %(version)s-%(scm)s
+version %(version)s_%(scm)s
 flavor_set plain
 sourceTree recipes platforms/group-kernel-devel/
