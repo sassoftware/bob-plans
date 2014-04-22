@@ -9,12 +9,13 @@ resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
 
 
-resolveTroves group-kernel-devel=%(master_label)s
-resolveTroves parallel-tools=%(master_label)s
+resolveTroves group-kernel-devel=%(group_label)s
+resolveTroves parallel-tools=%(group_label)s
 
 resolveTrovesOnly True
 
 macros version 9.0.24172.951362
+targetLabel %(group_label)s
 
 target []
 target kmod-parallel-tools
