@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/mint.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_entsrv, rbuilder-@BRANCH@_entsrv,rbuilder-@BRANCH@_group-updateservice,rbuilder-@BRANCH@_mint-test, rbuilder-@BRANCH@_group-updateservice, rbuilder-@BRANCH@_mint-test</childProjects>
+      <childProjects>rbuilder-@BRANCH@_entsrv, rbuilder-@BRANCH@_entsrv,rbuilder-@BRANCH@_entsrv,rbuilder-@BRANCH@_group-updateservice,rbuilder-@BRANCH@_mint-test,rbuilder-@BRANCH@_group-updateservice,rbuilder-@BRANCH@_mint-test, rbuilder-@BRANCH@_group-updateservice, rbuilder-@BRANCH@_mint-test</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
