@@ -4,7 +4,7 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
     <path>scc/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
@@ -39,6 +39,15 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/rbuild.bob
       <keepLongStdio>false</keepLongStdio>
       <testDataPublishers />
     </hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
   </publishers>
   <buildWrappers />
 </project>
