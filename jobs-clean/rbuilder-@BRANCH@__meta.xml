@@ -10,7 +10,7 @@
   </logRotator>
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.0.1">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.0.3">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -53,13 +53,15 @@ then
   git commit -m "Automatic import of changes on Jenkins"
   set +x
   echo
-  echo ... Changes were detected in the Jenkins configuration.
-  echo ... You can pull them like this:
-  echo ... git remote add jenkins ssh://$(id -nu)@$(hostname)/$(pwd)
-  echo ... git fetch --prune jenkins
-  echo ... git merge jenkins/meta-import
-  echo ... ./manage.sh push @BRANCH@
-  echo ... git push
+  echo Changes were detected in the Jenkins configuration.
+  echo You can pull them like this:
+  echo
+  echo git remote add jenkins ssh://$(id -nu)@$(hostname)/$(pwd)
+  echo git fetch --prune jenkins
+  echo git merge --no-ff --no-commit jenkins/meta-import
+  echo git commit --signoff --no-edit
+  echo ./manage.sh push @BRANCH@
+  echo git push origin HEAD
   echo
   exit 1
 fi
