@@ -4,7 +4,7 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
     <path>scc/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>

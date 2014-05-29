@@ -4,7 +4,7 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
     <path>scc/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
@@ -34,14 +34,14 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/models.bob
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.8">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_catalog-service,rbuilder-@BRANCH@_rpath-tools</childProjects>
+      <childProjects>rbuilder-@BRANCH@_catalog-service, rbuilder-@BRANCH@_catalog-service,rbuilder-@BRANCH@_rpath-tools, rbuilder-@BRANCH@_rpath-tools</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
