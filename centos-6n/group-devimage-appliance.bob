@@ -1,4 +1,5 @@
 includeConfigFile ../requires/conary.conf
+includeConfigFile ../requires/rpath-tools.conf
 includeConfigFile common.conf
 
 target group-devimage-appliance

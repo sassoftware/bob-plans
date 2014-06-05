@@ -40,6 +40,15 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/group-rpath-pa
       <description>\1</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>centos-6n-common_group-rpath-packages</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
   </publishers>
   <buildWrappers />
 </project>
