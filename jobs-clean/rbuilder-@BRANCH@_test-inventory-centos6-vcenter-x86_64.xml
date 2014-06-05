@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project>
+  <actions />
+  <description>CentOS 6 (x86_64) inventory regression test. Builds Monday-Saturday (after test-inventory-centos6-vcenter-x86 job).</description>
+  <keepDependencies>false</keepDependencies>
+  <properties />
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.0.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git://scc.unx.sas.com/qa.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/@BRANCH@</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list" />
+    <extensions />
+  </scm>
+  <assignedNode>qa</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>#Monday - Saturday at 1am 0 1 * * 1-6</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>
+export RBUILDER=10.12.31.49
+export RELEASE=@BRANCH@
+export LOGLEVEL=debug
+export SELENIUMSERVER=10.12.13.77
+export SELENIUMSERVERPORT=4443
+
+
+/bin/bash ./bin/run_test-standard.sh ./tests/regression-lite-centos6.tsv
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.robot.RobotPublisher plugin="robot@1.4.1">
+      <outputPath>./</outputPath>
+      <reportFileName>report.html</reportFileName>
+      <logFileName>log.html</logFileName>
+      <outputFileName>output.xml</outputFileName>
+      <passThreshold>100.0</passThreshold>
+      <unstableThreshold>75.0</unstableThreshold>
+      <otherFiles>
+        <string />
+      </otherFiles>
+      <onlyCritical>false</onlyCritical>
+    </hudson.plugins.robot.RobotPublisher>
+    <hudson.plugins.downstream__ext.DownstreamTrigger plugin="downstream-ext@1.8">
+      <childProjects />
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+      <thresholdStrategy>AND_HIGHER</thresholdStrategy>
+      <onlyIfSCMChanges>false</onlyIfSCMChanges>
+      <onlyIfLocalSCMChanges>false</onlyIfLocalSCMChanges>
+    </hudson.plugins.downstream__ext.DownstreamTrigger>
+    <hudson.tasks.Mailer plugin="mailer@1.8">
+      <recipients>PDTTEST@wnt.sas.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+    <hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher plugin="blame-upstream-commiters@1.2">
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8" />
+  </buildWrappers>
+</project>
