@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/xobj.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_crest, rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform, rbuilder-@BRANCH@_pyovf, rbuilder-@BRANCH@_robj, rbuilder-@BRANCH@_smartform</childProjects>
+      <childProjects>rbuilder-@BRANCH@_crest, rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_crest,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform,rbuilder-@BRANCH@_pyovf,rbuilder-@BRANCH@_robj,rbuilder-@BRANCH@_smartform, rbuilder-@BRANCH@_pyovf, rbuilder-@BRANCH@_robj, rbuilder-@BRANCH@_smartform</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
