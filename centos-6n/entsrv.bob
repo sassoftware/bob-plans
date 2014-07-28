@@ -1,7 +1,7 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile common.conf
-resolveTroves rbuild-test=%(master_label)s
+resolveTroves rbuild=%(master_label)s rbuild-test=%(master_label)s
 
 macros version 1.0
 scm entsrv wms scc/entsrv %(rbuilder_forest)s
