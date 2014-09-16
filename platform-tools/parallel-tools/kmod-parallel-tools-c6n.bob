@@ -8,8 +8,6 @@ resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
 
-
-resolveTroves group-kernel-devel=%(group_label)s
 resolveTroves parallel-tools=%(group_label)s
 
 resolveTrovesOnly True

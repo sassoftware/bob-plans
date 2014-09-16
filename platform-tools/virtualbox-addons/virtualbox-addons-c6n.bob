@@ -11,8 +11,6 @@ resolveTroves group-rpath-packages=%(common_label)s
 resolveTroves fltk-conary=centos6.rpath.com@rpath:centos-6-common
 resolveTroves libjpeg-turbo=centos6.rpath.com@rpath:centos-6e-devel
 
-resolveTroves group-kernel-devel=%(group_label)s
-
 resolveTrovesOnly True
 
 macros version 4.3.6_91406
