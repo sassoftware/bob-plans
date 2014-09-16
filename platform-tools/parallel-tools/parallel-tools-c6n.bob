@@ -28,7 +28,7 @@ version %(version)s
 flavor_set plain
 
 [target:kmod-parallel-tools]
-sourceTree recipes platforms/parallel-tools
+sourceTree recipes platforms/kmod-parallel-tools
 version %(version)s
 after parallel-tools
 flavor_set plain
