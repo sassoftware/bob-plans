@@ -8,6 +8,8 @@ resolveTroves []
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
 
+resolveTroves kernel-devel=%(distro_label)s
+
 resolveTroves redhat-rpm-config=%(group_label)s
 
 resolveTrovesOnly True

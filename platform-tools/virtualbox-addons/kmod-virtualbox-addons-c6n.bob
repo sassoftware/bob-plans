@@ -7,7 +7,7 @@ resolveTroves []
 # LATEST
 resolveTroves group-os=%(distro_label)s
 resolveTroves group-rpath-packages=%(common_label)s
-
+resolveTroves kernel-devel=%(distro_label)s
 resolveTroves fltk-conary=centos6.rpath.com@rpath:centos-6-common
 resolveTroves libjpeg-turbo=centos6.rpath.com@rpath:centos-6e-devel
 
