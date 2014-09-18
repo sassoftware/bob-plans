@@ -20,6 +20,6 @@ target []
 target kmod-parallel-tools
 
 [target:kmod-parallel-tools]
-sourceTree recipes platforms/parallel-tools
+sourceTree recipes platforms/kmod-parallel-tools
 version %(version)s
 flavor_set plain
