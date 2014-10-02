@@ -1,14 +1,22 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/mint.conf
 includeConfigFile common.conf
+resolveTroves rbuild=%(master_label)s rbuild-test=%(master_label)s
 
 macros version 1.0
 scm entsrv wms scc/entsrv %(rbuilder_forest)s
 
 target entsrv
+target entsrv-test
 
 [target:entsrv]
 version %(version)s_%(start_time)s_%(hg)s
 sourceTree entsrv recipes/entsrv
+scm entsrv
+flavor_set x86_64
+
+[target:entsrv-test]
+sourceTree entsrv recipes/entsrv-test
+version %(version)s_%(start_time)s_%(hg)s
 scm entsrv
 flavor_set x86_64

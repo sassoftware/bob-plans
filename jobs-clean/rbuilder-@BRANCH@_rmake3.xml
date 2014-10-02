@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/rmake3.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_rpath-repeater, rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv, rbuilder-@BRANCH@_upsrv</childProjects>
+      <childProjects>rbuilder-@BRANCH@_rpath-repeater, rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv,rbuilder-@BRANCH@_upsrv, rbuilder-@BRANCH@_upsrv</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
