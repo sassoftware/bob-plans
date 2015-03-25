@@ -48,8 +48,10 @@ cd windows
     <hudson.tasks.ArtifactArchiver>
       <artifacts>windows/MSI/*.msi</artifacts>
       <excludes>bin/*.log</excludes>
-      <latestOnly>false</latestOnly>
       <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
     </hudson.tasks.ArtifactArchiver>
     <hudson.tasks.Mailer plugin="mailer@1.8">
       <recipients>Joe.Baltimore@sas.com Robert.Jernigan@sas.com Gary.Kohan@sas.com</recipients>
