@@ -38,7 +38,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/amiconfig.bob
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.4">
       <testResults>output/tests/junit.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <testDataPublishers />
@@ -50,7 +50,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/amiconfig.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-rpath-packages, rbuilder-@BRANCH@_group-rpath-packages,@BRANCH@_centos-6n-common_group-rpath-packages, rbuilder-@BRANCH@_jobslave</childProjects>
+      <childProjects>rbuilder-@BRANCH@_group-rpath-packages, rbuilder-@BRANCH@_group-rpath-packages,rbuilder-@BRANCH@_group-rpath-packages,@BRANCH@_centos-6n-common_group-rpath-packages,rbuilder-@BRANCH@_jobslave, rbuilder-@BRANCH@_jobslave</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

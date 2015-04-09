@@ -55,7 +55,7 @@ export SELENIUMSERVERPORT=4443
       <logFileName>log.html</logFileName>
       <outputFileName>output.xml</outputFileName>
       <disableArchiveOutput>false</disableArchiveOutput>
-      <passThreshold>100.0</passThreshold>
+      <passThreshold>95.0</passThreshold>
       <unstableThreshold>75.0</unstableThreshold>
       <otherFiles>
         <string />
