@@ -6,7 +6,8 @@ includeConfigFile ../requires/crest.conf
 includeConfigFile ../requires/jobslave.conf
 includeConfigFile ../requires/mcp.conf
 includeConfigFile ../requires/models.conf
-includeConfigFile ../requires/pcreator.conf
+includeConfigFile ../requires/proddef.conf
+includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/rmake3.conf
