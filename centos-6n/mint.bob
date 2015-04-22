@@ -1,5 +1,4 @@
 # internal dependencies
-includeConfigFile ../requires/capsule-indexer.conf
 includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/crest.conf
@@ -8,7 +7,6 @@ includeConfigFile ../requires/mcp.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/proddef.conf
 includeConfigFile ../requires/rmake.conf
-includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/rmake3.conf
 includeConfigFile ../requires/robj.conf
