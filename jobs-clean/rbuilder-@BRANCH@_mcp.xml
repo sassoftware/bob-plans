@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/mcp.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_jobmaster, rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint, rbuilder-@BRANCH@_mint</childProjects>
+      <childProjects>rbuilder-@BRANCH@_jobmaster, rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_jobmaster,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint,rbuilder-@BRANCH@_mint, rbuilder-@BRANCH@_mint</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

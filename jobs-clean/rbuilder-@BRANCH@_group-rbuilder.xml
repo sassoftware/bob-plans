@@ -34,7 +34,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/group-rbuilder
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.8">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.9">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
@@ -49,6 +49,18 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/group-rbuilder
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
+    <hudson.plugins.downstream__ext.DownstreamTrigger plugin="downstream-ext@1.8">
+      <childProjects>rbuilder-@BRANCH@_test-inventory-centos6-vcenter-x86_64</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+      <thresholdStrategy>AND_HIGHER</thresholdStrategy>
+      <onlyIfSCMChanges>false</onlyIfSCMChanges>
+      <onlyIfLocalSCMChanges>false</onlyIfLocalSCMChanges>
+    </hudson.plugins.downstream__ext.DownstreamTrigger>
   </publishers>
   <buildWrappers />
 </project>

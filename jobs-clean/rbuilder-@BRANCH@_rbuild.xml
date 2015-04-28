@@ -34,7 +34,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/rbuild.bob
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.4">
       <testResults>output/tests/junit.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <testDataPublishers />
@@ -46,7 +46,7 @@ bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/rbuild.bob
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
+      <childProjects>rbuilder-@BRANCH@_entsrv, rbuilder-@BRANCH@_entsrv,rbuilder-@BRANCH@_group-devimage-appliance</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

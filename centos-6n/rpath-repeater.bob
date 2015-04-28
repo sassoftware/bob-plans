@@ -2,7 +2,6 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rmake3.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/xobj.conf
-includeConfigFile ../requires/wmiclient.conf
 includeConfigFile common.conf
 
 macros version 0

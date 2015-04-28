@@ -1,11 +1,10 @@
 # internal dependencies
 includeConfigFile ../requires/conary.conf
-includeConfigFile ../requires/capsule-indexer.conf
-includeConfigFile ../requires/repodata.conf
 includeConfigFile ../requires/catalog-service.conf
 includeConfigFile ../requires/crest.conf
 includeConfigFile ../requires/mcp.conf
-includeConfigFile ../requires/pcreator.conf
+includeConfigFile ../requires/proddef.conf
+includeConfigFile ../requires/rmake.conf
 includeConfigFile ../requires/restlib.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile ../requires/storage.conf

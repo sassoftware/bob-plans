@@ -10,7 +10,7 @@
   </logRotator>
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.0.3">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -56,12 +56,14 @@ then
   echo Changes were detected in the Jenkins configuration.
   echo You can pull them like this:
   echo
-  echo git remote add jenkins ssh://$(id -nu)@$(hostname)/$(pwd)
-  echo git fetch --prune jenkins
-  echo git merge --no-ff --no-commit jenkins/meta-import
-  echo git commit --signoff --no-edit
+  echo cd '~/appengine/bob-plans'
+  echo git checkout @BRANCH@
+  echo git remote add jenkins-@BRANCH@ ssh://$(id -nu)@$(hostname)/$(pwd)
+  echo git fetch --prune jenkins-@BRANCH@
+  echo git merge jenkins-@BRANCH@/meta-import
+  echo
   echo ./manage.sh push @BRANCH@
-  echo git push origin HEAD
+  echo git push @BRANCH@
   echo
   exit 1
 fi
