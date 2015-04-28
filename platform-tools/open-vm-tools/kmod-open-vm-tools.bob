@@ -13,7 +13,7 @@ resolveTroves redhat-rpm-config=%(group_label)s
 
 resolveTrovesOnly True
 
-macros version 9.4.0_1280544
+macros version 9.4.6_1770165
 
 targetLabel %(group_label)s
 
