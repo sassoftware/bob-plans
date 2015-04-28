@@ -20,7 +20,7 @@ targetLabel %(group_label)s
 
 target []
 target open-vm-tools
-target kmod-open-vm-tools
+#target kmod-open-vm-tools
 
 [target:open-vm-tools]
 sourceTree recipes platforms/open-vm-tools
