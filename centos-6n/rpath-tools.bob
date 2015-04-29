@@ -1,7 +1,6 @@
 includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
-includeConfigFile ../requires/xml_resources.conf
 includeConfigFile common.conf
 
 scm rpath-tools wms scc/rpath-tools %(rbuilder_forest)s
