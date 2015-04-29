@@ -7,17 +7,10 @@ includeConfigFile common.conf
 
 scm jobslave wms scc/jobslave %(rbuilder_forest)s
 
-target group-jobslave
 target jobslave
 
 [target:jobslave]
 sourceTree jobslave recipes/jobslave
 version %(version)s.%(hg)s
 scm jobslave
-flavor_set x86_64
-
-[target:group-jobslave]
-sourceTree jobslave recipes/group-jobslave
-version %(jobslave_version)s
-after jobslave
 flavor_set x86_64
