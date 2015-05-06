@@ -13,11 +13,11 @@ version %(start_time)s_%(scm)s
 scm testutils
 flavor_set plain
 
-[target:testpackage]
-sourceTree testutils recipes/unified/testutils
+[target:conary-testenv]
+sourceTree testutils recipes/unified/conary-testenv
 version %(start_time)s_%(scm)s
 scm testutils
-flavor_set plain
+flavor_set x86_64
 
 [target:testpackage]
 sourceTree testutils recipes/unified/testpackage
