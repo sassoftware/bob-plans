@@ -5,11 +5,11 @@
   <keepDependencies>false</keepDependencies>
   <properties />
   <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
-    <path>scc/appengine</path>
+    <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/recipes</watchRepo>
+        <watchRepo>gerrit-pdt/appengine/recipes</watchRepo>
         <watchPath>product-definitions</watchPath>
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
@@ -31,12 +31,12 @@
       <command>
 for product in rba rus devimage rwbs; do
  for target in "" "-infra"; do
-  bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/product-definition-${product}${target}.bob
+  bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-${product}${target}.bob
  done
 done
 
-bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/product-definition-rba-vapp.bob
-bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/product-definition-entsrv.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-rba-vapp.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-entsrv.bob
 </command>
     </hudson.tasks.Shell>
   </builders>

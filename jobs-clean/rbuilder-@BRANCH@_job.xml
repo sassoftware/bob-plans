@@ -5,11 +5,11 @@
   <keepDependencies>false</keepDependencies>
   <properties />
   <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
+    <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/rpath-job</watchRepo>
+        <watchRepo>gerrit-pdt/appengine/rpath-job</watchRepo>
         <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
@@ -29,7 +29,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/job.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/job.bob
 </command>
     </hudson.tasks.Shell>
   </builders>

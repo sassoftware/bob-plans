@@ -4,12 +4,12 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+    <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/xml_resources</watchRepo>
+        <watchRepo>gerrit-pdt/appengine/xml_resources</watchRepo>
         <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
@@ -29,19 +29,19 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/xml_resources.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/xml_resources.bob
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.9">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_flexlibs, rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools, rbuilder-@BRANCH@_rpath-tools</childProjects>
+      <childProjects>rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_flexlibs,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools,rbuilder-@BRANCH@_rpath-tools</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

@@ -4,7 +4,7 @@ includeConfigFile common.conf
 
 # source materials
 macros version 0
-scm flex3p wms gerrit-pdt/appengine/flex3p %(rbuilder_forest)s
+scm flex3p wms gerrit-pdt/archive/flex3p %(rbuilder_forest)s
 
 # target configuration
 target flex3p

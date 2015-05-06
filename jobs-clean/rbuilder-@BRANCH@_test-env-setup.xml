@@ -33,7 +33,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-export RBUILDER=10.12.31.49
+export RBUILDER=10.12.19.129
 export DEVIMAGE=test-devimage-emerald.na.sas.com
 export SELENIUMSERVER=10.12.13.77
 export SELENIUMSERVERPORT=4443

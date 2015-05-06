@@ -4,12 +4,12 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
-    <path>scc/appengine</path>
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+    <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>scc/entsrv</watchRepo>
+        <watchRepo>gerrit-pdt/internal/entsrv</watchRepo>
         <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
@@ -29,19 +29,19 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-bob-jenkins --base-uri $WMS --repo scc/bob-plans --plan centos-6n/entsrv.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/entsrv.bob
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.9">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-devimage-appliance,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder</childProjects>
+      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rbuilder</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
