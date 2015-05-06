@@ -4,7 +4,7 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
     <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
@@ -34,14 +34,14 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.9">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-entsrv,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rpath-packages,rbuilder-@BRANCH@_group-rpath-packages,rbuilder-@BRANCH@_group-rpath-packages,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_rpath-repeater,rbuilder-@BRANCH@_group-updateservice,@BRANCH@_centos-6n-common_group-rpath-packages,rbuilder-@BRANCH@_group-rbuilder,rbuilder-@BRANCH@_group-rpath-packages,rbuilder-@BRANCH@_group-updateservice</childProjects>
+      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-rpath-packages, rbuilder-@BRANCH@_group-updateservice, rbuilder-@BRANCH@_rpath-repeater, @BRANCH@_centos-6n-common_group-rpath-packages, rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-rpath-packages, rbuilder-@BRANCH@_group-updateservice</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

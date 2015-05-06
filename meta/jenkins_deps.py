@@ -38,7 +38,7 @@ def _find_job(url):
 
 def main():
     top = 'jobs-clean'
-    forest = 'scc/appengine'
+    forest = 'gerrit-pdt/appengine/appengine'
     jobs = os.listdir(top)
     plan_to_job = {}
     job_to_plan = {}
@@ -70,7 +70,7 @@ def main():
         children = set(x.rsplit('.', 1)[0] for x in after_jobs)
         for publisher in list(publishers.getchildren()):
             if publisher.tag == 'hudson.tasks.BuildTrigger':
-                children.update(publisher.find('childProjects').text.split(', '))
+                children.update(publisher.find('childProjects').text.split(','))
                 publishers.remove(publisher)
             elif publisher.tag == 'hudson.plugins.descriptionsetter.DescriptionSetterPublisher':
                 publishers.remove(publisher)
