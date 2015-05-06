@@ -9,7 +9,7 @@
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>gerrit-pdt/appengine/restlib</watchRepo>
+        <watchRepo>gerrit-pdt/appengine/testutils</watchRepo>
         <watchPath />
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
@@ -29,16 +29,11 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/restlib.bob
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/testutils.bob
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.4">
-      <testResults>output/tests/junit.xml</testResults>
-      <keepLongStdio>false</keepLongStdio>
-      <testDataPublishers />
-    </hudson.tasks.junit.JUnitResultArchiver>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
@@ -46,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_jobmaster, rbuilder-@BRANCH@_jobslave, rbuilder-@BRANCH@_crest, rbuilder-@BRANCH@_jobmaster, rbuilder-@BRANCH@_jobslave</childProjects>
+      <childProjects>rbuilder-@BRANCH@_conary</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
