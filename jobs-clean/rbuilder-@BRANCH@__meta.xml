@@ -14,7 +14,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>git://scc.unx.sas.com/bob-plans.git</url>
+        <url>http://gerrit-pdt.unx.sas.com/appengine/bob-plans</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
