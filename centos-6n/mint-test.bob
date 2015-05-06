@@ -20,7 +20,7 @@ includeConfigFile ../requires/mint.conf
 includeConfigFile common.conf
 
 # source materials
-scm mint wms scc/mint %(rbuilder_forest)s
+scm mint wms gerrit-pdt/appengine/mint %(rbuilder_forest)s
 
 target rbuilder-test
 

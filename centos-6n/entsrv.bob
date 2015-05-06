@@ -4,7 +4,7 @@ includeConfigFile common.conf
 resolveTroves rbuild=%(master_label)s rbuild-test=%(master_label)s
 
 macros version 1.0
-scm entsrv wms scc/entsrv %(rbuilder_forest)s
+scm entsrv wms gerrit-pdt/appengine/entsrv %(rbuilder_forest)s
 
 target entsrv
 target entsrv-test

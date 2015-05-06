@@ -6,7 +6,7 @@ targetLabel %(master_label)s-rwbs
 
 macros contrib_label winpkg.rbuilder.unx.sas.com@rpath:winpkg-bucket
 
-scm recipes wms scc/recipes %(rbuilder_forest)s
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:group-rwbs-appliance]
 version %(version)s

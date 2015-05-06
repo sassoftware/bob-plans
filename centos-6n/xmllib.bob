@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0.1
-scm rpath-xmllib wms scc/rpath-xmllib %(rbuilder_forest)s
+scm rpath-xmllib wms gerrit-pdt/appengine/rpath-xmllib %(rbuilder_forest)s
 
 target rpath-xmllib-test
 target rpath-xmllib

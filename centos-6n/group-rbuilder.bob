@@ -6,7 +6,7 @@ targetLabel %(master_label)s-rba
 
 macros aemon_label %(taget_host)s@rpath:centos-6n-aemon-trunk
 
-scm recipes wms scc/recipes %(rbuilder_forest)s
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:group-rbuilder-dist]
 version %(version)s

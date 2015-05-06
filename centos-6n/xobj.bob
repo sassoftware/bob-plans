@@ -3,7 +3,7 @@ includeConfigFile ../requires/flexsdk.conf
 includeConfigFile common.conf
 
 macros version 0
-scm xobj wms scc/xobj %(rbuilder_forest)s
+scm xobj wms gerrit-pdt/appengine/xobj %(rbuilder_forest)s
 
 target xobj
 

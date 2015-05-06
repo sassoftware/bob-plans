@@ -5,7 +5,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-scm rpath-repeater wms scc/rpath-repeater %(rbuilder_forest)s
+scm rpath-repeater wms gerrit-pdt/appengine/rpath-repeater %(rbuilder_forest)s
 
 target rpath-repeater
 target rpath-repeater-test

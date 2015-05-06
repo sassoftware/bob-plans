@@ -5,7 +5,7 @@ includeConfigFile ../requires/flexsdk.conf
 includeConfigFile common.conf
 
 macros version 0
-scm rbuilder-ui wms scc/rbuilder-ui %(rbuilder_forest)s
+scm rbuilder-ui wms gerrit-pdt/appengine/rbuilder-ui %(rbuilder_forest)s
 
 # target configuration
 target rbuilder-ui

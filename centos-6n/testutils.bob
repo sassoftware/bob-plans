@@ -1,0 +1,26 @@
+includeConfigFile ../requires/upstream.conf
+includeConfigFile common.conf
+
+scm testutils wms gerrit-pdt/appengine/testutils %(rbuilder_forest)s
+
+target testutils
+target testpackage
+target conary-testenv
+
+[target:testutils]
+sourceTree testutils recipes/unified/testutils
+version %(start_time)s_%(scm)s
+scm testutils
+flavor_set plain
+
+[target:testpackage]
+sourceTree testutils recipes/unified/testutils
+version %(start_time)s_%(scm)s
+scm testutils
+flavor_set plain
+
+[target:testpackage]
+sourceTree testutils recipes/unified/testpackage
+version %(start_time)s_%(scm)s
+scm testutils
+noBuild True

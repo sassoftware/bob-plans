@@ -4,7 +4,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-scm pyovf wms scc/pyovf %(rbuilder_forest)s
+scm pyovf wms gerrit-pdt/appengine/pyovf %(rbuilder_forest)s
 
 target pyovf
 

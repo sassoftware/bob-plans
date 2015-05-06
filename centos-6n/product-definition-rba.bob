@@ -10,7 +10,7 @@ macros release_label %(target_label)s
 # proddef must have a unique branch version
 macros major_version %(rbuilder_forest)s
 
-scm recipes wms scc/recipes %(rbuilder_forest)s
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:product-definition]
 version %(version)s

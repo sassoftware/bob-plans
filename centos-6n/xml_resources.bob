@@ -3,7 +3,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0
-scm xml_resources wms scc/xml_resources %(rbuilder_forest)s
+scm xml_resources wms gerrit-pdt/appengine/xml_resources %(rbuilder_forest)s
 
 # target configuration
 target xml_resources

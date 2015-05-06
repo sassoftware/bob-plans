@@ -4,7 +4,7 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 4.5
-scm product-definition wms scc/rpath-product-definition %(rbuilder_forest)s
+scm product-definition wms gerrit-pdt/appengine/rpath-product-definition %(rbuilder_forest)s
 
 target rpath-product-definition
 target rpath-product-definition-test

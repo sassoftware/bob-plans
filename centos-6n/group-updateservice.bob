@@ -4,7 +4,7 @@ includeConfigFile common.conf
 target group-updateservice-appliance
 targetLabel %(master_label)s-updateservice
 
-scm recipes wms scc/recipes %(rbuilder_forest)s
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:group-updateservice-appliance]
 version %(version)s

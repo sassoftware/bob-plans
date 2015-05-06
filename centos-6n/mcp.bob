@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile ../requires/rmake.conf
 includeConfigFile common.conf
 
-scm mcp wms scc/mcp %(rbuilder_forest)s
+scm mcp wms gerrit-pdt/appengine/mcp %(rbuilder_forest)s
 
 target mcp
 

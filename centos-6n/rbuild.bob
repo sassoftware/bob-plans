@@ -5,7 +5,7 @@ includeConfigFile ../requires/smartform.conf
 includeConfigFile common.conf
 
 macros version 1.2
-scm rbuild wms scc/rbuild %(rbuilder_forest)s
+scm rbuild wms gerrit-pdt/appengine/rbuild %(rbuilder_forest)s
 
 target rbuild
 target rbuild-test

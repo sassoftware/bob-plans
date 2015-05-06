@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 0.1
-scm restlib wms scc/restlib %(rbuilder_forest)s
+scm restlib wms gerrit-pdt/appengine/restlib %(rbuilder_forest)s
 
 target restlib
 target restlib-test

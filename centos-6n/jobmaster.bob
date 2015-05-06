@@ -4,7 +4,7 @@ includeConfigFile ../requires/mcp.conf
 
 includeConfigFile common.conf
 
-scm jobmaster wms scc/jobmaster %(rbuilder_forest)s
+scm jobmaster wms gerrit-pdt/appengine/jobmaster %(rbuilder_forest)s
 
 target jobmaster
 

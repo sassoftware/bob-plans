@@ -11,7 +11,7 @@ includeConfigFile ../requires/smartform.conf
 
 includeConfigFile common.conf
 
-scm catalog-service wms scc/catalog-service %(rbuilder_forest)s
+scm catalog-service wms gerrit-pdt/appengine/catalog-service %(rbuilder_forest)s
 
 target catalog-service-test
 target catalog-service

@@ -4,7 +4,7 @@ includeConfigFile common.conf
 
 macros version 3.0
 
-scm rmake wms scc/rmake3 %(rbuilder_forest)s
+scm rmake wms gerrit-pdt/appengine/rmake3 %(rbuilder_forest)s
 
 target rmake3
 

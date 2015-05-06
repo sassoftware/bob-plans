@@ -3,7 +3,7 @@ includeConfigFile ../requires/rmake3.conf
 includeConfigFile common.conf
 
 # source materials
-scm rbm wms scc/rbm %(rbuilder_forest)s
+scm rbm wms gerrit-pdt/appengine/rbm %(rbuilder_forest)s
 
 target updateservice
 target upsrv-test

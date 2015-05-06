@@ -2,7 +2,7 @@ includeConfigFile ../requires/conary.conf
 includeConfigFile common.conf
 
 macros version 1.0
-scm rpath-models wms scc/rpath-models %(rbuilder_forest)s
+scm rpath-models wms gerrit-pdt/appengine/rpath-models %(rbuilder_forest)s
 
 target rpath-models
 

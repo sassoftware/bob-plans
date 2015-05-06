@@ -3,7 +3,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-scm robj wms scc/robj %(rbuilder_forest)s
+scm robj wms gerrit-pdt/appengine/robj %(rbuilder_forest)s
 
 target robj
 target robj-test

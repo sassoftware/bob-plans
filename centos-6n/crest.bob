@@ -4,7 +4,7 @@ includeConfigFile ../requires/xobj.conf
 
 includeConfigFile common.conf
 
-scm crest wms scc/crest %(rbuilder_forest)s
+scm crest wms gerrit-pdt/appengine/crest %(rbuilder_forest)s
 
 target conary-rest
 target crest-test

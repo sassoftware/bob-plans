@@ -5,7 +5,7 @@ includeConfigFile common.conf
 target group-rpath-packages
 targetLabel %(master_label)s-centos-6n
 
-scm recipes wms scc/recipes %(rbuilder_forest)s
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:group-rpath-packages]
 version %(start_time)s

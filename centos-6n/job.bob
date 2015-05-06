@@ -5,7 +5,7 @@ includeConfigFile ../requires/xmllib.conf
 includeConfigFile common.conf
 
 macros version 0.1
-scm rpath-job wms scc/rpath-job %(rbuilder_forest)s
+scm rpath-job wms gerrit-pdt/appengine/rpath-job %(rbuilder_forest)s
 
 target rpath-job
 

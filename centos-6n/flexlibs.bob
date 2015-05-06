@@ -8,7 +8,7 @@ includeConfigFile common.conf
 
 # source materials
 macros version 0
-scm flexlibs wms scc/flexlibs %(rbuilder_forest)s
+scm flexlibs wms gerrit-pdt/appengine/flexlibs %(rbuilder_forest)s
 
 # target configuration
 target flexlibs

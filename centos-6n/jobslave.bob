@@ -5,7 +5,7 @@ includeConfigFile ../requires/proddef.conf
 
 includeConfigFile common.conf
 
-scm jobslave wms scc/jobslave %(rbuilder_forest)s
+scm jobslave wms gerrit-pdt/appengine/jobslave %(rbuilder_forest)s
 
 target jobslave
 

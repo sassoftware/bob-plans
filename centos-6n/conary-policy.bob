@@ -1,12 +1,9 @@
 includeConfigFile ../requires/upstream.conf
 includeConfigFile common.conf
 
-# FIXME: temporary until 2.5.2 is released
-ephemeral false
-
 macros version 1.3
 
-scm conary-policy wms scc/conary-policy %(rbuilder_forest)s
+scm conary-policy wms gerrit-pdt/appengine/conary-policy %(rbuilder_forest)s
 
 target conary-policy
 

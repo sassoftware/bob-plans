@@ -3,7 +3,7 @@ includeConfigFile ../requires/models.conf
 includeConfigFile ../requires/smartform.conf
 includeConfigFile common.conf
 
-scm rpath-tools wms scc/rpath-tools %(rbuilder_forest)s
+scm rpath-tools wms gerrit-pdt/appengine/rpath-tools %(rbuilder_forest)s
 
 target rpath-tools
 

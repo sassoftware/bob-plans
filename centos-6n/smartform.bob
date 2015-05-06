@@ -3,7 +3,7 @@ includeConfigFile ../requires/xobj.conf
 includeConfigFile common.conf
 
 macros version 0
-scm smartform wms scc/smartform %(rbuilder_forest)s
+scm smartform wms gerrit-pdt/appengine/smartform %(rbuilder_forest)s
 
 target smartform
 
