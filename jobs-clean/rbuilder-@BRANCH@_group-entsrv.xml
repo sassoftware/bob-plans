@@ -9,8 +9,8 @@
     <branch>@BRANCH@</branch>
     <watchPaths>
       <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
-        <watchRepo>gerrit-pdt/appengine/recipes</watchRepo>
-        <watchPath>centos-6n/group-entsrv-appliance</watchPath>
+        <watchRepo>gerrit-pdt/internal/entsrv</watchRepo>
+        <watchPath>recipes/group-entsrv-appliance</watchPath>
       </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
     </watchPaths>
   </scm>
@@ -34,7 +34,7 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.8">
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
       <description>\1</description>

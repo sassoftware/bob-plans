@@ -41,7 +41,7 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.BuildTrigger>
-      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder, rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder</childProjects>
+      <childProjects>rbuilder-@BRANCH@_group-devimage-appliance, rbuilder-@BRANCH@_group-entsrv, rbuilder-@BRANCH@_group-rbuilder</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

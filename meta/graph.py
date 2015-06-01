@@ -1,20 +1,4 @@
-#
-# Copyright (c) SAS Institute Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-
+# Map of plan files to SCM paths they consume
 scm_deps = {'amiconfig.bob': set([('gerrit-pdt/appengine/amiconfig', '')]),
  'catalog-service.bob': set([('gerrit-pdt/appengine/catalog-service', '')]),
  'conary-policy.bob': set([('gerrit-pdt/appengine/conary-policy', '')]),
@@ -27,16 +11,14 @@ scm_deps = {'amiconfig.bob': set([('gerrit-pdt/appengine/amiconfig', '')]),
                                        'centos-6n/devimage-custom'),
                                       ('gerrit-pdt/appengine/recipes',
                                        'centos-6n/group-devimage-appliance')]),
- 'group-entsrv.bob': set([('gerrit-pdt/appengine/recipes',
-                           'centos-6n/group-entsrv-appliance')]),
+ 'group-entsrv.bob': set([('gerrit-pdt/internal/entsrv',
+                           'recipes/group-entsrv-appliance')]),
  'group-rbuilder.bob': set([('gerrit-pdt/appengine/recipes',
                              'centos-6n/group-rbuilder-dist')]),
  'group-rpath-packages.bob': set([('gerrit-pdt/appengine/recipes',
                                    'centos-6n/group-rpath-packages')]),
  'group-rpath-platform.bob': set([('gerrit-pdt/appengine/recipes',
                                    'centos-6n/group-rpath-platform')]),
- 'group-rwbs-appliance.bob': set([('gerrit-pdt/appengine/recipes',
-                                   'centos-6n/group-rwbs-appliance')]),
  'group-updateservice.bob': set([('gerrit-pdt/appengine/recipes',
                                   'centos-6n/group-updateservice-appliance')]),
  'job.bob': set([('gerrit-pdt/appengine/rpath-job', '')]),
@@ -89,7 +71,6 @@ dep_graph = {'amiconfig.bob': set(['catalog-service.bob', 'group-rpath-packages.
  'conary-policy.bob': set(['conary.bob']),
  'conary.bob': set(['amiconfig.bob',
                     'flex3p.bob',
-                    'group-rwbs-appliance.bob',
                     'models.bob',
                     'product-definition-devimage-infra.bob',
                     'product-definition-devimage.bob',
@@ -118,7 +99,6 @@ dep_graph = {'amiconfig.bob': set(['catalog-service.bob', 'group-rpath-packages.
  'group-rbuilder.bob': set(),
  'group-rpath-packages.bob': set(),
  'group-rpath-platform.bob': set(),
- 'group-rwbs-appliance.bob': set(),
  'group-updateservice.bob': set(),
  'job.bob': set(['catalog-service.bob']),
  'jobmaster.bob': set(['group-rbuilder.bob']),
