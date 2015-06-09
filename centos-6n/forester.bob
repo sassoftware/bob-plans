@@ -4,7 +4,6 @@ includeConfigFile common.conf
 scm forester wms gerrit-pdt/tools/forester garnet
 
 # target configuration
-target []
 target forester
 
 [target:forester]
