@@ -1,7 +1,7 @@
 includeConfigFile common.conf
 
 # source materials
-scm forester wms gerrit-pdt/tools/forester garnet
+scm forester wms gerrit-pdt/tools/forester %(rbuilder_forest)s
 
 # target configuration
 target []
