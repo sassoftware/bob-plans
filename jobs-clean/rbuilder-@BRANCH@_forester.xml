@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project>
+  <actions />
+  <description />
+  <keepDependencies>false</keepDependencies>
+  <properties />
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent">
+    <path>gerrit-pdt/appengine/appengine</path>
+    <branch>@BRANCH@</branch>
+    <watchPaths>
+      <org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+        <watchRepo>gerrit-pdt/tools/forester</watchRepo>
+        <watchPath />
+      </org.jenkinsci.plugins.git__wms.GitWMSAgent_-WatchPath>
+    </watchPaths>
+  </scm>
+  <quietPeriod>15</quietPeriod>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec>@hourly</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>
+bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/forester.bob
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.6">
+      <testResults>output/tests/junit.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+    </hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
+      <regexp>Revisions built: (.*)</regexp>
+      <regexpForFailed />
+      <description>\1</description>
+      <setForMatrix>false</setForMatrix>
+    </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
+    <hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher plugin="blame-upstream-commiters@1.2">
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
+  </publishers>
+  <buildWrappers />
+</project>
