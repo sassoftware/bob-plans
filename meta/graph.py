@@ -72,6 +72,7 @@ dep_graph = {'amiconfig.bob': set(['catalog-service.bob', 'group-rpath-packages.
  'conary-policy.bob': set(['conary.bob']),
  'conary.bob': set(['amiconfig.bob',
                     'flex3p.bob',
+                    'forester.bob',
                     'models.bob',
                     'product-definition-devimage-infra.bob',
                     'product-definition-devimage.bob',
