@@ -11,7 +11,7 @@ target rmake
 target rmake-test
 
 [target:rmake]
-sourceTree rmake recipes/centos-6n/rmake
+sourceTree rmake recipes/unified/rmake
 version %(version)s.%(hg)s
 scm rmake
 flavor_set plain
