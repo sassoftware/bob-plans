@@ -41,8 +41,8 @@ case "$cmd" in
         $JBUTLER jobs retrieve --filter="rbuilder-${branch}_.*"
         for job in jobs/*.xml
         do
-            name=$(echo $(basename $job) | sed -e "s/${branch}/@BRANCH@/g")
-            sed -e "s/$branch/@BRANCH@/g" "$job" | tidy -config meta/tidy.conf >"jobs-clean/$name"
+            name=$(echo $(basename $job) | sed -e "s/^rbuilder-${branch}_/rbuilder-@BRANCH@_/g")
+            sed -e "s#\([-_.>=/ ]\)$branch#\1@BRANCH@#g" "$job" | tidy -config meta/tidy.conf >"jobs-clean/$name"
         done
         git add jobs-clean
         git add -u jobs-clean
