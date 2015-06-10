@@ -34,12 +34,12 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.4">
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.6">
       <testResults>output/tests/junit.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <healthScaleFactor>1.0</healthScaleFactor>
     </hudson.tasks.junit.JUnitResultArchiver>
-    <hudson.tasks.Mailer plugin="mailer@1.11">
+    <hudson.tasks.Mailer plugin="mailer@1.15">
       <recipients />
       <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>true</sendToIndividuals>

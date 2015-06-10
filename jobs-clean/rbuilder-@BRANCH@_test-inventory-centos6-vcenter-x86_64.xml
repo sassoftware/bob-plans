@@ -4,7 +4,7 @@
   <description>CentOS 6 (x86_64) inventory regression test. Builds Monday-Saturday (after test-inventory-centos6-vcenter-x86 job).</description>
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.3.5">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -25,7 +25,7 @@
   </scm>
   <assignedNode>qa</assignedNode>
   <canRoam>false</canRoam>
-  <disabled>false</disabled>
+  <disabled>true</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
@@ -49,7 +49,7 @@ export SELENIUMSERVERPORT=4443
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.robot.RobotPublisher plugin="robot@1.5.0">
+    <hudson.plugins.robot.RobotPublisher plugin="robot@1.6.0">
       <outputPath>./</outputPath>
       <reportFileName>report.html</reportFileName>
       <logFileName>log.html</logFileName>
@@ -62,7 +62,7 @@ export SELENIUMSERVERPORT=4443
       </otherFiles>
       <onlyCritical>false</onlyCritical>
     </hudson.plugins.robot.RobotPublisher>
-    <hudson.tasks.Mailer plugin="mailer@1.11">
+    <hudson.tasks.Mailer plugin="mailer@1.15">
       <recipients>parth.bakshi@sas.com</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>false</sendToIndividuals>
@@ -72,6 +72,6 @@ export SELENIUMSERVERPORT=4443
     </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
   </publishers>
   <buildWrappers>
-    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.14" />
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.6" />
   </buildWrappers>
 </project>
