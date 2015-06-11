@@ -5,7 +5,6 @@ includeConfigFile common.conf
 scm forester wms gerrit-pdt/tools/forester %(rbuilder_forest)s
 
 # target configuration
-target []
 target forester
 target forester-test
 
