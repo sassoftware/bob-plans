@@ -12,11 +12,11 @@ target forester-test
 version %(version)s.%(scm)s
 scm forester
 flavor_set x86_64
-sourceTree forester recipes
+sourceTree forester recipes/forester
 
 [target:forester-test]
 version %(version)s.%(scm)s
 scm forester
 after forester
 flavor_set x86_64
-sourceTree forester recipes
+sourceTree forester recipes/forester-test
