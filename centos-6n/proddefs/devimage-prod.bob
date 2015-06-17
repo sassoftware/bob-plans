@@ -1,0 +1,15 @@
+includeConfigFile ../../requires/conary.conf
+includeConfigFile ../common.conf
+
+macros project_name pdt
+macros release_label pdt.cny.sas.com@sas:devimage-%(major_version)s
+
+target product-definition
+targetLabel %(release_label)s
+
+scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
+
+[target:product-definition]
+version %(version)s
+sourceTree recipes product-definitions/devimage/product-definition
+flavor_set x86_64

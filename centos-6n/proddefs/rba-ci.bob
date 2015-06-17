@@ -1,14 +1,12 @@
-includeConfigFile ../requires/conary.conf
-includeConfigFile common.conf
+includeConfigFile ../../requires/conary.conf
+includeConfigFile ../common.conf
+
+macros project_name newton
+macros release_label %(master_label)s-rba
+macros major_version %(rbuilder_forest)s
 
 target product-definition
-targetLabel %(master_label)s-rba
-
-macros product_version rba-%(major_version)s
-macros project_name newton
-macros release_label %(target_label)s
-# proddef must have a unique branch version
-macros major_version %(rbuilder_forest)s
+targetLabel %(release_label)s
 
 scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 

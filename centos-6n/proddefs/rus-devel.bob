@@ -1,15 +1,16 @@
-includeConfigFile ../requires/conary.conf
-includeConfigFile common.conf
+includeConfigFile ../../requires/conary.conf
+includeConfigFile ../common.conf
+
+macros project_name pdt
+macros major_version 8-devel
+macros release_label pdt.cny.sas.com@sas:rus-%(major_version)s
 
 target product-definition
-targetLabel %(master_label)s-updateservice-infra
-macros project_name pdt
-macros release_label pdt.cny.sas.com@sas:rus-%(major_version)s
+targetLabel %(release_label)s
 
 scm recipes wms gerrit-pdt/appengine/recipes %(rbuilder_forest)s
 
 [target:product-definition]
 version %(version)s
 sourceTree recipes product-definitions/rus/product-definition
-# x86_64: main product
-flavor %rPL 2:x86_64% !dom0
+flavor_set x86_64
