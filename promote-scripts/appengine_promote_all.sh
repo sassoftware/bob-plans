@@ -13,6 +13,11 @@ then
     suffix=""
     plans=prod
 else
+    if [ "$rel" != "master" ]
+    then
+        echo Only master branch can be promoted to devel
+        exit 0
+    fi
     echo Promoting to devel labels
     suffix="-devel"
     plans=devel
