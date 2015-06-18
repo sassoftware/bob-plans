@@ -19,7 +19,8 @@ bucket=sas-app-engine-ci
 
 rm -rf $dir
 $rbuild init $label
-$rbuild build images "$imagename"
+cd $dir/Release
+#$rbuild build images "$imagename"
 
 cd $top
 imagefile=appengine-8-devel-x86_64.iso
