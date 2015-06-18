@@ -28,6 +28,7 @@ http_proxy= wget -q -O $imagefile "http://rba.cny.sas.com/api/v1/projects/$proje
 s3put -b $bucket --reduced --grant=public-read --prefix=$top $imagefile
 rm -f $imagefile
 
+cd $dir/Release
 imageids=$($rbuild list images |grep '^[0-9]' | cut -d' ' -f1)
 if [ -n "$imageids" ]
 then
