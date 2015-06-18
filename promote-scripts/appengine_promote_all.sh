@@ -12,6 +12,7 @@ then
     echo Promoting to production labels
     suffix=""
     plans=prod
+    interactive="--interactive"
 else
     if [ "$rel" != "master" ]
     then
@@ -21,6 +22,7 @@ else
     echo Promoting to devel labels
     suffix="-devel"
     plans=devel
+    interactive=""
 fi
 shift 2
 
@@ -30,7 +32,7 @@ dest_base="/pdt.cny.sas.com@sas:"
 
 ./promote_safe.py "${dest_base}rba-$major$suffix" \
     "group-rbuilder-dist=$ci_base-rba" \
-    -m "promote to $plans" --interactive
+    -m "promote to $plans" $interactive
 bob ../centos-6n/proddefs/rba-${plans}.bob
 
 if [ $plans == devel ]
@@ -42,10 +44,10 @@ fi
 
 ./promote_safe.py "${dest_base}rus-$major$suffix" \
     "group-updateservice-appliance=$ci_base-updateservice" \
-    -m "promote to $plans" --interactive
+    -m "promote to $plans" $interactive
 bob ../centos-6n/proddefs/rus-${plans}.bob
 
 ./promote_safe.py "${dest_base}devimage-$major$suffix" \
     "group-devimage-appliance=$ci_base-devimage" \
-    -m "promote to $plans" --interactive
+    -m "promote to $plans" $interactive
 bob ../centos-6n/proddefs/devimage-${plans}.bob
