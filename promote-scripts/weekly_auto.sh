@@ -20,10 +20,16 @@ bucket=sas-app-engine-ci
 rm -rf $dir
 $rbuild init $label
 cd $dir/Release
-#$rbuild build images "$imagename"
+$rbuild build images "$imagename"
 
 cd $top
 imagefile=appengine-8-devel-x86_64.iso
 http_proxy= wget -O $imagefile "http://rba.cny.sas.com/api/v1/projects/$project/project_branches/$label/project_branch_stages/Release/images_by_name/$image_url/latest_file"
-s3put -b $bucket --reduced --prefix=$top $imagefile
+s3put -b $bucket --reduced --grant=public-read --prefix=$top $imagefile
 rm -f $imagefile
+
+imageids=$($rbuild list images |grep '^[0-9]' | cut -d' ' -f1)
+if [ -n "$imageids" ]
+then
+    $rbuild delete images --force $imageids ||:
+fi
