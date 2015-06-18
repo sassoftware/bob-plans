@@ -25,6 +25,10 @@ $rbuild build images "$imagename"
 cd $top
 imagefile=appengine-8-devel-x86_64.iso
 http_proxy= wget -q -O $imagefile "http://rba.cny.sas.com/api/v1/projects/$project/project_branches/$label/project_branch_stages/Release/images_by_name/$image_url/latest_file"
+echo
+echo Image MD5sum:
+md5sum $imagefile
+echo
 s3put -b $bucket --reduced --grant=public-read --prefix=$top $imagefile
 rm -f $imagefile
 
