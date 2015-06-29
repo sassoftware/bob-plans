@@ -6,9 +6,17 @@ macros version 0
 scm smartform wms gerrit-pdt/appengine/smartform %(rbuilder_forest)s
 
 target smartform
+target smartform-test
 
 [target:smartform]
 sourceTree smartform recipes/centos-6n
 version %(version)s.%(hg)s
 scm smartform
 flavor_set plain
+
+[target:smartform-test]
+version %(version)s.%(scm)s
+scm smartform
+after smartform
+flavor_set x86_64
+sourceTree smartform recipes/smartform-test
