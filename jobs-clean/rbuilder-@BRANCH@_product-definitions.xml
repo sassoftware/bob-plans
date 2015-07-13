@@ -4,7 +4,7 @@
   <description />
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.0-SNAPSHOT">
+  <scm class="org.jenkinsci.plugins.git_wms.GitWMSAgent" plugin="git-wms@1.1-SNAPSHOT">
     <path>gerrit-pdt/appengine/appengine</path>
     <branch>@BRANCH@</branch>
     <watchPaths>
@@ -29,7 +29,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-for product in rba rus devimage rwbs; do
+for product in rba rus devimage; do
  for target in "" "-infra"; do
   bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-${product}${target}.bob
  done
