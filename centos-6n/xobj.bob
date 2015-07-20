@@ -6,9 +6,17 @@ macros version 0
 scm xobj wms gerrit-pdt/appengine/xobj %(rbuilder_forest)s
 
 target xobj
+target xobj-test
 
 [target:xobj]
 sourceTree xobj recipes/centos-6n/xobj
 version %(version)s.%(hg)s
 scm xobj
+flavor_set plain
+
+[target:xobj-test]
+sourceTree xobj recipes/centos-6n/xobj-test
+version %(version)s.%(hg)s
+scm xobj
+after xobj
 flavor_set plain
