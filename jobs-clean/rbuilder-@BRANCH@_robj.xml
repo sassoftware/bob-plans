@@ -34,6 +34,11 @@ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.6">
+      <testResults>output/tests/junit.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+    </hudson.tasks.junit.JUnitResultArchiver>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter">
       <regexp>Revisions built: (.*)</regexp>
       <regexpForFailed />
