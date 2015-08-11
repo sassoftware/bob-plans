@@ -4,7 +4,7 @@
   <description>Executes image matrix test. Builds after new rBuilder is provisioned.</description>
   <keepDependencies>false</keepDependencies>
   <properties />
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.7">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.3.5">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -33,7 +33,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-export RBUILDER=10.12.31.49
+export RBUILDER=10.12.19.129
 export DEVIMAGE=test-devimage-feldspar.na.sas.com
 export SELENIUMSERVER=10.12.13.77
 export SELENIUMSERVERPORT=4443
@@ -47,7 +47,7 @@ export VMNAME=test-rbuilder-@BRANCH@
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.robot.RobotPublisher plugin="robot@1.5.0">
+    <hudson.plugins.robot.RobotPublisher plugin="robot@1.6.0">
       <outputPath>./</outputPath>
       <reportFileName>report.html</reportFileName>
       <logFileName>log.html</logFileName>
@@ -60,7 +60,7 @@ export VMNAME=test-rbuilder-@BRANCH@
       </otherFiles>
       <onlyCritical>false</onlyCritical>
     </hudson.plugins.robot.RobotPublisher>
-    <hudson.tasks.Mailer plugin="mailer@1.11">
+    <hudson.tasks.Mailer plugin="mailer@1.15">
       <recipients>PDTTEST@wnt.sas.com</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>false</sendToIndividuals>
@@ -70,6 +70,6 @@ export VMNAME=test-rbuilder-@BRANCH@
     </hudson.plugins.blame__upstream__commiters.BlameUpstreamCommitersPublisher>
   </publishers>
   <buildWrappers>
-    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.14" />
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.6" />
   </buildWrappers>
 </project>
