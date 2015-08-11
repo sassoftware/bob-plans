@@ -29,14 +29,9 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-for product in rba rus devimage; do
- for target in "" "-infra"; do
-  bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-${product}${target}.bob
- done
+for product in rba rus devimage entsrv; do
+ bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/proddefs/${product}-ci.bob
 done
-
-bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-rba-vapp.bob
-bob-jenkins --base-uri $WMS --repo gerrit-pdt/appengine/bob-plans --plan centos-6n/product-definition-entsrv.bob
 </command>
     </hudson.tasks.Shell>
   </builders>
