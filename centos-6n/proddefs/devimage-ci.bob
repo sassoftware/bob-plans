@@ -1,7 +1,7 @@
 includeConfigFile ../../requires/conary.conf
 includeConfigFile ../common.conf
 
-macros project_name newton
+macros project_name faraday
 macros release_label %(master_label)s-devimage
 macros major_version %(rbuilder_forest)s
 
