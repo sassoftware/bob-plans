@@ -35,12 +35,12 @@ RBUILD="rbuild --config-file ${WORKSPACE}/rbuildrc"
 rm -rf rbuild
 mkdir rbuild
 cd rbuild
-$RBUILD init newton.eng.rpath.com@sas:rba-@BRANCH@-updateservice
+$RBUILD init faraday.cny.sas.com@sas:rba-@BRANCH@-updateservice
 cd */Release
 $RBUILD build images 'UpdateService @BRANCH@ x86_64 ISO'
 
 cd ${WORKSPACE}
-PATH=/usr/local/bin:$PATH ./image-scripts/jenkins.sh newton.eng.rpath.com@sas:rba-@BRANCH@-updateservice /mnt/rpath/linux/auto
+PATH=/usr/local/bin:$PATH ./image-scripts/jenkins.sh faraday.cny.sas.com@sas:rba-@BRANCH@-updateservice /mnt/rpath/linux/auto
 </command>
     </hudson.tasks.Shell>
   </builders>

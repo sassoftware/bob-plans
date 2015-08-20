@@ -27,7 +27,7 @@ fi
 shift 2
 
 major=8
-ci_base="newton.eng.rpath.com@sas:rba-$rel"
+ci_base="faraday.cny.sas.com@sas:rba-$rel"
 dest_base="/pdt.cny.sas.com@sas:"
 
 ./promote_safe.py "${dest_base}rba-$major$suffix" \
