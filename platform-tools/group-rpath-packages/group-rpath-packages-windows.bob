@@ -1,9 +1,0 @@
-includeConfigFile ../conf/common.conf
-includeConfigFile ../conf/platform-windows.conf
-includeConfigFile sources.conf
-
-
-
-target []
-
-target group-rpath-packages
