@@ -26,8 +26,8 @@
     <hudson.tasks.Shell>
       <command>
 ./promote_safe.py --clear \
-    /faraday.cny.sas.com@sas:rba-@BRANCH@-platform \
-    group-rpath-platform=faraday.cny.sas.com@sas:platform-@BRANCH@-devel \
+    /newton.eng.rpath.com@sas:rba-@BRANCH@-platform \
+    group-rpath-platform=newton.eng.rpath.com@sas:platform-@BRANCH@-devel \
     --message='Automated flattening of platform group'
 </command>
     </hudson.tasks.Shell>
