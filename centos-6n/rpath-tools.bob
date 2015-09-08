@@ -6,6 +6,7 @@ includeConfigFile common.conf
 scm rpath-tools wms gerrit-pdt/appengine/rpath-tools %(rbuilder_forest)s
 
 target rpath-tools
+target rpath-tools-test
 
 [target:rpath-tools]
 version %(version)s_%(scm)s_%(start_time)s
@@ -14,3 +15,9 @@ flavor_set plain
 classVar plat 'centos'
 classVar platver '6'
 sourceTree rpath-tools recipes/unified/rpath-tools
+
+[target:rpath-tools-test]
+version %(version)s_%(scm)s_%(start_time)s
+scm rpath-tools
+flavor_set plain
+sourceTree rpath-tools recipes/unified/rpath-tools-test
